@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.big_bertha.hold_first_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, 60, -130],
+					"position": [5, 35, 0],
+					"scale": [1.45, 1.45, 1.45]
+				}
+			}
+		},
+		"animation.big_bertha.hold_third_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [83, 0, 4],
+					"position": [-0.8, 23, 4],
+					"scale": [1.45, 1.45, 1.45]
+				}
+			}
+		}
+	}
+}
