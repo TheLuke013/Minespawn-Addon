@@ -16,6 +16,7 @@
             },
             "animations": {
                 "hold_first_person": "animation.big_bertha.hold_first_person",
+                "hold_first_person_attack": "animation.big_bertha.hold_first_person_attack",
                 "hold_third_person": "animation.big_bertha.hold_third_person"
             },
             "scripts": {
@@ -24,11 +25,16 @@
                         "hold_first_person": "context.is_first_person == 1.0"
                     },
                     {
+                        "hold_first_person_attack": "context.is_first_person == 1.0 && query.is_delayed_attacking"
+                    },
+                    {
                         "hold_third_person": "context.is_first_person == 0.0"
                     }
                 ]
             },
-            "render_controllers": ["controller.render.item_default"]
+            "render_controllers": [
+                "controller.render.item_default"
+            ]
         }
     }
 }

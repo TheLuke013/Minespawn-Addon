@@ -1,0 +1,43 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Minespawn Addon",
+	"namespace": "minespawn",
+	"authors": [
+		"TheLuke013"
+	],
+	"targetVersion": "1.21.50",
+	"description": "A remake of Orespawn",
+	"experimentalGameplay": {
+		"creationOfCustomBiomes": true,
+		"upcomingCreatorFeatures": true,
+		"enableGameTestFramework": true,
+		"focusTargetCamera": true,
+		"dataDrivenJigsawStructures": true,
+		"aimAssist": true,
+		"educationEdition": true
+	},
+	"bdsProject": true,
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Minespawn Addon"
+				}
+			]
+		]
+	}
+}
