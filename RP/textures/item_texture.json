@@ -1,9 +1,0 @@
-{
-  "resource_pack_name": "Minespawn Resource Pack",
-  "texture_name": "atlas.items",
-  "texture_data": {
-    "minespawn:big_bertha": {
-      "textures": "textures/items/weapons/big_bertha"
-    }
-  }
-}
