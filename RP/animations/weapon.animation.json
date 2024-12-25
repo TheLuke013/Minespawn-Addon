@@ -1,0 +1,80 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.weapon.hold_first_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						0,
+						60,
+						-130
+					],
+					"position": [
+						5,
+						35,
+						0
+					],
+					"scale": [
+						1.45,
+						1.45,
+						1.45
+					]
+				}
+			}
+		},
+		"animation.weapon.hold_first_person_attack": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [
+							0,
+							60,
+							-130
+						],
+						"0.125": [
+							90,
+							60,
+							-130
+						],
+						"0.25": [
+							0,
+							60,
+							-130
+						]
+					},
+					"position": [
+						5,
+						35,
+						0
+					],
+					"scale": 1.45
+				}
+			}
+		},
+		"animation.weapon.hold_third_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						83,
+						0,
+						4
+					],
+					"position": [
+						-0.8,
+						23,
+						4
+					],
+					"scale": [
+						1.45,
+						1.45,
+						1.45
+					]
+				}
+			}
+		}
+	}
+}

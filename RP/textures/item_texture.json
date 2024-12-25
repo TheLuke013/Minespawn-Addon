@@ -1,9 +1,21 @@
 {
-  "resource_pack_name": "Minespawn Resource Pack",
-  "texture_name": "atlas.items",
-  "texture_data": {
-    "minespawn:big_bertha": {
-      "textures": "textures/items/weapons/big_bertha"
-    }
-  }
+	"resource_pack_name": "Minespawn Resource Pack",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"minespawn_big_bertha": {
+			"textures": "textures/items/weapons/big_bertha/big_bertha"
+		},
+		"minespawn_big_bertha_handle": {
+			"textures": "textures/items/weapons/big_bertha/big_bertha_handle"
+		},
+		"minespawn_big_bertha_guard": {
+			"textures": "textures/items/weapons/big_bertha/big_bertha_guard"
+		},
+		"minespawn_big_bertha_blade": {
+			"textures": "textures/items/weapons/big_bertha/big_bertha_blade"
+		},
+		"minespawn_royal_guardian": {
+			"textures": "textures/items/weapons/royal_guardian"
+		}
+	}
 }
