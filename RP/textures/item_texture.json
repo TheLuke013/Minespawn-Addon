@@ -16,6 +16,9 @@
 		},
 		"minespawn_royal_guardian": {
 			"textures": "textures/items/weapons/royal_guardian"
+		},
+		"minespawn_slice": {
+			"textures": "textures/items/weapons/slice"
 		}
 	}
 }

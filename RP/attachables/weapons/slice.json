@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "minespawn:slice",
+			"materials": {
+				"default": "entity",
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/weapons/slice",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.slice"
+			},
+			"animations": {
+				"hold_first_person": "animation.weapon.hold_first_person",
+				"hold_first_person_attack": "animation.weapon.hold_first_person_attack",
+				"hold_third_person": "animation.weapon.hold_third_person"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"hold_first_person": "context.is_first_person == 1.0"
+					},
+					{
+						"hold_first_person_attack": "context.is_first_person == 1.0 && query.is_delayed_attacking"
+					},
+					{
+						"hold_third_person": "context.is_first_person == 0.0"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}

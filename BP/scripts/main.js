@@ -18,7 +18,8 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
         onHitEntity: e => {
             const weapon = e.itemStack;
 
-            if (weapon.typeId === 'minespawn:big_bertha' && 'minespawn:slice') {
+            if (weapon.typeId === 'minespawn:big_bertha' || weapon.typeId === 'minespawn:slice') {
+                world.sendMessage("Big ou Slice");
                 e.hitEntity.applyDamage(500);
             } else if (weapon.typeId === 'minespawn:royal_guardian') {
                 e.hitEntity.applyDamage(750);
