@@ -4,7 +4,7 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
     initEvent.itemComponentRegistry.registerCustomComponent('minespawn:knockback', {
         onHitEntity: e => {
             const dir = e.attackingEntity.getViewDirection();
-            e.hitEntity.applyKnockback(dir.x + 20, dir.y + 20, dir.z + 20, 1);
+            e.hitEntity.applyKnockback(dir.x, dir.z, 10, 1);
         }
     });
 
