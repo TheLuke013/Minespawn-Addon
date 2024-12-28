@@ -16,16 +16,14 @@
             },
             "animations": {
                 "hold_first_person": "animation.weapon.hold_first_person",
-                "hold_first_person_attack": "animation.weapon.hold_first_person_attack",
+                "attack_controller": "controller.animation.weapon_attack",
+                "attack": "animation.weapon.hold_first_person_attack",
                 "hold_third_person": "animation.weapon.hold_third_person"
             },
             "scripts": {
                 "animate": [
                     {
-                        "hold_first_person": "context.is_first_person == 1.0"
-                    },
-                    {
-                        "hold_first_person_attack": "context.is_first_person == 1.0 && query.is_delayed_attacking"
+                        "hold_first_person": "context.is_first_person == 1.0 && !query.is_delayed_attacking"
                     },
                     {
                         "hold_third_person": "context.is_first_person == 0.0"

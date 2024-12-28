@@ -48,7 +48,12 @@
                     "minecraft:is_sword",
                     "minecraft:is_tool"
                 ]
-            }
+            },
+            "minecraft:custom_components": [
+                "minespawn:knockback",
+                "minespawn:flaming_damage",
+                "minespawn:weapon_damage"
+            ]
         }
     }
 }

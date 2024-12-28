@@ -48,7 +48,11 @@
 					"minecraft:is_sword",
 					"minecraft:is_tool"
 				]
-			}
+			},
+			"minecraft:custom_components": [
+				"minespawn:knockback",
+				"minespawn:weapon_damage"
+			]
 		}
 	}
 }
