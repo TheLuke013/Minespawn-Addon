@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:slice",
+			"identifier": "minespawn:stelix_bertha",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.sword"
@@ -13,9 +13,9 @@
 			"minecraft:hand_equipped": true,
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:durability": {
-				"max_durability": 9000
+				"max_durability": 14000
 			},
-			"minecraft:icon": "minespawn_slice",
+			"minecraft:icon": "minespawn_stelix_bertha",
 			"minecraft:enchantable": {
 				"value": 14,
 				"slot": "sword"
@@ -25,11 +25,11 @@
 				"destroy_speeds": [
 					{
 						"block": "minecraft:web",
-						"speed": 50
+						"speed": 70
 					},
 					{
 						"block": "minecraft:bamboo",
-						"speed": 60
+						"speed": 90
 					}
 				]
 			},

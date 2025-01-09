@@ -1,5 +1,5 @@
 pack.description=Um addon remake de Orespawn
 
-item.minespawn:big_bertha=Big Bertha\n\n§9+500 Dano de Ataque
-item.minespawn:royal_guardian=Royal Guardian\n\n§9+750 Dano de Ataque
-item.minespawn:slice=Slice\n\n§9+500 Dano de Ataque
+item.minespawn:big_bertha=Big Bertha Sword\n\n§9+500 Dano de Ataque
+item.minespawn:royal_guardian=Royal Guardian Sword\n\n§9+750 Dano de Ataque
+item.minespawn:stelix_bertha=Stelix Bertha Sword\n\n§9+580 Dano de Ataque

@@ -5,6 +5,6 @@ item.minespawn:big_bertha_handle=Big Bertha Handle
 item.minespawn:big_bertha_guard=Big Bertha Guard
 item.minespawn:big_bertha_blade=Big Bertha Blade
 
-item.minespawn:big_bertha=Big Bertha\n\n§9+500 Attack Damage
-item.minespawn:royal_guardian=Royal Guardian\n\n§9+750 Attack Damage
-item.minespawn:slice=Slice\n\n§9+500 Attack Damage
+item.minespawn:big_bertha=Big Bertha Sword\n\n§9+500 Attack Damage
+item.minespawn:royal_guardian=Royal Guardian Sword\n\n§9+750 Attack Damage
+item.minespawn:stelix_bertha=Stelix Bertha Sword\n\n§9+580 Attack Damage

@@ -2,25 +2,26 @@
 	"format_version": "1.20.80",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "minespawn:slice"
+			"identifier": "minespawn:stelix_bertha"
 		},
 		"tags": [
 			"crafting_table"
 		],
 		"pattern": [
-			"b",
-			"i"
+			"iii",
+			"ibi",
+			"iii"
 		],
 		"key": {
 			"b": {
 				"item": "minespawn:big_bertha"
 			},
 			"i": {
-				"item": "minecraft:iron_ingot"
+				"item": "minecraft:iron_block"
 			}
 		},
 		"result": {
-			"item": "minespawn:slice"
+			"item": "minespawn:stelix_bertha"
 		},
 		"unlock": [
 			{

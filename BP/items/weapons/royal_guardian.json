@@ -13,7 +13,7 @@
 			"minecraft:hand_equipped": true,
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:durability": {
-				"max_durability": 9000
+				"max_durability": 18000
 			},
 			"minecraft:icon": "minespawn_royal_guardian",
 			"minecraft:enchantable": {

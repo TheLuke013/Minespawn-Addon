@@ -4,12 +4,10 @@
         "description": {
             "identifier": "minespawn:royal_guardian",
             "materials": {
-                "default": "entity",
-                "enchanted": "entity_alphatest_glint"
+                "default": "entity"
             },
             "textures": {
-                "default": "textures/weapons/royal_guardian",
-                "enchanted": "textures/misc/enchanted_item_glint"
+                "default": "textures/weapons/royal_guardian"
             },
             "geometry": {
                 "default": "geometry.royal_guardian"
@@ -33,7 +31,7 @@
                 ]
             },
             "render_controllers": [
-                "controller.render.item_default"
+                "controller.render.weapon"
             ]
         }
     }
