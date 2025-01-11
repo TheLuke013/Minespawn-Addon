@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.0",
+    "format_version": "1.10.0",
     "minecraft:attachable": {
         "description": {
             "identifier": "minespawn:big_bertha",
@@ -19,7 +19,7 @@
             },
             "scripts": {
                 "pre_animation": [
-                    "v.ultima_blade = query.get_equipped_item_name('main_hand') == 'big_bertha';"
+                    "variable.ultima_blade = query.get_equipped_item_name('main_hand') == 'big_bertha';"
                 ],
                 "animate": [
                     {
@@ -29,7 +29,7 @@
                         "hold_third_person": "context.is_first_person == 0.0"
                     },
                     {
-                        "first_person_attack": "v.ultima_blade && v.is_first_person && v.attack_time"
+                        "first_person_attack": "variable.ultima_blade && context.is_first_person && context.attack_time"
                     }
                 ]
             },
