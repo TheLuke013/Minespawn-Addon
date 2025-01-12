@@ -19,6 +19,12 @@
 		},
 		"minespawn_stelix_bertha": {
 			"textures": "textures/items/weapons/stelix_bertha"
+		},
+		"minespawn_wither_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/wither_spawn_egg"
+		},
+		"minespawn_ender_dragon_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/ender_dragon_spawn_egg"
 		}
 	}
 }

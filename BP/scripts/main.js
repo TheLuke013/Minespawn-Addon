@@ -35,7 +35,6 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
     initEvent.itemComponentRegistry.registerCustomComponent('minespawn:weapon_damage', {
         onHitEntity: e => {
             const weapon = e.itemStack;
-
             if (weapon.typeId === 'minespawn:big_bertha') {
                 e.hitEntity.applyDamage(500);
             } else if (weapon.typeId === 'minespawn:stelix_bertha') {
