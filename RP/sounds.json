@@ -1,0 +1,57 @@
+{
+	"entity_sounds": {
+		"entities": {
+			"minespawn:golden_apple_cow": {
+				"volume": 1,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.cow.say",
+					"hurt": "mob.cow.hurt",
+					"death": "mob.cow.hurt",
+					"step": {
+						"sound": "mob.cow.step",
+						"volume": 0.15,
+						"pitch": 1
+					}
+				}
+			},
+			"minespawn:apple_cow": {
+				"volume": 1,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.cow.say",
+					"hurt": "mob.cow.hurt",
+					"death": "mob.cow.hurt",
+					"step": {
+						"sound": "mob.cow.step",
+						"volume": 0.15,
+						"pitch": 1
+					}
+				}
+			},
+			"minespawn:enchanted_golden_apple_cow": {
+				"volume": 1,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.cow.say",
+					"hurt": "mob.cow.hurt",
+					"death": "mob.cow.hurt",
+					"step": {
+						"sound": "mob.cow.step",
+						"volume": 0.15,
+						"pitch": 1
+					}
+				}
+			}
+		}
+	}
+}
