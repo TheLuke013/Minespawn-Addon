@@ -25,6 +25,21 @@
 		},
 		"minespawn_ender_dragon_spawn_egg": {
 			"textures": "textures/items/spawn_eggs/ender_dragon_spawn_egg"
+		},
+		"minespawn_ultimate_hammer": {
+			"textures": "textures/items/weapons/ultimate_hammer"
+		},
+		"minespawn_amethyst_helmet": {
+			"textures": "textures/items/armors/amethyst/amethyst_helmet"
+		},
+		"minespawn_amethyst_chestplate": {
+			"textures": "textures/items/armors/amethyst/amethyst_chestplate"
+		},
+		"minespawn_amethyst_leggings": {
+			"textures": "textures/items/armors/amethyst/amethyst_leggings"
+		},
+		"minespawn_amethyst_boots": {
+			"textures": "textures/items/armors/amethyst/amethyst_boots"
 		}
 	}
 }

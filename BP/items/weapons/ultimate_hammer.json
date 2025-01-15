@@ -1,0 +1,61 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "minespawn:ultimate_hammer",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.sword"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:durability": {
+				"max_durability": 9000
+			},
+			"minecraft:icon": "minespawn_ultimate_hammer",
+			"minecraft:enchantable": {
+				"value": 14,
+				"slot": "sword"
+			},
+			"minecraft:damage": {
+				"value": 86
+			},
+			"minecraft:display_name": {
+				"value": "Ultimate Hammer"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:web",
+						"speed": 15
+					},
+					{
+						"block": "minecraft:bamboo",
+						"speed": 20
+					}
+				]
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"minespawn:ultimate_hammer"
+						],
+						"repair_amount": "context.other->q.remaining_durability + 0.05 * context.other->q.max_durability"
+					}
+				]
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_sword",
+					"minecraft:is_tool"
+				]
+			},
+			"minecraft:custom_components": []
+		}
+	}
+}
