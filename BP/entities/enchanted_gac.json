@@ -3,7 +3,7 @@
 	"minecraft:entity": {
 		"description": {
 			"identifier": "minespawn:enchanted_golden_apple_cow",
-			"is_spawnable": true,
+			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false
 		},
@@ -80,6 +80,7 @@
 			}
 		},
 		"components": {
+			"minecraft:is_charged": {},
 			"minecraft:type_family": {
 				"family": [
 					"enchanted_golden_cow",

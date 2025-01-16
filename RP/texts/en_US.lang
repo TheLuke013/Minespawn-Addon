@@ -14,7 +14,6 @@ item.minespawn:amethyst_leggings=Amethyst Leggings
 item.minespawn:amethyst_boots=Amethyst Boots
 
 item.spawn_egg.entity.minespawn:golden_apple_cow.name=Spawn Golden Apple Cow
-item.spawn_egg.entity.minespawn:enchanted_golden_apple_cow.name=Spawn Enchanted Golden Apple Cow
 item.spawn_egg.entity.minespawn:apple_cow.name=Spawn Apple Cow
 
 entity.minespawn:golden_apple_cow.name=Golden Apple Cow

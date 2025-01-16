@@ -34,8 +34,7 @@
 				"controller.render.cow"
 			],
 			"spawn_egg": {
-				"base_color": "#FF0000",
-				"overlay_color": "#C6C2C2"
+				"texture": "minespawn_apple_cow_spawn_egg"
 			}
 		}
 	}

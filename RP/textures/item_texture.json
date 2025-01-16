@@ -40,6 +40,12 @@
 		},
 		"minespawn_amethyst_boots": {
 			"textures": "textures/items/armors/amethyst/amethyst_boots"
+		},
+		"minespawn_apple_cow_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/apple_cow_spawn_egg"
+		},
+		"minespawn_golden_apple_cow_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/golden_apple_cow_spawn_egg"
 		}
 	}
 }
