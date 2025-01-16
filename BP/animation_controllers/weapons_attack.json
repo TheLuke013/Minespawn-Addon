@@ -1,0 +1,71 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.royal_guardian_attack": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attack": "query.get_equipped_item_name('main_hand') == 'royal_guardian' && variable.attack_time"
+						}
+					]
+				},
+				"attack": {
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					],
+					"on_entry": [
+						"/say Royal Guardian Attack"
+					]
+				}
+			}
+		},
+		"controller.animation.big_bertha_attack": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attack": "query.get_equipped_item_name('main_hand') == 'big_bertha' && variable.attack_time"
+						}
+					]
+				},
+				"attack": {
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					],
+					"on_entry": [
+						"/say Big Bertha Attack"
+					]
+				}
+			}
+		},
+		"controller.animation.stelix_bertha_attack": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attack": "query.get_equipped_item_name('main_hand') == 'stelix_bertha' && variable.attack_time"
+						}
+					]
+				},
+				"attack": {
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					],
+					"on_entry": [
+						"/say Stelix Bertha Attack"
+					]
+				}
+			}
+		}
+	}
+}

@@ -55,7 +55,9 @@
 					"minecraft:is_tool"
 				]
 			},
-			"minecraft:custom_components": []
+			"minecraft:custom_components": [
+				"minespawn:on_damage"
+			]
 		}
 	}
 }

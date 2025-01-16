@@ -51,7 +51,7 @@
 			},
 			"minecraft:custom_components": [
 				"minespawn:knockback",
-				"minespawn:weapon_damage"
+				"minespawn:on_damage"
 			]
 		}
 	}

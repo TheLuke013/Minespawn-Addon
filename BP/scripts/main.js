@@ -5,6 +5,20 @@ function getPlayerMainhandItem(player) {
     return equippable.getEquipment('Mainhand');
 }
 
+function ultimateHammerAttack(player, attackLoc) {
+    world.getDimension(player.dimension.id).createExplosion(attackLoc, 3, { causesFire: true, source: player });
+
+    const entities = player.dimension.getEntities({
+        location: player.location, maxDistance: 5,
+        excludeFamilies: ['player']
+    });
+
+    entities.forEach(entity => {
+        entity.applyKnockback(0, 0, 10, 3);
+        //world.sendMessage(entity.typeId);
+    })
+}
+
 //custom components registers
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
     initEvent.itemComponentRegistry.registerCustomComponent('minespawn:knockback', {
@@ -32,7 +46,7 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
         }
     });
 
-    initEvent.itemComponentRegistry.registerCustomComponent('minespawn:weapon_damage', {
+    initEvent.itemComponentRegistry.registerCustomComponent('minespawn:on_damage', {
         onHitEntity: e => {
             const weapon = e.itemStack;
             if (weapon.typeId === 'minespawn:big_bertha') {
@@ -41,9 +55,25 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
                 e.hitEntity.applyDamage(580);
             } else if (weapon.typeId === 'minespawn:royal_guardian') {
                 e.hitEntity.applyDamage(750);
+            } else if (weapon.typeId === 'minespawn:ultimate_hammer') {
+                ultimateHammerAttack(e.attackingEntity, e.hitEntity.location);
             }
         }
     });
+});
+
+world.afterEvents.entityHitBlock.subscribe(e => {
+    const entity = e.damagingEntity;
+    const block = e.hitBlock;
+
+    //ultimate hammer explosion on hit block
+    if (entity.typeId === 'minecraft:player') {
+        const mainhandItem = getPlayerMainhandItem(entity);
+
+        if (mainhandItem?.typeId === 'minespawn:ultimate_hammer') {
+            ultimateHammerAttack(entity, block.location);
+        }
+    }
 });
 
 system.runInterval(() => {
@@ -63,5 +93,5 @@ system.runInterval(() => {
         else if (mainhandItem?.typeId === 'minespawn:royal_guardian') {
             player.runCommand('enchant @s unbreaking 3');
         }
-    })
+    });
 });
