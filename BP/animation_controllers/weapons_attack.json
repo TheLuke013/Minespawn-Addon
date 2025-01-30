@@ -18,7 +18,7 @@
 						}
 					],
 					"on_entry": [
-						"/say Royal Guardian Attack"
+						"/tag @s add royal_guardian_attacking"
 					]
 				}
 			}
@@ -40,7 +40,7 @@
 						}
 					],
 					"on_entry": [
-						"/say Big Bertha Attack"
+						"/tag @s add big_bertha_attacking"
 					]
 				}
 			}
@@ -62,7 +62,7 @@
 						}
 					],
 					"on_entry": [
-						"/say Stelix Bertha Attack"
+						"/tag @s add stelix_bertha_attacking"
 					]
 				}
 			}

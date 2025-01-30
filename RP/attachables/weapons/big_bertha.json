@@ -14,8 +14,9 @@
             },
             "animations": {
                 "hold_first_person": "animation.weapon.hold_first_person",
-                "first_person_attack": "animation.weapon.hold_first_person_attack",
-                "hold_third_person": "animation.weapon.hold_third_person"
+                "hold_third_person": "animation.weapon.hold_third_person",
+                "hold_first_person_attack": "animation.weapon.hold_first_person_attack",
+                "weapon_attack": "controller.animation.weapon_attack"
             },
             "scripts": {
                 "pre_animation": [
@@ -28,9 +29,7 @@
                     {
                         "hold_third_person": "context.is_first_person == 0.0"
                     },
-                    {
-                        "first_person_attack": "variable.ultima_blade && context.is_first_person && context.attack_time"
-                    }
+                    "weapon_attack"
                 ]
             },
             "render_controllers": [

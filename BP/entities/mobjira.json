@@ -1,0 +1,90 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minespawn:mobjira",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {},
+		"components": {
+			"minecraft:physics": {},
+			"minecraft:movement.basic": {},
+			"minecraft:movement": {
+				"value": 0.25
+			},
+			"minecraft:jump.static": {},
+			"minecraft:navigation.walk": {
+				"avoid_water": true,
+				"can_jump": true,
+				"can_break_doors": true,
+				"can_sink": true,
+				"can_walk": true
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 1
+			},
+			"minecraft:scale": {
+				"value": 3
+			},
+			"minecraft:collision_box": {
+				"width": 2.5,
+				"height": 10
+			},
+			"minecraft:boss": {
+				"hud_range": 125,
+				"name": "§3Mobjira"
+			},
+			"minecraft:health": {
+				"value": 25000
+			},
+			"minecraft:type_family": {
+				"family": [
+					"mobjira"
+				]
+			},
+			"minecraft:experience_reward": {
+				"on_death": 4000
+			},
+			"minecraft:behavior.look_at_target": {
+				"priority": 5,
+				"look_distance": 30
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 5,
+				"look_distance": 30
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"must_see": true,
+				"reselect_targets": true,
+				"within_radius": 100,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								}
+							]
+						},
+						"max_dist": 100
+					}
+				]
+			},
+			"minecraft:behavior.melee_attack": {
+				"priority": 3
+			},
+			"minecraft:attack": {
+				"damage": {
+					"range_min": 100,
+					"range_max": 175
+				}
+			}
+		},
+		"events": {}
+	}
+}

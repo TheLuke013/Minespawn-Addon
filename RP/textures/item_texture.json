@@ -46,6 +46,9 @@
 		},
 		"minespawn_golden_apple_cow_spawn_egg": {
 			"textures": "textures/items/spawn_eggs/golden_apple_cow_spawn_egg"
+		},
+		"minespawn_mobjira_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/mobjira_spawn_egg"
 		}
 	}
 }

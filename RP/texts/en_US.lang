@@ -19,3 +19,5 @@ item.spawn_egg.entity.minespawn:apple_cow.name=Spawn Apple Cow
 entity.minespawn:golden_apple_cow.name=Golden Apple Cow
 entity.minespawn:enchanted_golden_apple_cow.name=Enchanted Golden Apple Cow
 entity.minespawn:apple_cow.name=Apple Cow
+item.spawn_egg.entity.minespawn:mobjira.name=Spawn Mobjira
+entity.minespawn:mobjira.name=Mobjira

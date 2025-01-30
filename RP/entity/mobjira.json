@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "minespawn:mobjira",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/mobjira"
+			},
+			"geometry": {
+				"default": "geometry.mobjira"
+			},
+			"render_controllers": [
+				"controller.render.mobjira"
+			],
+			"spawn_egg": {
+				"texture": "minespawn_mobjira_spawn_egg"
+			},
+			"animations": {
+				"move": "animation.burning_mobjira.move"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.is_moving"
+					}
+				]
+			}
+		}
+	}
+}

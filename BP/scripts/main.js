@@ -19,6 +19,15 @@ function ultimateHammerAttack(player, attackLoc) {
     })
 }
 
+function longRangeAttack(range, player) {
+    const playerLoc = player.location;
+
+    for (let i = 0; i <= range; i++) {
+        const loc = { x: playerLoc.x + i, y: playerLoc.y + i, z: playerLoc.z + i }
+        world.getDimension(player.dimension.id).setBlockType(loc, 'minecraft:stone');
+    }
+}
+
 //custom components registers
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
     initEvent.itemComponentRegistry.registerCustomComponent('minespawn:knockback', {
@@ -92,6 +101,19 @@ system.runInterval(() => {
         //royal guardian enchantment
         else if (mainhandItem?.typeId === 'minespawn:royal_guardian') {
             player.runCommand('enchant @s unbreaking 3');
+        }
+
+        //long range attack
+        if (player.getTags().includes('royal_guardian_attacking')) {
+            world.sendMessage('Player com tag de royal');
+            player.removeTag('royal_guardian_attacking');
+        } else if (player.getTags().includes('big_bertha_attacking')) {
+            world.sendMessage('Player com tag de big bertha');
+            longRangeAttack(10, player);
+            player.removeTag('big_bertha_attacking');
+        } else if (player.getTags().includes('stelix_bertha_attacking')) {
+            world.sendMessage('Player com tag de stelixB');
+            player.removeTag('stelix_bertha_attacking');
         }
     });
 });
