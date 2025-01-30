@@ -1,3 +1,37 @@
 {
-	"sound_definitions": {}
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"mob.mobjira.step": {
+			"category": "neutral",
+			"max_distance": 150,
+			"sounds": [
+				"sounds/mob/mobjira/mobjira_step"
+			]
+		},
+		"mob.mobjira.hurt": {
+			"category": "neutral",
+			"max_distance": 150,
+			"sounds": [
+				"sounds/mob/mobjira/mobjira_roar1"
+			]
+		},
+		"mob.mobjira.death": {
+			"category": "neutral",
+			"max_distance": 150,
+			"sounds": [
+				"sounds/mob/mobjira/mobjira_roar4"
+			]
+		},
+		"mob.mobjira.roar": {
+			"category": "neutral",
+			"max_distance": 150,
+			"sounds": [
+				"sounds/mob/mobjira/mobjira_roar1",
+				"sounds/mob/mobjira/mobjira_roar2",
+				"sounds/mob/mobjira/mobjira_roar3",
+				"sounds/mob/mobjira/mobjira_roar4",
+				"sounds/mob/mobjira/mobjira_roar5"
+			]
+		}
+	}
 }

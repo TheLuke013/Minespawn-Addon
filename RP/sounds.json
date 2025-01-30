@@ -51,6 +51,19 @@
 						"pitch": 1
 					}
 				}
+			},
+			"minespawn:mobjira": {
+				"volume": 30.0,
+				"pitch": 1.0,
+				"events": {
+					"step": {
+						"sound": "mob.mobjira.step",
+						"volume": 100.0
+					},
+					"hurt": "mob.mobjira.hurt",
+					"death": "mob.mobjira.death",
+					"ambient": "mob.mobjira.roar"
+				}
 			}
 		}
 	}

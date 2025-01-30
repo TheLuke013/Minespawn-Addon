@@ -10,7 +10,9 @@
 		"component_groups": {},
 		"components": {
 			"minecraft:physics": {},
-			"minecraft:movement.basic": {},
+			"minecraft:movement.basic": {
+				"max_turn": 180
+			},
 			"minecraft:movement": {
 				"value": 0.25
 			},
@@ -18,12 +20,14 @@
 			"minecraft:navigation.walk": {
 				"avoid_water": true,
 				"can_jump": true,
-				"can_break_doors": true,
-				"can_sink": true,
-				"can_walk": true
+				"can_break_doors": true
 			},
 			"minecraft:behavior.random_stroll": {
-				"priority": 1
+				"priority": 5,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 7
 			},
 			"minecraft:scale": {
 				"value": 3
@@ -58,8 +62,6 @@
 			"minecraft:behavior.nearest_attackable_target": {
 				"priority": 2,
 				"must_see": true,
-				"reselect_targets": true,
-				"within_radius": 100,
 				"entity_types": [
 					{
 						"filters": {
@@ -68,6 +70,19 @@
 									"test": "is_family",
 									"subject": "other",
 									"value": "player"
+								}
+							]
+						},
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "!=",
+									"value": "mobjira"
 								}
 							]
 						},
@@ -83,7 +98,8 @@
 					"range_min": 100,
 					"range_max": 175
 				}
-			}
+			},
+			"minecraft:conditional_bandwidth_optimization": {}
 		},
 		"events": {}
 	}
