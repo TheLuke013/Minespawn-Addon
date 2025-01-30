@@ -19,12 +19,12 @@
 				"texture": "minespawn_mobjira_spawn_egg"
 			},
 			"animations": {
-				"move": "animation.burning_mobjira.move"
+				"move": "animation.mobjira.moving"
 			},
 			"scripts": {
 				"animate": [
 					{
-						"move": "query.is_moving"
+						"move": "query.modified_move_speed"
 					}
 				]
 			}
