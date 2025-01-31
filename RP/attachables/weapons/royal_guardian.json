@@ -18,15 +18,21 @@
                 "hold_third_person": "animation.weapon.hold_third_person"
             },
             "scripts": {
+                "parent_setup": "t.royal_attack = v.attack_time;",
+                "pre_animation": [
+                    "v.royal = query.get_equipped_item_name('main_hand') == 'royal_guardian';",
+                    "v.attack_time = t.royal_attack ?? 0;",
+                    "v.c_ifp = context.is_first_person;"
+                ],
                 "animate": [
                     {
-                        "hold_first_person": "context.is_first_person == 1.0"
+                        "hold_first_person": "v.c_ifp && !v.attack_time"
                     },
                     {
-                        "hold_first_person_attack": "context.is_first_person == 1.0 && query.is_delayed_attacking"
+                        "hold_first_person_attack": "v.royal && v.attack_time && v.c_ifp"
                     },
                     {
-                        "hold_third_person": "context.is_first_person == 0.0"
+                        "hold_third_person": "!v.c_ifp"
                     }
                 ]
             },

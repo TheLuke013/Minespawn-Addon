@@ -1,24 +1,27 @@
 {
 	"format_version": "1.10.0",
 	"animation_controllers": {
-		"controller.animation.weapon_attack": {
+		"controller.animation.mobjira_destroy": {
 			"initial_state": "default",
 			"states": {
 				"default": {
 					"transitions": [
 						{
-							"attack": "v.attack_time >= 0.0"
-						}
-					]
-				},
-				"attack": {
-					"transitions": [
-						{
-							"default": "v.attack_time < 0.0"
+							"destroy": "(1.0)"
 						}
 					],
-					"animations": [
-						"hold_first_person_attack"
+					"on_entry": [
+						"/function mobjira_destroy"
+					]
+				},
+				"destroy": {
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/function mobjira_destroy"
 					]
 				}
 			}

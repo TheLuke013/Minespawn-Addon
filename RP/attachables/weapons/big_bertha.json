@@ -1,5 +1,5 @@
 {
-    "format_version": "1.10.0",
+    "format_version": "1.20.0",
     "minecraft:attachable": {
         "description": {
             "identifier": "minespawn:big_bertha",
@@ -15,21 +15,25 @@
             "animations": {
                 "hold_first_person": "animation.weapon.hold_first_person",
                 "hold_third_person": "animation.weapon.hold_third_person",
-                "hold_first_person_attack": "animation.weapon.hold_first_person_attack",
-                "weapon_attack": "controller.animation.weapon_attack"
+                "hold_first_person_attack": "animation.weapon.hold_first_person_attack"
             },
             "scripts": {
+                "parent_setup": "t.big_bertha_attack = v.attack_time;",
                 "pre_animation": [
-                    "variable.ultima_blade = query.get_equipped_item_name('main_hand') == 'big_bertha';"
+                    "v.big_bertha = query.get_equipped_item_name('main_hand') == 'big_bertha';",
+                    "v.attack_time = t.big_bertha_attack ?? 0;",
+                    "v.c_ifp = context.is_first_person;"
                 ],
                 "animate": [
                     {
-                        "hold_first_person": "context.is_first_person == 1.0"
+                        "hold_first_person": "v.c_ifp && !v.attack_time"
                     },
                     {
-                        "hold_third_person": "context.is_first_person == 0.0"
+                        "hold_third_person": "!v.c_ifp"
                     },
-                    "weapon_attack"
+                    {
+                        "hold_first_person_attack": "v.big_bertha && v.attack_time && v.c_ifp"
+                    }
                 ]
             },
             "render_controllers": [

@@ -5,10 +5,42 @@
 			"identifier": "minespawn:mobjira",
 			"is_spawnable": true,
 			"is_summonable": true,
-			"is_experimental": false
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"mobjira_destroy"
+				]
+			},
+			"animations": {
+				"mobjira_destroy": "controller.animation.mobjira_destroy"
+			}
 		},
 		"component_groups": {},
 		"components": {
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fire_tick",
+						"deals_damage": false
+					},
+					{
+						"cause": "fire",
+						"deals_damage": false
+					},
+					{
+						"cause": "suffocation",
+						"deals_damage": false
+					},
+					{
+						"cause": "lightning",
+						"deals_damage": false
+					},
+					{
+						"cause": "fall",
+						"deals_damage": false
+					}
+				]
+			},
 			"minecraft:physics": {},
 			"minecraft:movement.basic": {
 				"max_turn": 180
@@ -16,7 +48,10 @@
 			"minecraft:movement": {
 				"value": 0.25
 			},
-			"minecraft:jump.static": {},
+			"minecraft:jump.static": {
+				"jump_power": 3.0
+			},
+			"minecraft:can_climb": {},
 			"minecraft:navigation.walk": {
 				"avoid_water": true,
 				"can_jump": true,
@@ -24,7 +59,7 @@
 			},
 			"minecraft:behavior.random_stroll": {
 				"priority": 5,
-				"speed_multiplier": 1
+				"speed_multiplier": 2
 			},
 			"minecraft:behavior.random_look_around": {
 				"priority": 7
@@ -59,22 +94,26 @@
 				"priority": 5,
 				"look_distance": 30
 			},
-			"minecraft:behavior.nearest_attackable_target": {
-				"priority": 2,
-				"must_see": true,
+			"minecraft:behavior.nearest_prioritized_attackable_target": {
+				"priority": 1,
+				"set_persistent": true,
+				"within_radius": 25.0,
 				"entity_types": [
 					{
 						"filters": {
-							"any_of": [
-								{
-									"test": "is_family",
-									"subject": "other",
-									"value": "player"
-								}
-							]
+							"test": "is_family",
+							"subject": "other",
+							"value": "player"
 						},
 						"max_dist": 100
-					},
+					}
+				]
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 4,
+				"must_see": false,
+				"must_reach": true,
+				"entity_types": [
 					{
 						"filters": {
 							"all_of": [
@@ -91,13 +130,22 @@
 				]
 			},
 			"minecraft:behavior.melee_attack": {
-				"priority": 3
+				"priority": 1,
+				"speed_multiplier": 2.0,
+				"reach_multiplier": 8.5,
+				"melee_fov": 360,
 			},
 			"minecraft:attack": {
 				"damage": {
 					"range_min": 100,
 					"range_max": 175
 				}
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 2
+			},
+			"minecraft:follow_range": {
+				"value": 100
 			},
 			"minecraft:conditional_bandwidth_optimization": {}
 		},
