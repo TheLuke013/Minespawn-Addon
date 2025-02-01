@@ -19,29 +19,8 @@ function ultimateHammerAttack(player, attackLoc) {
     })
 }
 
-function longRangeAttack(range, player) {
-    const playerLoc = player.location;
-    const rotation = player.getRotation();
+function longRangeAttack(player) {
 
-    // Converter graus para radianos
-    const yaw = (rotation.y + 90) * (Math.PI / 180); // Yaw controla direção horizontal
-    const pitch = -rotation.x * (Math.PI / 180); // Pitch controla inclinação (negativo porque MC inverte)
-
-    // Calcular a direção do vetor normalizado
-    const dirX = Math.cos(yaw) * Math.cos(pitch);
-    const dirY = Math.sin(pitch);
-    const dirZ = Math.sin(yaw) * Math.cos(pitch);
-
-    // Criar os blocos seguindo a linha reta da visão do jogador
-    for (let i = 1; i <= range; i++) {
-        const loc = {
-            x: Math.floor(playerLoc.x + dirX * i),
-            y: Math.floor(playerLoc.y + dirY * i),
-            z: Math.floor(playerLoc.z + dirZ * i)
-        };
-
-        world.getDimension(player.dimension.id).getBlock(loc).setType('minecraft:stone');
-    }
 }
 
 //custom components registers
@@ -123,10 +102,10 @@ system.runInterval(() => {
         if (player.getTags().includes('royal_guardian_attacking')) {
             player.removeTag('royal_guardian_attacking');
         } else if (player.getTags().includes('big_bertha_attacking')) {
-            longRangeAttack(10, player);
+            longRangeAttack(player);
             player.removeTag('big_bertha_attacking');
         } else if (player.getTags().includes('stelix_bertha_attacking')) {
             player.removeTag('stelix_bertha_attacking');
         }
-    });
+    })
 });

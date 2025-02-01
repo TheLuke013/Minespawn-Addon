@@ -19,12 +19,16 @@
 				"texture": "minespawn_mobjira_spawn_egg"
 			},
 			"animations": {
+				"idle": "animation.mobjira.idle",
 				"move": "animation.mobjira.moving",
 				"roar": "animation.mobjira.roar",
 				"look_at_target": "animation.mobjira.look_at_target"
 			},
 			"scripts": {
 				"animate": [
+					{
+						"idle": "query.is_on_ground"
+					},
 					{
 						"move": "query.modified_move_speed"
 					},

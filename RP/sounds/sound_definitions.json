@@ -32,6 +32,19 @@
 				"sounds/mob/mobjira/mobjira_roar4",
 				"sounds/mob/mobjira/mobjira_roar5"
 			]
+		},
+		"mob.mobjira.jump_impact": {
+			"category": "neutral",
+			"max_distance": 150,
+			"sounds": [
+				"sounds/mob/mobjira/mobjira_jump_impact"
+			]
+		},
+		"weapon.weapon_swoosh": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/random/weapon_swoosh"
+			]
 		}
 	}
 }

@@ -62,7 +62,9 @@
 					},
 					"hurt": "mob.mobjira.hurt",
 					"death": "mob.mobjira.death",
-					"ambient": "mob.mobjira.roar"
+					"ambient": "mob.mobjira.roar",
+					"fall.big": "mob.mobjira.jump_impact",
+					"fall.small": "mob.mobjira.jump_impact"
 				}
 			}
 		}

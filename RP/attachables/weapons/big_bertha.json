@@ -36,6 +36,9 @@
                     }
                 ]
             },
+            "sound_effects": {
+                "hold_first_person_attack": "mob.mobjira.roar"
+            },
             "render_controllers": [
                 "controller.render.weapon"
             ]

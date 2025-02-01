@@ -18,7 +18,8 @@
 						}
 					],
 					"on_entry": [
-						"/tag @s add royal_guardian_attacking"
+						"/tag @s add royal_guardian_attacking",
+						"/playsound weapon.weapon_swoosh"
 					]
 				}
 			}
@@ -40,7 +41,8 @@
 						}
 					],
 					"on_entry": [
-						"/tag @s add big_bertha_attacking"
+						"/tag @s add big_bertha_attacking",
+						"/playsound weapon.weapon_swoosh"
 					]
 				}
 			}
@@ -62,7 +64,30 @@
 						}
 					],
 					"on_entry": [
-						"/tag @s add stelix_bertha_attacking"
+						"/tag @s add stelix_bertha_attacking",
+						"/playsound weapon.weapon_swoosh"
+					]
+				}
+			}
+		},
+		"controller.animation.ultimate_hammer_attack": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attack": "query.get_equipped_item_name('main_hand') == 'ultimate_hammer' && variable.attack_time"
+						}
+					]
+				},
+				"attack": {
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					],
+					"on_entry": [
+						"/playsound weapon.weapon_swoosh"
 					]
 				}
 			}
