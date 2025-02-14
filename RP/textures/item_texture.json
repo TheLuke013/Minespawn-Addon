@@ -49,6 +49,18 @@
 		},
 		"minespawn_mobjira_spawn_egg": {
 			"textures": "textures/items/spawn_eggs/mobjira_spawn_egg"
+		},
+		"minespawn_ruby_helmet": {
+			"textures": "textures/items/armors/ruby/ruby_helmet"
+		},
+		"minespawn_ruby_chestplate": {
+			"textures": "textures/items/armors/ruby/ruby_chestplate"
+		},
+		"minespawn_ruby_leggings": {
+			"textures": "textures/items/armors/ruby/ruby_leggings"
+		},
+		"minespawn_ruby_boots": {
+			"textures": "textures/items/armors/ruby/ruby_boots"
 		}
 	}
 }

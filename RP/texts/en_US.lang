@@ -8,16 +8,22 @@ item.minespawn:big_bertha_blade=Big Bertha Blade
 item.minespawn:big_bertha=Big Bertha Sword\n\n§9+500 Attack Damage
 item.minespawn:royal_guardian=Royal Guardian Sword\n\n§9+750 Attack Damage
 item.minespawn:stelix_bertha=Stelix Bertha Sword\n\n§9+580 Attack Damage
+
 item.minespawn:amethyst_helmet=Amethyst Helmet
 item.minespawn:amethyst_chestplate=Amethyst Chestplate
 item.minespawn:amethyst_leggings=Amethyst Leggings
 item.minespawn:amethyst_boots=Amethyst Boots
 
+item.minespawn:ruby_helmet=Ruby Helmet
+item.minespawn:ruby_chestplate=Ruby Chestplate
+item.minespawn:ruby_leggings=Ruby Leggings
+item.minespawn:ruby_boots=Ruby Boots
+
 item.spawn_egg.entity.minespawn:golden_apple_cow.name=Spawn Golden Apple Cow
 item.spawn_egg.entity.minespawn:apple_cow.name=Spawn Apple Cow
+item.spawn_egg.entity.minespawn:mobjira.name=Spawn Mobjira
 
 entity.minespawn:golden_apple_cow.name=Golden Apple Cow
 entity.minespawn:enchanted_golden_apple_cow.name=Enchanted Golden Apple Cow
 entity.minespawn:apple_cow.name=Apple Cow
-item.spawn_egg.entity.minespawn:mobjira.name=Spawn Mobjira
 entity.minespawn:mobjira.name=Mobjira
