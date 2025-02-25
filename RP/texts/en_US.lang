@@ -19,6 +19,11 @@ item.minespawn:ruby_chestplate=Ruby Chestplate
 item.minespawn:ruby_leggings=Ruby Leggings
 item.minespawn:ruby_boots=Ruby Boots
 
+item.minespawn:emerald_helmet=Emerald Helmet
+item.minespawn:emerald_chestplate=Emerald Chestplate
+item.minespawn:emerald_leggings=Emerald Leggings
+item.minespawn:emerald_boots=Emerald Boots
+
 item.spawn_egg.entity.minespawn:golden_apple_cow.name=Spawn Golden Apple Cow
 item.spawn_egg.entity.minespawn:apple_cow.name=Spawn Apple Cow
 item.spawn_egg.entity.minespawn:mobjira.name=Spawn Mobjira

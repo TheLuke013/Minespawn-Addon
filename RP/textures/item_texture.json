@@ -61,6 +61,18 @@
 		},
 		"minespawn_ruby_boots": {
 			"textures": "textures/items/armors/ruby/ruby_boots"
+		},
+		"minespawn_emerald_helmet": {
+			"textures": "textures/items/armors/emerald/emerald_helmet"
+		},
+		"minespawn_emerald_chestplate": {
+			"textures": "textures/items/armors/emerald/emerald_chestplate"
+		},
+		"minespawn_emerald_leggings": {
+			"textures": "textures/items/armors/emerald/emerald_leggings"
+		},
+		"minespawn_emerald_boots": {
+			"textures": "textures/items/armors/emerald/emerald_boots"
 		}
 	}
 }
