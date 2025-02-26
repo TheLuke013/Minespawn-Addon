@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minespawn:experience_boots"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"eee",
+			"e#e",
+			"eee"
+		],
+		"key": {
+			"#": {
+				"item": "minespawn:emerald_boots"
+			},
+			"e": {
+				"item": "minecraft:experience_bottle"
+			}
+		},
+		"result": {
+			"item": "minespawn:experience_boots"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:experience_bottle"
+			}
+		]
+	}
+}

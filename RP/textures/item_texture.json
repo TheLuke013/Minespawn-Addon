@@ -73,6 +73,18 @@
 		},
 		"minespawn_emerald_boots": {
 			"textures": "textures/items/armors/emerald/emerald_boots"
+		},
+		"minespawn_experience_helmet": {
+			"textures": "textures/items/armors/experience/experience_helmet"
+		},
+		"minespawn_experience_chestplate": {
+			"textures": "textures/items/armors/experience/experience_chestplate"
+		},
+		"minespawn_experience_leggings": {
+			"textures": "textures/items/armors/experience/experience_leggings"
+		},
+		"minespawn_experience_boots": {
+			"textures": "textures/items/armors/experience/experience_boots"
 		}
 	}
 }

@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minespawn:experience_helmet"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"eee",
+			"e#e",
+			"eee"
+		],
+		"key": {
+			"#": {
+				"item": "minespawn:emerald_helmet"
+			},
+			"e": {
+				"item": "minecraft:experience_bottle"
+			}
+		},
+		"result": {
+			"item": "minespawn:experience_helmet"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:experience_bottle"
+			}
+		]
+	}
+}

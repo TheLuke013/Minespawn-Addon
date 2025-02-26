@@ -24,6 +24,11 @@ item.minespawn:emerald_chestplate=Emerald Chestplate
 item.minespawn:emerald_leggings=Emerald Leggings
 item.minespawn:emerald_boots=Emerald Boots
 
+item.minespawn:experience_helmet=Experience Helmet
+item.minespawn:experience_chestplate=Experience Chestplate
+item.minespawn:experience_leggings=Experience Leggings
+item.minespawn:experience_boots=Experience Boots
+
 item.spawn_egg.entity.minespawn:golden_apple_cow.name=Spawn Golden Apple Cow
 item.spawn_egg.entity.minespawn:apple_cow.name=Spawn Apple Cow
 item.spawn_egg.entity.minespawn:mobjira.name=Spawn Mobjira
