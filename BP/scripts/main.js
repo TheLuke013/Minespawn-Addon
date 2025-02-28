@@ -97,6 +97,15 @@ system.runInterval(() => {
         else if (mainhandItem?.typeId === 'minespawn:royal_guardian') {
             player.runCommand('enchant @s unbreaking 3');
         }
+        //enchanted emerald armor
+        else if (mainhandItem?.typeId === 'minespawn:experience_helmet' ||
+            mainhandItem?.typeId === 'minespawn:experience_chestplate' ||
+            mainhandItem?.typeId === 'minespawn:experience_leggings') {
+            player.runCommand('enchant @s protection 2');
+        } else if (mainhandItem?.typeId === 'minespawn:experience_boots') {
+            player.runCommand('enchant @s protection 2');
+            player.runCommand('enchant @s feather_falling');
+        }
 
         //long range attack
         if (player.getTags().includes('royal_guardian_attacking')) {
