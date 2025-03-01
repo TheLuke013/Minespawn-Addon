@@ -97,6 +97,11 @@ system.runInterval(() => {
         else if (mainhandItem?.typeId === 'minespawn:royal_guardian') {
             player.runCommand('enchant @s unbreaking 3');
         }
+        //battle axe
+        else if (mainhandItem?.typeId === 'minespawn:battle_axe') {
+            player.runCommand('enchant @s unbreaking 3');
+            player.runCommand('enchant @s looting 3');
+        }
         //enchanted emerald armor
         else if (mainhandItem?.typeId === 'minespawn:experience_helmet' ||
             mainhandItem?.typeId === 'minespawn:experience_chestplate' ||

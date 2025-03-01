@@ -85,6 +85,9 @@
 		},
 		"minespawn_experience_boots": {
 			"textures": "textures/items/armors/experience/experience_boots"
+		},
+		"minespawn_battle_axe": {
+			"textures": "textures/items/weapons/battle_axe"
 		}
 	}
 }
