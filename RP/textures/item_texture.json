@@ -88,6 +88,9 @@
 		},
 		"minespawn_battle_axe": {
 			"textures": "textures/items/weapons/battle_axe"
+		},
+		"minespawn_queen_battle_axe": {
+			"textures": "textures/items/weapons/queen_battle_axe"
 		}
 	}
 }

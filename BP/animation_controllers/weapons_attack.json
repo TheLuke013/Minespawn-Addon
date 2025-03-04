@@ -113,6 +113,28 @@
 					]
 				}
 			}
+		},
+		"controller.animation.queen_battle_axe_attack": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attack": "query.get_equipped_item_name('main_hand') == 'queen_battle_axe' && variable.attack_time"
+						}
+					]
+				},
+				"attack": {
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					],
+					"on_entry": [
+						"/playsound weapon.weapon_swoosh"
+					]
+				}
+			}
 		}
 	}
 }

@@ -1,0 +1,44 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "minespawn:queen_battle_axe",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/weapons/queen_battle_axe"
+			},
+			"geometry": {
+				"default": "geometry.queen_battle_axe"
+			},
+			"animations": {
+				"hold_first_person": "animation.weapon.hold_first_person",
+				"hold_first_person_attack": "animation.weapon.hold_first_person_attack",
+				"hold_third_person": "animation.weapon.hold_third_person"
+			},
+			"scripts": {
+				"parent_setup": "t.battle_axe_attack = v.attack_time;",
+				"pre_animation": [
+					"v.ultimate = query.get_equipped_item_name('main_hand') == 'queen_battle_axe';",
+					"v.attack_time = t.battle_axe_attack ?? 0;",
+					"v.c_ifp = context.is_first_person;"
+				],
+				"animate": [
+					{
+						"hold_first_person": "v.c_ifp && !v.attack_time"
+					},
+					{
+						"hold_first_person_attack": "v.ultimate && v.attack_time && v.c_ifp"
+					},
+					{
+						"hold_third_person": "!v.c_ifp"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.weapon"
+			]
+		}
+	}
+}

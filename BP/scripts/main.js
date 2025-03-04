@@ -61,6 +61,8 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
                 e.hitEntity.applyDamage(750);
             } else if (weapon.typeId === 'minespawn:ultimate_hammer') {
                 ultimateHammerAttack(e.attackingEntity, e.hitEntity.location);
+            } else if (weapon.typeId === 'minespawn:queen_battle_axe') {
+                e.hitEntity.applyDamage(666);
             }
         }
     });
@@ -101,6 +103,13 @@ system.runInterval(() => {
         else if (mainhandItem?.typeId === 'minespawn:battle_axe') {
             player.runCommand('enchant @s unbreaking 3');
             player.runCommand('enchant @s looting 3');
+        }
+        //queen battle axe
+        else if (mainhandItem?.typeId === 'minespawn:queen_battle_axe') {
+            player.runCommand('enchant @s unbreaking 3');
+            player.runCommand('enchant @s looting 3');
+            player.runCommand('enchant @s fire_aspect 2');
+            player.runCommand('enchant @s sharpness 5');
         }
         //enchanted emerald armor
         else if (mainhandItem?.typeId === 'minespawn:experience_helmet' ||

@@ -12,7 +12,8 @@
           "stelix_bertha_attack",
           "royal_guardian_attack",
           "ultimate_hammer_attack",
-          "battle_axe_attack"
+          "battle_axe_attack",
+          "queen_battle_axe_attack"
         ]
       },
       "animations": {
@@ -20,7 +21,8 @@
         "stelix_bertha_attack": "controller.animation.stelix_bertha_attack",
         "royal_guardian_attack": "controller.animation.royal_guardian_attack",
         "ultimate_hammer_attack": "controller.animation.ultimate_hammer_attack",
-        "battle_axe_attack": "controller.animation.battle_axe_attack"
+        "battle_axe_attack": "controller.animation.battle_axe_attack",
+        "queen_battle_axe_attack": "controller.animation.queen_battle_axe_attack"
       }
     },
     "component_groups": {
