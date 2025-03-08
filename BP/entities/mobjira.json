@@ -8,14 +8,159 @@
 			"is_experimental": false,
 			"scripts": {
 				"animate": [
-					"mobjira_destroy"
+					"mobjira_destroy",
+					"mobjira_lightning",
+					"mobjira_jump"
 				]
 			},
 			"animations": {
-				"mobjira_destroy": "controller.animation.mobjira_destroy"
+				"mobjira_destroy": "controller.animation.mobjira_destroy",
+				"mobjira_lightning": "controller.animation.mobjira_lightning",
+				"mobjira_jump": "controller.animation.mobjira_jump"
 			}
 		},
-		"component_groups": {},
+		"component_groups": {
+			"minespawn:melee_attack": {
+				"minecraft:skin_id": {
+					"value": 1
+				},
+				"minecraft:behavior.melee_attack": {
+					"priority": 1,
+					"speed_multiplier": 2.0,
+					"reach_multiplier": 8.5,
+					"melee_fov": 360
+				},
+				"minecraft:attack": {
+					"damage": {
+						"range_min": 100,
+						"range_max": 175
+					}
+				},
+				"minecraft:timer": {
+					"looping": true,
+					"time": [
+						3,
+						5
+					],
+					"time_down_event": {
+						"event": "minespawn:toggle_random_attack",
+						"target": "self"
+					}
+				}
+			},
+			"minespawn:fireball_attack": {
+				"minecraft:skin_id": {
+					"value": 2
+				},
+				"minecraft:behavior.ranged_attack": {
+					"priority": 1,
+					"burst_shots": 22,
+					"burst_interval": 0.22,
+					"attack_interval_max": 1,
+					"attack_interval_min": 1,
+					"attack_radius": 100,
+					"charge_shoot_trigger": 1,
+					"charge_charged_trigger": 0
+				},
+				"minecraft:shooter": {
+					"def": "minespawn:mj_fireball"
+				},
+				"minecraft:timer": {
+					"looping": true,
+					"time": [
+						3,
+						5
+					],
+					"time_down_event": {
+						"event": "minespawn:toggle_random_attack",
+						"target": "self"
+					}
+				}
+			},
+			"minespawn:lightning_attack": {
+				"minecraft:skin_id": {
+					"value": 3
+				},
+				"minecraft:timer": {
+					"looping": true,
+					"time": [
+						3,
+						5
+					],
+					"time_down_event": {
+						"event": "minespawn:toggle_random_attack",
+						"target": "self"
+					}
+				}
+			},
+			"minespawn:jump": {
+				"minecraft:skin_id": {
+					"value": 4
+				},
+				"minecraft:timer": {
+					"looping": true,
+					"time": [
+						1,
+						1
+					],
+					"time_down_event": {
+						"event": "minespawn:jumping",
+						"target": "self"
+					}
+				}
+			},
+			"minespawn:jumping": {
+				"minecraft:skin_id": {
+					"value": 6
+				},
+				"minecraft:timer": {
+					"looping": true,
+					"time": [
+						5,
+						5
+					],
+					"time_down_event": {
+						"event": "minespawn:toggle_random_attack",
+						"target": "self"
+					}
+				}
+			},
+			"minespawn:knockback": {
+				"minecraft:skin_id": {
+					"value": 5
+				},
+				"minecraft:behavior.knockback_roar": {
+					"priority": 1,
+					"attack_time": 0.3,
+					"cooldown_time": 0,
+					"duration": 1,
+					"knockback_damage": 175,
+					"knockback_range": 20,
+					"knockback_horizontal_strength": 20,
+					"damage_filters": {
+						"all_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"operator": "!=",
+								"value": "mobjira"
+							}
+						]
+					}
+				},
+				"minecraft:timer": {
+					"looping": true,
+					"time": [
+						3,
+						5
+					],
+					"time_down_event": {
+						"event": "minespawn:toggle_random_attack",
+						"target": "self"
+					}
+				}
+			}
+		},
 		"components": {
 			"minecraft:damage_sensor": {
 				"triggers": [
@@ -40,6 +185,9 @@
 						"deals_damage": false
 					}
 				]
+			},
+			"minecraft:knockback_resistance": {
+				"value": 5
 			},
 			"minecraft:physics": {},
 			"minecraft:movement.basic": {
@@ -67,9 +215,18 @@
 			"minecraft:scale": {
 				"value": 3
 			},
-			"minecraft:collision_box": {
-				"width": 2.5,
-				"height": 10
+			"minecraft:custom_hit_test": {
+				"hitboxes": [
+					{
+						"width": 10,
+						"height": 10,
+						"pivot": [
+							0,
+							0,
+							0
+						]
+					}
+				]
 			},
 			"minecraft:boss": {
 				"hud_range": 125,
@@ -93,6 +250,20 @@
 			"minecraft:behavior.look_at_player": {
 				"priority": 5,
 				"look_distance": 30
+			},
+			"minecraft:area_attack": {
+				"damage_per_tick": 175,
+				"damage_range": 10.0,
+				"entity_filter": {
+					"any_of": [
+						{
+							"test": "is_family",
+							"subject": "other",
+							"operator": "!=",
+							"value": "mobjira"
+						}
+					]
+				}
 			},
 			"minecraft:behavior.nearest_prioritized_attackable_target": {
 				"priority": 1,
@@ -129,18 +300,6 @@
 					}
 				]
 			},
-			"minecraft:behavior.melee_attack": {
-				"priority": 1,
-				"speed_multiplier": 2.0,
-				"reach_multiplier": 8.5,
-				"melee_fov": 360,
-			},
-			"minecraft:attack": {
-				"damage": {
-					"range_min": 100,
-					"range_max": 175
-				}
-			},
 			"minecraft:behavior.hurt_by_target": {
 				"priority": 2
 			},
@@ -149,6 +308,114 @@
 			},
 			"minecraft:conditional_bandwidth_optimization": {}
 		},
-		"events": {}
+		"events": {
+			"minecraft:entity_spawned": {
+				"queue_command": {
+					"command": "effect @e[type=minespawn:mobjira] regeneration 9999 255 true",
+					"target": "self"
+				},
+				"add": {
+					"component_groups": [
+						"minespawn:melee_attack"
+					]
+				}
+			},
+			"minespawn:jumping": {
+				"add": {
+					"component_groups": [
+						"minespawn:jumping"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minespawn:jump"
+					]
+				}
+			},
+			"minespawn:toggle_random_attack": {
+				"randomize": [
+					{
+						"weight": 25,
+						"add": {
+							"component_groups": [
+								"minespawn:melee_attack"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"minespawn:fireball_attack",
+								"minespawn:jump",
+								"minespawn:knockback",
+								"minespawn:lightning_attack"
+							]
+						}
+					},
+					{
+						"weight": 25,
+						"add": {
+							"component_groups": [
+								"minespawn:fireball_attack"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"minespawn:melee_attack",
+								"minespawn:jump",
+								"minespawn:knockback",
+								"minespawn:lightning_attack"
+							]
+						}
+					},
+					{
+						"weight": 25,
+						"add": {
+							"component_groups": [
+								"minespawn:lightning_attack"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"minespawn:fireball_attack",
+								"minespawn:jump",
+								"minespawn:knockback",
+								"minespawn:melee_attack"
+							]
+						}
+					},
+					{
+						"weight": 25,
+						"add": {
+							"component_groups": [
+								"minespawn:jump"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"minespawn:fireball_attack",
+								"minespawn:knockback",
+								"minespawn:lightning_attack",
+								"minespawn:melee_attack"
+							]
+						}
+					},
+					{
+						"weight": 25,
+						"add": {
+							"component_groups": [
+								"minespawn:knockback"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"minespawn:fireball_attack",
+								"minespawn:jump",
+								"minespawn:lightning_attack",
+								"minespawn:melee_attack"
+							]
+						}
+					}
+				]
+			}
+		}
 	}
 }

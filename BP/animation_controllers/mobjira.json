@@ -25,6 +25,62 @@
 					]
 				}
 			}
+		},
+		"controller.animation.mobjira_lightning": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"destroy": "query.skin_id == 3"
+						}
+					]
+				},
+				"destroy": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 3"
+						}
+					],
+					"on_entry": [
+						"/execute as @e[rm=0,r=100,c=1,family=!mobjira,family=!inanimate,type=!lightning_bolt,type=!item] at @s run summon lightning_bolt"
+					]
+				}
+			}
+		},
+		"controller.animation.mobjira_jump": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"jump": "query.skin_id == 4"
+						}
+					]
+				},
+				"jumping": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 6"
+						}
+					],
+					"on_entry": [
+						"/playsound mob.mobjira.jump_impact @p[r=100]",
+						"/execute as @e[rm=0,r=100,c=1,family=!mobjira] at @s run tag @p[r=100] add mobjira_jump_knockback",
+						"/execute as @e[rm=0,r=100,c=1,family=!mobjira] at @s run camerashake add @p[r=100] 4 1 positional"
+					]
+				},
+				"jump": {
+					"transitions": [
+						{
+							"jumping": "query.skin_id != 4 && query.is_on_ground"
+						}
+					],
+					"on_entry": [
+						"/effect @s levitation 1 40 true"
+					]
+				}
+			}
 		}
 	}
 }

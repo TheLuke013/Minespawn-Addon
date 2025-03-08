@@ -5,9 +5,21 @@
 			"loop": true,
 			"bones": {
 				"root": {
-					"rotation": [0, 60, -130],
-					"position": [5, 35, 0],
-					"scale": [1.45, 1.45, 1.45]
+					"rotation": [
+						0,
+						60,
+						-130
+					],
+					"position": [
+						5,
+						35,
+						0
+					],
+					"scale": [
+						1.45,
+						1.45,
+						1.45
+					]
 				}
 			}
 		},
@@ -17,11 +29,27 @@
 			"bones": {
 				"root": {
 					"rotation": {
-						"0.0": [0, 60, -130],
-						"0.5": [90, 60, -130],
-						"1.0": [0, 60, -130]
+						"0.0": [
+							0,
+							60,
+							-130
+						],
+						"0.5": [
+							90,
+							60,
+							-130
+						],
+						"1.0": [
+							0,
+							60,
+							-130
+						]
 					},
-					"position": [13, 41, 0],
+					"position": [
+						13,
+						41,
+						0
+					],
 					"scale": 2.15
 				}
 			}
@@ -30,9 +58,65 @@
 			"loop": true,
 			"bones": {
 				"root": {
-					"rotation": [83, 0, 4],
-					"position": [-0.8, 23, 8],
-					"scale": [2.15, 2.15, 2.25]
+					"rotation": [
+						83,
+						0,
+						4
+					],
+					"position": [
+						-0.8,
+						23,
+						8
+					],
+					"scale": [
+						2.15,
+						2.15,
+						2.25
+					]
+				}
+			}
+		},
+		"animation.weapon.hold_third_person2": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						83,
+						0,
+						4
+					],
+					"position": [
+						-0.8,
+						21.5,
+						8
+					],
+					"scale": [
+						2.15,
+						2.15,
+						2.25
+					]
+				}
+			}
+		},
+		"animation.weapon.hold_third_person3": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						83,
+						0,
+						4
+					],
+					"position": [
+						-0.8,
+						19,
+						8
+					],
+					"scale": [
+						2.15,
+						2.15,
+						2.25
+					]
 				}
 			}
 		}

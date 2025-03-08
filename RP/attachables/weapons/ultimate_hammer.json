@@ -15,7 +15,7 @@
 			"animations": {
 				"hold_first_person": "animation.weapon.hold_first_person",
 				"hold_first_person_attack": "animation.weapon.hold_first_person_attack",
-				"hold_third_person": "animation.weapon.hold_third_person"
+				"hold_third_person": "animation.weapon.hold_third_person2"
 			},
 			"scripts": {
 				"parent_setup": "t.ultimate_attack = v.attack_time;",

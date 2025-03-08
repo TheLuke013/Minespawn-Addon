@@ -10,13 +10,19 @@ function ultimateHammerAttack(player, attackLoc) {
 
     const entities = player.dimension.getEntities({
         location: player.location, maxDistance: 5,
-        excludeFamilies: ['player']
+        excludeTypes: ['minecraft:item', 'minecraft:player']
     });
 
     entities.forEach(entity => {
-        entity.applyKnockback(0, 0, 10, 3);
-        //world.sendMessage(entity.typeId);
-    })
+        if (!entity || !entity.isValid() || !entity.applyKnockback) return;
+
+        try {
+            entity.applyKnockback(0, 0, 10, 3);
+        } catch (error) {
+            world.sendMessage(`Knockback failed for ${entity.typeId}`);
+        }
+    });
+
 }
 
 function longRangeAttack(player) {
@@ -42,10 +48,12 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
         onHitEntity: e => {
             const weapon = e.itemStack;
 
-            if (weapon.typeId === 'minespawn:stelix_bertha') {
-                e.hitEntity.setOnFire(30, false);
-            } else {
-                e.hitEntity.setOnFire(10, false);
+            if (e.hitEntity.typeId != 'minespawn:mobjira') {
+                if (weapon.typeId === 'minespawn:stelix_bertha') {
+                    e.hitEntity.setOnFire(30, false);
+                } else {
+                    e.hitEntity.setOnFire(10, false);
+                }
             }
         }
     });
@@ -129,6 +137,12 @@ system.runInterval(() => {
             player.removeTag('big_bertha_attacking');
         } else if (player.getTags().includes('stelix_bertha_attacking')) {
             player.removeTag('stelix_bertha_attacking');
+        }
+
+        //mobjira knockback
+        else if (player.getTags().includes('mobjira_jump_knockback')) {
+            player.applyKnockback(10, 10, 10, 1);
+            player.removeTag('mobjira_jump_knockback');
         }
     })
 });
