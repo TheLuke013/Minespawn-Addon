@@ -4,16 +4,20 @@
 		"description": {
 			"identifier": "minespawn:mobjira",
 			"materials": {
-				"default": "entity_alphatest"
+				"default": "entity_alphatest",
+				"charged": "charged_creeper"
 			},
 			"textures": {
-				"default": "textures/entity/mobjira"
+				"default": "textures/entity/mobjira",
+				"charged": "textures/entity/atomic_breath"
 			},
 			"geometry": {
-				"default": "geometry.mobjira"
+				"default": "geometry.mobjira",
+				"charged": "geometry.mobjira_atomic_breath"
 			},
 			"render_controllers": [
-				"controller.render.mobjira"
+				"controller.render.mobjira",
+				"controller.render.mobjira_armor"
 			],
 			"spawn_egg": {
 				"texture": "minespawn_mobjira_spawn_egg"

@@ -1,4 +1,4 @@
-pack.name=Minespawn Addon RP
+pack.name=Minespawn Addon RP (V1.0)
 pack.description=A addon remake of Orespawn
 
 item.minespawn:big_bertha_handle=Big Bertha Handle
@@ -8,7 +8,8 @@ item.minespawn:big_bertha_blade=Big Bertha Blade
 item.minespawn:big_bertha=Big Bertha Sword\n\n§9+500 Attack Damage
 item.minespawn:royal_guardian=Royal Guardian Sword\n\n§9+750 Attack Damage
 item.minespawn:stelix_bertha=Stelix Bertha Sword\n\n§9+580 Attack Damage
-item.minespawn:queen_battle_axe=Queen Ghidorah Battle Axe\n\n§4Beast §9Attack Damage
+item.minespawn:queen_battle_axe=Queen Ghidorah Battle Axe\n\n§4Demon §9Attack Damage
+item.minespawn:ultimate_chainsaw=Ultimate Chainsaw
 
 item.minespawn:amethyst_helmet=Amethyst Helmet
 item.minespawn:amethyst_chestplate=Amethyst Chestplate

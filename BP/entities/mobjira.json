@@ -37,13 +37,14 @@
 					}
 				},
 				"minecraft:timer": {
-					"looping": true,
+					"looping": false,
 					"time": [
 						3,
 						5
 					],
 					"time_down_event": {
-						"event": "minespawn:toggle_random_attack",
+						//"event": "minespawn:toggle_random_attack",
+						"event": "minespawn:prepare_for_breath_atomic",
 						"target": "self"
 					}
 				}
@@ -159,6 +160,17 @@
 						"target": "self"
 					}
 				}
+			},
+			"minespawn:prepare_for_breath_atomic": {
+				"minecraft:skin_id": {
+					"value": 7
+				},
+				"minecraft:is_charged": {},
+				"minecraft:boss": {
+					"hud_range": 125,
+					"name": "§3Mobjira",
+					"should_darken_sky": true
+				}
 			}
 		},
 		"components": {
@@ -215,6 +227,10 @@
 			"minecraft:scale": {
 				"value": 3
 			},
+			"minecraft:boss": {
+				"hud_range": 125,
+				"name": "§3Mobjira"
+			},
 			"minecraft:custom_hit_test": {
 				"hitboxes": [
 					{
@@ -227,10 +243,6 @@
 						]
 					}
 				]
-			},
-			"minecraft:boss": {
-				"hud_range": 125,
-				"name": "§3Mobjira"
 			},
 			"minecraft:health": {
 				"value": 25000
@@ -318,6 +330,17 @@
 					"component_groups": [
 						"minespawn:melee_attack"
 					]
+				}
+			},
+			"minespawn:prepare_for_breath_atomic": {
+				"add": {
+					"component_groups": [
+						"minespawn:prepare_for_breath_atomic"
+					]
+				},
+				"queue_command": {
+					"target": "self",
+					"command": "execute as @e[r=100] at @s run playsound mob.mobjira.atomic_breath"
 				}
 			},
 			"minespawn:jumping": {

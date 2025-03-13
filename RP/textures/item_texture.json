@@ -91,6 +91,9 @@
 		},
 		"minespawn_queen_battle_axe": {
 			"textures": "textures/items/weapons/queen_battle_axe"
+		},
+		"minespawn_ultimate_chainsaw": {
+			"textures": "textures/items/weapons/ultimate_chainsaw"
 		}
 	}
 }

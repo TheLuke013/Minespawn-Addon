@@ -25,6 +25,37 @@ function ultimateHammerAttack(player, attackLoc) {
 
 }
 
+function ultimateChainsaw(dimension, entryLoc) {
+    const blocksToDestroy = [
+        'minecraft:acacia_log', 'minecraft:birch_log', 'minecraft:cherry_log',
+        'minecraft:dark_oak_log', 'minecraft:jungle_log', 'minecraft:mangrove_log',
+        'minecraft:oak_log', 'minecraft:pale_oak_log', 'minecraft:spruce_log',
+        'minecraft:acacia_leaves', 'minecraft:azalea_leaves', 'minecraft:azalea_leaves_flowered',
+        'minecraft:birch_leaves', 'minecraft:cherry_leaves', 'minecraft:dark_oak_leaves',
+        'minecraft:jungle_leaves', 'minecraft:mangrove_leaves', 'minecraft:oak_leaves',
+        'minecraft:pale_oak_leaves', 'minecraft:spruce_leaves'
+    ];
+
+    let blocksCoords = [];
+
+    for (let x = -2; x <= 2; x++) {
+        for (let y = 0; y <= 5; y++) {
+            for (let z = -2; z <= 2; z++) {
+                const blockLoc = { x: entryLoc.x + x, y: entryLoc.y + y, z: entryLoc.z + z };
+                const block = dimension.getBlock(blockLoc);
+
+                if (block && blocksToDestroy.includes(block.typeId)) {
+                    blocksCoords.push(blockLoc);
+                }
+            }
+        }
+    }
+
+    blocksCoords.forEach(block => {
+        dimension.runCommand(`setblock ${block.x} ${block.y} ${block.z} air destroy`);
+    })
+}
+
 function longRangeAttack(player) {
 
 }
@@ -74,6 +105,26 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
             }
         }
     });
+
+    initEvent.itemComponentRegistry.registerCustomComponent('minespawn:chainsaw', {
+        onMineBlock: e => {
+            ultimateChainsaw(e.source.dimension, e.block.location);
+            world.playSound('weapon.chainsaw', e.source.location);
+        },
+
+        onHitEntity: e => {
+            world.playSound('weapon.chainsaw', e.attackingEntity.location)
+            const entities = world.getDimension(e.attackingEntity.dimension.id).getEntities({
+                location: e.attackingEntity.location,
+                maxDistance: 5,
+                excludeTypes: [e.attackingEntity.typeId, 'minecraft:item']
+            });
+
+            entities.forEach(entity => {
+                entity.applyDamage(60);
+            })
+        }
+    });
 });
 
 world.afterEvents.entityHitBlock.subscribe(e => {
@@ -118,6 +169,11 @@ system.runInterval(() => {
             player.runCommand('enchant @s looting 3');
             player.runCommand('enchant @s fire_aspect 2');
             player.runCommand('enchant @s sharpness 5');
+        }
+        //ultimate chainsaw
+        else if (mainhandItem?.typeId === 'minespawn:ultimate_chainsaw') {
+            player.runCommand('enchant @s unbreaking 3');
+            player.runCommand('enchant @s efficiency 5');
         }
         //enchanted emerald armor
         else if (mainhandItem?.typeId === 'minespawn:experience_helmet' ||

@@ -45,6 +45,19 @@
 			"sounds": [
 				"sounds/random/weapon_swoosh"
 			]
+		},
+		"mob.mobjira.atomic_breath": {
+			"category": "ambient",
+			"max_distance": 150,
+			"sounds": [
+				"sounds/mob/mobjira/atomic_breath"
+			]
+		},
+		"weapon.chainsaw": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/random/chainsaw"
+			]
 		}
 	}
 }

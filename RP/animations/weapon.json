@@ -119,6 +119,74 @@
 					]
 				}
 			}
+		},
+		"animation.weapon.chainsaw.hold_third_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						182.44971,
+						-2.11885,
+						-174.69678
+					],
+					"position": [
+						-0.8,
+						14,
+						-5
+					],
+					"scale": [
+						0.6,
+						0.5,
+						0.6
+					]
+				}
+			}
+		},
+		"animation.weapon.chainsaw.hold_first_person": {
+			"loop": true,
+			"animation_length": 0.3,
+			"bones": {
+				"root": {
+					"rotation": [
+						-135.00253,
+						-51.48405,
+						62.5967
+					],
+					"position": [
+						6,
+						12,
+						12
+					]
+				},
+				"topSaws": {
+					"position": {
+						"0.0": [
+							0,
+							-14,
+							0
+						],
+						"0.3": [
+							0,
+							-4,
+							0
+						]
+					}
+				},
+				"downSaws": {
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.3": [
+							0,
+							-17,
+							0
+						]
+					}
+				}
+			}
 		}
 	}
 }
