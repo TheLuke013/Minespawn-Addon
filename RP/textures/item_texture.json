@@ -94,6 +94,12 @@
 		},
 		"minespawn_ultimate_chainsaw": {
 			"textures": "textures/items/weapons/ultimate_chainsaw"
+		},
+		"minespawn_waterzooka": {
+			"textures": "textures/items/weapons/waterzooka"
+		},
+		"minespawn_firezooka": {
+			"textures": "textures/items/firezooka"
 		}
 	}
 }

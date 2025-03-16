@@ -263,20 +263,6 @@
 				"priority": 5,
 				"look_distance": 30
 			},
-			"minecraft:area_attack": {
-				"damage_per_tick": 175,
-				"damage_range": 10.0,
-				"entity_filter": {
-					"any_of": [
-						{
-							"test": "is_family",
-							"subject": "other",
-							"operator": "!=",
-							"value": "mobjira"
-						}
-					]
-				}
-			},
 			"minecraft:behavior.nearest_prioritized_attackable_target": {
 				"priority": 1,
 				"set_persistent": true,

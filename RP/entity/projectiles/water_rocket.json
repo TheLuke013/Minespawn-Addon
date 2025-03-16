@@ -1,0 +1,28 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "minespawn:water_rocket",
+			"materials": {
+				"default": "snowball"
+			},
+			"textures": {
+				"default": "textures/weapons/waterzooka"
+			},
+			"geometry": {
+				"default": "geometry.water_rocket"
+			},
+			"render_controllers": [
+				"controller.render.item_sprite"
+			],
+			"animations": {
+				"flying": "animation.actor.billboard"
+			},
+			"scripts": {
+				"animate": [
+					"flying"
+				]
+			}
+		}
+	}
+}

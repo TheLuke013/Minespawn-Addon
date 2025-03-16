@@ -1,4 +1,5 @@
 import { world, system } from '@minecraft/server';
+import * as Vector3 from "./vector3.js";
 
 function getPlayerMainhandItem(player) {
     const equippable = player.getComponent('equippable');
@@ -123,6 +124,30 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
             entities.forEach(entity => {
                 entity.applyDamage(60);
             })
+        }
+    });
+
+    initEvent.itemComponentRegistry.registerCustomComponent('minespawn:blaster', {
+        onUse: e => {
+            if (e.source.typeId === 'minecraft:player') {
+
+                const mainhandItem = getPlayerMainhandItem(e.source);
+                if (mainhandItem?.typeId === 'minespawn:waterzooka') {
+                    const direction = Vector3.fromRotation(e.source.getRotation());
+
+                    let playerLocation = new Vector3.Vector3(e.source.location);
+                    let projectileSpawn = playerLocation.add(Vector3.Up.multiply(1.5)).add(direction.multiply(2));
+
+                    const projectile = e.source.dimension.spawnEntity('minespawn:water_rocket', { x: projectileSpawn.x, y: projectileSpawn.y, z: projectileSpawn.z });
+                    const projectileVelocity = direction.multiply(4);
+
+                    projectile.applyImpulse({ x: projectileVelocity.x, y: projectileVelocity.y, z: projectileVelocity.z });
+                    projectile.setRotation(e.source.getRotation());
+
+                    e.source.playSound('gun.blaster_fire');
+                    e.source.runCommand('camerashake add @s 0.06 0.5 rotational');
+                }
+            }
         }
     });
 });

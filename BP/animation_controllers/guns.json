@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.water_rocket": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"rocket": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/particle minecraft:water_splash ~ ~ ~"
+					]
+				},
+				"rocket": {
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/particle minecraft:water_splash ~ ~ ~"
+					]
+				}
+			}
+		}
+	}
+}

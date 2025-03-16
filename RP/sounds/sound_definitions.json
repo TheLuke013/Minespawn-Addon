@@ -40,12 +40,6 @@
 				"sounds/mob/mobjira/mobjira_jump_impact"
 			]
 		},
-		"weapon.weapon_swoosh": {
-			"category": "neutral",
-			"sounds": [
-				"sounds/random/weapon_swoosh"
-			]
-		},
 		"mob.mobjira.atomic_breath": {
 			"category": "ambient",
 			"max_distance": 150,
@@ -53,10 +47,22 @@
 				"sounds/mob/mobjira/atomic_breath"
 			]
 		},
+		"weapon.weapon_swoosh": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/weapon/weapon_swoosh"
+			]
+		},
 		"weapon.chainsaw": {
 			"category": "neutral",
 			"sounds": [
-				"sounds/random/chainsaw"
+				"sounds/weapon/chainsaw"
+			]
+		},
+		"gun.blaster_fire": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/guns/blaster_fire"
 			]
 		}
 	}

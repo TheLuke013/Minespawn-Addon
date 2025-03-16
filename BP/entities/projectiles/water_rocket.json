@@ -1,0 +1,90 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minespawn:water_rocket",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "snowball",
+			"scripts": {
+				"animate": [
+					"water_rocket"
+				]
+			},
+			"animations": {
+				"water_rocket": "controller.animation.water_rocket"
+			}
+		},
+		"component_groups": {
+			"minespawn:hit": {
+				"minecraft:explode": {
+					"fuse_length": 0,
+					"fuse_lit": true,
+					"power": 3,
+					"causes_fire": false,
+					"fire_affected_by_griefing": true,
+					"destroy_affected_by_griefing": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"definition_event": {
+						"event_trigger": {
+							"event": "minespawn:hit",
+							"target": "self"
+						}
+					},
+					"particle_on_hit": {
+						"particle_type": "watersplash",
+						"num_particles": 10,
+						"on_entity_hit": true,
+						"on_other_hit": true
+					}
+				},
+				"multiple_targets": true,
+				"anchor": 1,
+				"power": 10.0,
+				"gravity": 0.01,
+				"angle_offset": 0,
+				"offset": [
+					0,
+					0,
+					0
+				]
+			},
+			"minecraft:navigation.float": {},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			}
+		},
+		"events": {
+			"minespawn:hit": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"minespawn:hit"
+							]
+						},
+						"queue_command": {
+							"command": [
+								"playsound random.splash @p[r=50] ~~~",
+								"fill ~-2 ~ ~-2 ~2 ~2 ~2 water replace air"
+							],
+							"target": "self"
+						}
+					}
+				]
+			}
+		}
+	}
+}

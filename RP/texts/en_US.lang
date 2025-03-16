@@ -11,6 +11,9 @@ item.minespawn:stelix_bertha=Stelix Bertha Sword\n\n§9+580 Attack Damage
 item.minespawn:queen_battle_axe=Queen Ghidorah Battle Axe\n\n§4Demon §9Attack Damage
 item.minespawn:ultimate_chainsaw=Ultimate Chainsaw
 
+item.minespawn:waterzooka=Waterzooka
+item.minespawn:firezooka=Firezooka
+
 item.minespawn:amethyst_helmet=Amethyst Helmet
 item.minespawn:amethyst_chestplate=Amethyst Chestplate
 item.minespawn:amethyst_leggings=Amethyst Leggings
@@ -39,4 +42,7 @@ entity.minespawn:golden_apple_cow.name=Golden Apple Cow
 entity.minespawn:enchanted_golden_apple_cow.name=Enchanted Golden Apple Cow
 entity.minespawn:apple_cow.name=Apple Cow
 entity.minespawn:mobjira.name=Mobjira
+
 entity.minespawn:mj_fireball.name=Mobjira Fireball
+entity.minespawn:water_rocket.name=Water Rocket
+entity.minespawn:fire_rocket.name=Fire Rocket
