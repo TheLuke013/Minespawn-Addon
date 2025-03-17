@@ -2,12 +2,12 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "minespawn:waterzooka",
+			"identifier": "minespawn:firezooka",
 			"materials": {
 				"default": "entity"
 			},
 			"textures": {
-				"default": "textures/guns/waterzooka"
+				"default": "textures/guns/firezooka"
 			},
 			"geometry": {
 				"default": "geometry.blaster"

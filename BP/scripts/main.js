@@ -6,6 +6,19 @@ function getPlayerMainhandItem(player) {
     return equippable.getEquipment('Mainhand');
 }
 
+function shootEntityFromPlayer(entityId, player) {
+    const direction = Vector3.fromRotation(player.getRotation());
+
+    let playerLocation = new Vector3.Vector3(player.location);
+    let projectileSpawn = playerLocation.add(Vector3.Up.multiply(1.5)).add(direction.multiply(2));
+
+    const projectile = player.dimension.spawnEntity(entityId, { x: projectileSpawn.x, y: projectileSpawn.y, z: projectileSpawn.z });
+    const projectileVelocity = direction.multiply(4);
+
+    projectile.applyImpulse({ x: projectileVelocity.x, y: projectileVelocity.y, z: projectileVelocity.z });
+    projectile.setRotation(player.getRotation());
+}
+
 function ultimateHammerAttack(player, attackLoc) {
     world.getDimension(player.dimension.id).createExplosion(attackLoc, 3, { causesFire: true, source: player });
 
@@ -129,24 +142,17 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
 
     initEvent.itemComponentRegistry.registerCustomComponent('minespawn:blaster', {
         onUse: e => {
-            if (e.source.typeId === 'minecraft:player') {
+            if (e.source.typeId === 'minecraft:player' && e.itemStack.getTags().includes('minespawn:is_gun')) {
 
                 const mainhandItem = getPlayerMainhandItem(e.source);
                 if (mainhandItem?.typeId === 'minespawn:waterzooka') {
-                    const direction = Vector3.fromRotation(e.source.getRotation());
-
-                    let playerLocation = new Vector3.Vector3(e.source.location);
-                    let projectileSpawn = playerLocation.add(Vector3.Up.multiply(1.5)).add(direction.multiply(2));
-
-                    const projectile = e.source.dimension.spawnEntity('minespawn:water_rocket', { x: projectileSpawn.x, y: projectileSpawn.y, z: projectileSpawn.z });
-                    const projectileVelocity = direction.multiply(4);
-
-                    projectile.applyImpulse({ x: projectileVelocity.x, y: projectileVelocity.y, z: projectileVelocity.z });
-                    projectile.setRotation(e.source.getRotation());
-
-                    e.source.playSound('gun.blaster_fire');
-                    e.source.runCommand('camerashake add @s 0.06 0.5 rotational');
+                    shootEntityFromPlayer('minespawn:water_rocket', e.source)
+                } else if (mainhandItem?.typeId === 'minespawn:firezooka') {
+                    shootEntityFromPlayer('minespawn:fire_rocket', e.source)
                 }
+
+                e.source.playSound('gun.blaster_fire');
+                e.source.runCommand('camerashake add @s 0.06 0.5 rotational');
             }
         }
     });

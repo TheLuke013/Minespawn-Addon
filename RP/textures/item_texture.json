@@ -96,10 +96,10 @@
 			"textures": "textures/items/weapons/ultimate_chainsaw"
 		},
 		"minespawn_waterzooka": {
-			"textures": "textures/items/weapons/waterzooka"
+			"textures": "textures/items/guns/waterzooka"
 		},
 		"minespawn_firezooka": {
-			"textures": "textures/items/firezooka"
+			"textures": "textures/items/guns/firezooka"
 		}
 	}
 }

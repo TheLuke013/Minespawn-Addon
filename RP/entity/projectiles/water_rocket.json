@@ -7,10 +7,10 @@
 				"default": "snowball"
 			},
 			"textures": {
-				"default": "textures/weapons/waterzooka"
+				"default": "textures/guns/waterzooka"
 			},
 			"geometry": {
-				"default": "geometry.water_rocket"
+				"default": "geometry.rocket"
 			},
 			"render_controllers": [
 				"controller.render.item_sprite"

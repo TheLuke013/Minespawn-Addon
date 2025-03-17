@@ -35,17 +35,22 @@
 			},
 			"minecraft:projectile": {
 				"on_hit": {
-					"definition_event": {
-						"event_trigger": {
-							"event": "minespawn:hit",
-							"target": "self"
-						}
+					"impact_damage": {
+						"damage": 10,
+						"knockback": true,
+						"semi_random_diff_damage": false
 					},
 					"particle_on_hit": {
 						"particle_type": "watersplash",
 						"num_particles": 10,
 						"on_entity_hit": true,
 						"on_other_hit": true
+					},
+					"definition_event": {
+						"event_trigger": {
+							"event": "minespawn:hit",
+							"target": "self"
+						}
 					}
 				},
 				"multiple_targets": true,

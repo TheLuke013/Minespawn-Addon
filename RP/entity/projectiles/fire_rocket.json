@@ -7,10 +7,10 @@
 				"default": "snowball"
 			},
 			"textures": {
-				"default": "textures/items/firezooka"
+				"default": "textures/guns/firezooka"
 			},
 			"geometry": {
-				"default": "geometry.item_sprite"
+				"default": "geometry.rocket"
 			},
 			"render_controllers": [
 				"controller.render.item_sprite"
