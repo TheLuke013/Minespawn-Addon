@@ -100,6 +100,21 @@
 		},
 		"minespawn_firezooka": {
 			"textures": "textures/items/guns/firezooka"
+		},
+		"minespawn_royal_helmet": {
+			"textures": "textures/items/armors/royal/royal_helmet"
+		},
+		"minespawn_royal_chestplate": {
+			"textures": "textures/items/armors/royal/royal_chestplate"
+		},
+		"minespawn_royal_leggings": {
+			"textures": "textures/items/armors/royal/royal_leggings"
+		},
+		"minespawn_royal_boots": {
+			"textures": "textures/items/armors/royal/royal_boots"
+		},
+		"minespawn_royal_armor_stand": {
+			"textures": "textures/items/armors/royal/royal_armor_stand"
 		}
 	}
 }

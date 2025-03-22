@@ -148,13 +148,26 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
                 if (mainhandItem?.typeId === 'minespawn:waterzooka') {
                     shootEntityFromPlayer('minespawn:water_rocket', e.source)
                 } else if (mainhandItem?.typeId === 'minespawn:firezooka') {
-                    shootEntityFromPlayer('minespawn:fire_rocket', e.source)
+                    shootEntityFromPlayer('minespawn:fire_rocket', e.source);
                 }
 
                 e.source.playSound('gun.blaster_fire');
                 e.source.runCommand('camerashake add @s 0.06 0.5 rotational');
             }
         }
+    });
+
+    initEvent.itemComponentRegistry.registerCustomComponent('minespawn:placer', {
+        onUseOn: e => {
+            if (e.itemStack.typeId === 'minespawn:royal_armor_stand') {
+                const bl = e.block.location;
+
+                world.getDimension(e.source.dimension.id).runCommandAsync(
+                    `structure load royal_armor_stand ${bl.x} ${bl.y + 1} ${bl.z}`
+                );
+            }
+        }
+
     });
 });
 
