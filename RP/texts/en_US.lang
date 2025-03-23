@@ -52,3 +52,5 @@ entity.minespawn:mobjira.name=Mobjira
 entity.minespawn:mj_fireball.name=Mobjira Fireball
 entity.minespawn:water_rocket.name=Water Rocket
 entity.minespawn:fire_rocket.name=Fire Rocket
+tile.minespawn:extreme_torch.name=Extreme Torch
+item.minespawn:extreme_torch=Extreme Torch

@@ -115,6 +115,12 @@
 		},
 		"minespawn_royal_armor_stand": {
 			"textures": "textures/items/armors/royal/royal_armor_stand"
+		},
+		"minespawn_extreme_torch": {
+			"textures": "textures/items/extreme_torch"
+		},
+		"minespawn_miners_dream": {
+			"textures": "textures/items/miners_dream"
 		}
 	}
 }

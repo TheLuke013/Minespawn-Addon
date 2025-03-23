@@ -1,0 +1,52 @@
+import { world } from '@minecraft/server';
+
+export function ultimateHammerAttack(player, attackLoc) {
+    world.getDimension(player.dimension.id).createExplosion(attackLoc, 3, { causesFire: true, source: player });
+
+    const entities = player.dimension.getEntities({
+        location: player.location, maxDistance: 5,
+        excludeTypes: ['minecraft:item', 'minecraft:player']
+    });
+
+    entities.forEach(entity => {
+        if (!entity || !entity.isValid() || !entity.applyKnockback) return;
+
+        try {
+            entity.applyKnockback(0, 0, 10, 3);
+        } catch (error) {
+            world.sendMessage(`Knockback failed for ${entity.typeId}`);
+        }
+    });
+
+}
+
+export function ultimateChainsaw(dimension, entryLoc) {
+    const blocksToDestroy = [
+        'minecraft:acacia_log', 'minecraft:birch_log', 'minecraft:cherry_log',
+        'minecraft:dark_oak_log', 'minecraft:jungle_log', 'minecraft:mangrove_log',
+        'minecraft:oak_log', 'minecraft:pale_oak_log', 'minecraft:spruce_log',
+        'minecraft:acacia_leaves', 'minecraft:azalea_leaves', 'minecraft:azalea_leaves_flowered',
+        'minecraft:birch_leaves', 'minecraft:cherry_leaves', 'minecraft:dark_oak_leaves',
+        'minecraft:jungle_leaves', 'minecraft:mangrove_leaves', 'minecraft:oak_leaves',
+        'minecraft:pale_oak_leaves', 'minecraft:spruce_leaves'
+    ];
+
+    let blocksCoords = [];
+
+    for (let x = -2; x <= 2; x++) {
+        for (let y = 0; y <= 5; y++) {
+            for (let z = -2; z <= 2; z++) {
+                const blockLoc = { x: entryLoc.x + x, y: entryLoc.y + y, z: entryLoc.z + z };
+                const block = dimension.getBlock(blockLoc);
+
+                if (block && blocksToDestroy.includes(block.typeId)) {
+                    blocksCoords.push(blockLoc);
+                }
+            }
+        }
+    }
+
+    blocksCoords.forEach(block => {
+        dimension.runCommand(`setblock ${block.x} ${block.y} ${block.z} air destroy`);
+    })
+}
