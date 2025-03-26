@@ -54,3 +54,6 @@ entity.minespawn:water_rocket.name=Water Rocket
 entity.minespawn:fire_rocket.name=Fire Rocket
 tile.minespawn:extreme_torch.name=Extreme Torch
 item.minespawn:extreme_torch=Extreme Torch
+item.minespawn:miners_dream=Miner's Dream
+item.spawn_egg.entity.minespawn:dummy.name=Spawn Dummy
+entity.minespawn:dummy.name=Dummy

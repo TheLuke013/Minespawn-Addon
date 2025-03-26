@@ -1,0 +1,35 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "minespawn:miners_dream"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AAA",
+            "BBB",
+            "CCC"
+        ],
+        "key": {
+            "A": {
+                "item": "minecraft:cactus"
+            },
+            "B": {
+                "item": "minecraft:redstone_block"
+            },
+            "C": {
+                "item": "minecraft:gunpowder"
+            }
+        },
+        "result": {
+            "item": "minespawn:miners_dream"
+        },
+        "unlock": [
+            {
+                "item": "minecraft:redstone_block"
+            }
+        ]
+    }
+}

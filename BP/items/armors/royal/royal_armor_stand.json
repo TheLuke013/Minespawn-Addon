@@ -13,10 +13,9 @@
 			"minecraft:stacked_by_data": true,
 			"minecraft:glint": true,
 			"minecraft:hover_text_color": "aqua",
-			"minecraft:use_modifiers": {
-				"use_duration": 0.1
+			"minecraft:entity_placer": {
+				"entity": "minespawn:dummy"
 			},
-			"minecraft:food": {},
 			"minecraft:custom_components": [
 				"minespawn:placer"
 			]

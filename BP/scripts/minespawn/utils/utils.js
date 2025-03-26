@@ -26,3 +26,11 @@ export function replaceBlocks(locations, replaceBlock, block, dimension) {
         }
     }
 }
+
+export function getCardinalDirection(player) {
+    const yaw = player.getRotation().y;
+    if (yaw >= -45 && yaw < 45) return 'north';
+    else if (yaw >= 45 && yaw < 135) return 'east';
+    else if (yaw >= 135 || yaw < -135) return 'south';
+    else return 'west';
+}

@@ -1,5 +1,5 @@
 import { world } from '@minecraft/server';
-import { shootEntityFromPlayer, getPlayerMainhandItem } from '../utils/utils.js';
+import { shootEntityFromPlayer, getPlayerMainhandItem, getCardinalDirection } from '../utils/utils.js';
 import { ultimateChainsaw } from '../weapons.js';
 
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
@@ -88,11 +88,22 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
         onUseOn: e => {
             if (e.itemStack.typeId === 'minespawn:royal_armor_stand') {
                 const bl = e.block.location;
+                const playerDirection = getCardinalDirection(e.source);
+                let standDir = '';
+
+                if (playerDirection == 'south') {
+                    standDir = '90_degrees';
+                } else if (playerDirection == 'north') {
+                    standDir = '270_degrees';
+                } else if (playerDirection == 'east') {
+                    standDir = '0_degrees';
+                } else if (playerDirection == 'west') {
+                    standDir = '180_degrees';
+                }
                 world.getDimension(e.source.dimension.id).runCommandAsync(
-                    `structure load royal_armor_stand ${bl.x} ${bl.y + 1} ${bl.z}`
+                    `structure load royal_armor_stand ${bl.x} ${bl.y + 1} ${bl.z} ${standDir}`
                 );
             }
         }
-
     });
 });
