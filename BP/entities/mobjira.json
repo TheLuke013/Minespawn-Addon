@@ -43,8 +43,8 @@
 						5
 					],
 					"time_down_event": {
-						//"event": "minespawn:toggle_random_attack",
-						"event": "minespawn:prepare_for_breath_atomic",
+						"event": "minespawn:toggle_random_attack",
+						//"event": "minespawn:prepare_for_breath_atomic",
 						"target": "self"
 					}
 				}

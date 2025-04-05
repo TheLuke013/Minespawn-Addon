@@ -17,7 +17,16 @@
 					"minecraft:stone",
 					"minecraft:gravel",
 					"minecraft:cobblestone",
-					"minecraft:deepslate"
+					"minecraft:deepslate",
+					"minecraft:tuff",
+					"minecraft:basalt",
+					"minecraft:blackstone",
+					"minecraft:nether_brick",
+					"minecraft:magma",
+					"minecraft:soul_sand",
+					"minecraft:soul_soil",
+					"minecraft:warped_nylium",
+					"minecraft:crimson_nylium"
 				]
 			}
 		}

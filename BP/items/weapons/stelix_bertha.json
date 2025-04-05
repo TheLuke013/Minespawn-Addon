@@ -37,7 +37,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"minespawn:slice"
+							"minespawn:stelix_bertha"
 						],
 						"repair_amount": "context.other->q.remaining_durability + 0.05 * context.other->q.max_durability"
 					}
