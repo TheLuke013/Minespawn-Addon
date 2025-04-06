@@ -3,5 +3,29 @@
 	"minespawn:extreme_torch": {
 		"sound": "wood",
 		"textures": "minespawn_extreme_torch"
+	},
+	"minespawn:amethyst_ore": {
+		"sound": "stone",
+		"textures": "minespawn_amethyst_ore"
+	},
+	"minespawn:ruby_ore": {
+		"sound": "stone",
+		"textures": "minespawn_ruby_ore"
+	},
+	"minespawn:deepslate_amethyst_ore": {
+		"sound": "deepslate",
+		"textures": "minespawn_deepslate_amethyst_ore"
+	},
+	"minespawn:deepslate_ruby_ore": {
+		"sound": "deepslate",
+		"textures": "minespawn_deepslate_ruby_ore"
+	},
+	"minespawn:amethyst_block": {
+		"sound": "stone",
+		"textures": "minespawn_amethyst_block"
+	},
+	"minespawn:ruby_block": {
+		"sound": "stone",
+		"textures": "minespawn_ruby_block"
 	}
 }

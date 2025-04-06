@@ -34,3 +34,7 @@ export function getCardinalDirection(player) {
     else if (yaw >= 135 || yaw < -135) return 'south';
     else return 'west';
 }
+
+export function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}

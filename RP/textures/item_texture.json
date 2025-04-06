@@ -121,6 +121,12 @@
 		},
 		"minespawn_miners_dream": {
 			"textures": "textures/items/miners_dream"
+		},
+		"minespawn_amethyst": {
+			"textures": "textures/items/ores/amethyst"
+		},
+		"minespawn_ruby": {
+			"textures": "textures/items/ores/ruby"
 		}
 	}
 }

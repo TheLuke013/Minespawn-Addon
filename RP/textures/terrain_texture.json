@@ -6,6 +6,24 @@
 	"texture_data": {
 		"minespawn_extreme_torch": {
 			"textures": "textures/items/extreme_torch"
+		},
+		"minespawn_amethyst_ore": {
+			"textures": "textures/blocks/ores/amethyst_ore"
+		},
+		"minespawn_ruby_ore": {
+			"textures": "textures/blocks/ores/ruby_ore"
+		},
+		"minespawn_deepslate_amethyst_ore": {
+			"textures": "textures/blocks/ores/deepslate_amethyst_ore"
+		},
+		"minespawn_deepslate_ruby_ore": {
+			"textures": "textures/blocks/ores/deepslate_ruby_ore"
+		},
+		"minespawn_amethyst_block": {
+			"textures": "textures/blocks/amethyst_block"
+		},
+		"minespawn_ruby_block": {
+			"textures": "textures/blocks/ruby_block"
 		}
 	}
 }

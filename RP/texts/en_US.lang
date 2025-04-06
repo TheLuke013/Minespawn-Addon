@@ -40,9 +40,15 @@ item.minespawn:royal_chestplate=Royal Guardian Chestplate
 item.minespawn:royal_leggings=Royal Guardian Leggings
 item.minespawn:royal_boots=Royal Guardian Boots
 
+item.minespawn:extreme_torch=Extreme Torch
+item.minespawn:miners_dream=Miner's Dream
+item.minespawn:amethyst=Amethyst
+item.minespawn:ruby=Ruby
+
 item.spawn_egg.entity.minespawn:golden_apple_cow.name=Spawn Golden Apple Cow
 item.spawn_egg.entity.minespawn:apple_cow.name=Spawn Apple Cow
 item.spawn_egg.entity.minespawn:mobjira.name=Spawn Mobjira
+item.spawn_egg.entity.minespawn:dummy.name=Spawn Dummy
 
 entity.minespawn:golden_apple_cow.name=Golden Apple Cow
 entity.minespawn:enchanted_golden_apple_cow.name=Enchanted Golden Apple Cow
@@ -52,8 +58,12 @@ entity.minespawn:mobjira.name=Mobjira
 entity.minespawn:mj_fireball.name=Mobjira Fireball
 entity.minespawn:water_rocket.name=Water Rocket
 entity.minespawn:fire_rocket.name=Fire Rocket
-tile.minespawn:extreme_torch.name=Extreme Torch
-item.minespawn:extreme_torch=Extreme Torch
-item.minespawn:miners_dream=Miner's Dream
-item.spawn_egg.entity.minespawn:dummy.name=Spawn Dummy
 entity.minespawn:dummy.name=Dummy
+
+tile.minespawn:extreme_torch.name=Extreme Torch
+tile.minespawn:amethyst_ore.name=Amethyst Ore
+tile.minespawn:ruby_ore.name=Ruby Ore
+tile.minespawn:deepslate_amethyst_ore.name=Deepslate Amethyst Ore
+tile.minespawn:deepslate_ruby_ore.name=Deepslate Ruby Ore
+tile.minespawn:amethyst_block.name=Amethyst Block
+tile.minespawn:ruby_block.name=Ruby Block

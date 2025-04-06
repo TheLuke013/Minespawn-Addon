@@ -1,5 +1,5 @@
 import { world, MolangVariableMap } from '@minecraft/server';
-import { replaceBlocks } from '../utils/utils.js';
+import { replaceBlocks, getPlayerMainhandItem, randomInt } from '../utils/utils.js';
 
 function getExtremeTorchLightLocations(e) {
     return [
@@ -57,5 +57,27 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
                 }
             }
         }
-    })
+    });
+
+    initEvent.blockComponentRegistry.registerCustomComponent('minespawn:ore_xp_reward', {
+        onPlayerDestroy: e => {
+            const mainhandItem = getPlayerMainhandItem(e.player);
+
+            const pickaxes = [
+                'minecraft:iron_pickaxe', 'minecraft:golden_pickaxe',
+                'minecraft:diamond_pickaxe', 'minecraft:netherite_pickaxe'];
+
+            if (!(mainhandItem && pickaxes.includes(mainhandItem.typeId))) return;
+
+            const enchantable = mainhandItem.getComponent('minecraft:enchantable');
+            const silkTouch = enchantable?.getEnchantment('silk_touch');
+            if (silkTouch) return;
+
+            const xpAmount = randomInt(1, 5);
+            for (let i = 0; i < xpAmount; i++) {
+                e.dimension.spawnEntity("minecraft:xp_orb", e.block.location);
+            }
+
+        }
+    });
 })
