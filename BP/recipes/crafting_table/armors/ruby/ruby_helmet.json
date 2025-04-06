@@ -1,0 +1,28 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minespawn:ruby_helmet"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"###",
+			"# #"
+		],
+		"key": {
+			"#": {
+				"item": "minespawn:ruby"
+			}
+		},
+		"result": {
+			"item": "minespawn:ruby_helmet"
+		},
+		"unlock": [
+			{
+				"item": "minespawn:ruby"
+			}
+		]
+	}
+}

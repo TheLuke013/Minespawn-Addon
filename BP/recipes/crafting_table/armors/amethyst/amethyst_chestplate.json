@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minespawn:amethyst_chestplate"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"# #",
+			"###",
+			"###"
+		],
+		"key": {
+			"#": {
+				"item": "minespawn:amethyst"
+			}
+		},
+		"result": {
+			"item": "minespawn:amethyst_chestplate"
+		},
+		"unlock": [
+			{
+				"item": "minespawn:amethyst"
+			}
+		]
+	}
+}

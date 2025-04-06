@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minespawn:ruby_leggings"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"###",
+			"# #",
+			"# #"
+		],
+		"key": {
+			"#": {
+				"item": "minespawn:ruby"
+			}
+		},
+		"result": {
+			"item": "minespawn:ruby_leggings"
+		},
+		"unlock": [
+			{
+				"item": "minespawn:ruby"
+			}
+		]
+	}
+}

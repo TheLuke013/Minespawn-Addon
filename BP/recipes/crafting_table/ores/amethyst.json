@@ -1,0 +1,28 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "minespawn:amethyst"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "A"
+        ],
+        "key": {
+            "A": {
+                "item": "minespawn:amethyst_block"
+            }
+        },
+        "result": {
+            "item": "minespawn:amethyst",
+            "count": 9
+        },
+        "unlock": [
+            {
+                "item": "minespawn:amethyst"
+            }
+        ]
+    }
+}

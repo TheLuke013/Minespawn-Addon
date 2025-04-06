@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minespawn:big_bertha"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"b",
+			"g",
+			"h"
+		],
+		"key": {
+			"h": {
+				"item": "minespawn:big_bertha_handle"
+			},
+			"g": {
+				"item": "minespawn:big_bertha_guard"
+			},
+			"b": {
+				"item": "minespawn:big_bertha_blade"
+			}
+		},
+		"result": {
+			"item": "minespawn:big_bertha"
+		},
+		"unlock": [
+			{
+				"item": "minespawn:big_bertha_handle"
+			}
+		]
+	}
+}

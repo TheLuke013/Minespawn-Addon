@@ -1,0 +1,28 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "minespawn:ruby"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "A"
+        ],
+        "key": {
+            "A": {
+                "item": "minespawn:ruby_block"
+            }
+        },
+        "result": {
+            "item": "minespawn:ruby",
+            "count": 9
+        },
+        "unlock": [
+            {
+                "item": "minespawn:ruby"
+            }
+        ]
+    }
+}
