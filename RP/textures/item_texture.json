@@ -21,10 +21,10 @@
 			"textures": "textures/items/weapons/stelix_bertha"
 		},
 		"minespawn_wither_spawn_egg": {
-			"textures": "textures/items/spawn_eggs/wither_spawn_egg"
+			"textures": "textures/items/spawn_eggs/spawn_egg_wither"
 		},
 		"minespawn_ender_dragon_spawn_egg": {
-			"textures": "textures/items/spawn_eggs/ender_dragon_spawn_egg"
+			"textures": "textures/items/spawn_eggs/spawn_egg_ender_dragon"
 		},
 		"minespawn_ultimate_hammer": {
 			"textures": "textures/items/weapons/ultimate_hammer"

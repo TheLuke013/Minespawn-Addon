@@ -43,7 +43,7 @@
 						}
 					],
 					"on_entry": [
-						"/execute as @e[rm=0,r=100,c=1,family=!mobjira,family=!inanimate,type=!lightning_bolt,type=!item] at @s run summon lightning_bolt"
+						"/execute as @e[rm=0,r=100,family=!mobjira,family=!inanimate,type=!lightning_bolt,type=!item] at @s run summon lightning_bolt"
 					]
 				}
 			}

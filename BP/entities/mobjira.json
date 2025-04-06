@@ -39,8 +39,8 @@
 				"minecraft:timer": {
 					"looping": false,
 					"time": [
-						3,
-						5
+						1,
+						3
 					],
 					"time_down_event": {
 						"event": "minespawn:toggle_random_attack",
@@ -69,8 +69,8 @@
 				"minecraft:timer": {
 					"looping": true,
 					"time": [
-						3,
-						5
+						10,
+						10
 					],
 					"time_down_event": {
 						"event": "minespawn:toggle_random_attack",
@@ -85,8 +85,8 @@
 				"minecraft:timer": {
 					"looping": true,
 					"time": [
-						3,
-						5
+						1,
+						3
 					],
 					"time_down_event": {
 						"event": "minespawn:toggle_random_attack",
@@ -152,8 +152,8 @@
 				"minecraft:timer": {
 					"looping": true,
 					"time": [
-						3,
-						5
+						1,
+						3
 					],
 					"time_down_event": {
 						"event": "minespawn:toggle_random_attack",
@@ -165,12 +165,7 @@
 				"minecraft:skin_id": {
 					"value": 7
 				},
-				"minecraft:is_charged": {},
-				"minecraft:boss": {
-					"hud_range": 125,
-					"name": "§3Mobjira",
-					"should_darken_sky": true
-				}
+				"minecraft:is_charged": {}
 			}
 		},
 		"components": {
@@ -234,11 +229,20 @@
 			"minecraft:custom_hit_test": {
 				"hitboxes": [
 					{
-						"width": 10,
-						"height": 10,
+						"width": 5,
+						"height": 5,
 						"pivot": [
 							0,
 							0,
+							0
+						]
+					},
+					{
+						"width": 5,
+						"height": 5,
+						"pivot": [
+							0,
+							10,
 							0
 						]
 					}
@@ -250,6 +254,30 @@
 			"minecraft:type_family": {
 				"family": [
 					"mobjira"
+				]
+			},
+			"minecraft:break_blocks": {
+				"breakable_blocks": [
+					"minecraft:acacia_log",
+					"minecraft:birch_log",
+					"minecraft:cherry_log",
+					"minecraft:dark_oak_log",
+					"minecraft:jungle_log",
+					"minecraft:mangrove_log",
+					"minecraft:oak_log",
+					"minecraft:pale_oak_log",
+					"minecraft:spruce_log",
+					"minecraft:acacia_leaves",
+					"minecraft:azalea_leaves",
+					"minecraft:azalea_leaves_flowered",
+					"minecraft:birch_leaves",
+					"minecraft:cherry_leaves",
+					"minecraft:dark_oak_leaves",
+					"minecraft:jungle_leaves",
+					"minecraft:mangrove_leaves",
+					"minecraft:oak_leaves",
+					"minecraft:pale_oak_leaves",
+					"minecraft:spruce_leaves"
 				]
 			},
 			"minecraft:experience_reward": {
@@ -294,7 +322,7 @@
 								}
 							]
 						},
-						"max_dist": 100
+						"max_dist": 300
 					}
 				]
 			},
@@ -302,14 +330,17 @@
 				"priority": 2
 			},
 			"minecraft:follow_range": {
-				"value": 100
+				"value": 300
 			},
 			"minecraft:conditional_bandwidth_optimization": {}
 		},
 		"events": {
 			"minecraft:entity_spawned": {
 				"queue_command": {
-					"command": "effect @e[type=minespawn:mobjira] regeneration 9999 255 true",
+					"command": [
+						"effect @e[type=minespawn:mobjira] regeneration 9999 255 true",
+						"function mobjira_ultimate_destroy"
+					],
 					"target": "self"
 				},
 				"add": {
@@ -344,7 +375,7 @@
 			"minespawn:toggle_random_attack": {
 				"randomize": [
 					{
-						"weight": 25,
+						"weight": 50,
 						"add": {
 							"component_groups": [
 								"minespawn:melee_attack"
@@ -360,7 +391,7 @@
 						}
 					},
 					{
-						"weight": 25,
+						"weight": 50,
 						"add": {
 							"component_groups": [
 								"minespawn:fireball_attack"
