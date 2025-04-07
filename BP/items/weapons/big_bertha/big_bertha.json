@@ -52,7 +52,8 @@
             "minecraft:custom_components": [
                 "minespawn:knockback",
                 "minespawn:flaming_damage",
-                "minespawn:on_damage"
+                "minespawn:on_damage",
+                "minespawn:durability"
             ]
         }
     }

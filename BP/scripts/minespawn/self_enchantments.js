@@ -35,8 +35,10 @@ export function enchantItems(player) {
         mainhandItem?.typeId === 'minespawn:experience_chestplate' ||
         mainhandItem?.typeId === 'minespawn:experience_leggings') {
         player.runCommand('enchant @s protection 2');
+        player.runCommand('enchant @s mending');
     } else if (mainhandItem?.typeId === 'minespawn:experience_boots') {
         player.runCommand('enchant @s protection 2');
         player.runCommand('enchant @s feather_falling');
+        player.runCommand('enchant @s mending');
     }
 }

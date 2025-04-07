@@ -1,6 +1,7 @@
-import { world } from '@minecraft/server';
+import { world, EquipmentSlot } from '@minecraft/server';
 import { shootEntityFromPlayer, getPlayerMainhandItem, getCardinalDirection } from '../utils/utils.js';
 import { ultimateChainsaw } from '../weapons.js';
+import { itemDurability } from '../item_durability.js';
 
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
     initEvent.itemComponentRegistry.registerCustomComponent('minespawn:knockback', {
@@ -104,6 +105,12 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
                     `structure load royal_armor_stand ${bl.x} ${bl.y + 1} ${bl.z} ${standDir}`
                 );
             }
+        }
+    });
+
+    initEvent.itemComponentRegistry.registerCustomComponent('minespawn:durability', {
+        onMineBlock: e => {
+            itemDurability(e.source);
         }
     });
 });

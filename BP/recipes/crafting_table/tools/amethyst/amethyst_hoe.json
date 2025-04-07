@@ -1,0 +1,32 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "minespawn:amethyst_hoe"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AA",
+            " B",
+            " B"
+        ],
+        "key": {
+            "A": {
+                "item": "minespawn:amethyst"
+            },
+            "B": {
+                "item": "minecraft:stick"
+            }
+        },
+        "result": {
+            "item": "minespawn:amethyst_hoe"
+        },
+        "unlock": [
+            {
+                "item": "minespawn:amethyst"
+            }
+        ]
+    }
+}

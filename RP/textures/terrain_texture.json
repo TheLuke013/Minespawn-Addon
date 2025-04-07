@@ -20,10 +20,10 @@
 			"textures": "textures/blocks/ores/deepslate_ruby_ore"
 		},
 		"minespawn_amethyst_block": {
-			"textures": "textures/blocks/amethyst_block"
+			"textures": "textures/blocks/ores/blocks/amethyst_block"
 		},
 		"minespawn_ruby_block": {
-			"textures": "textures/blocks/ruby_block"
+			"textures": "textures/blocks/ores/blocks/ruby_block"
 		}
 	}
 }

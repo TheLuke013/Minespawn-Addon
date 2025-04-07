@@ -6,6 +6,7 @@ import { enchantItems } from './self_enchantments.js';
 import './custom_components/itemCustomComponents.js';
 import './custom_components/blockCustomComponents.js';
 import './miners_dream.js';
+import './tools.js';
 
 function longRangeAttack(player) {
 

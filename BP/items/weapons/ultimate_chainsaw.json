@@ -55,7 +55,8 @@
 				]
 			},
 			"minecraft:custom_components": [
-				"minespawn:chainsaw"
+				"minespawn:chainsaw",
+				"minespawn:durability"
 			]
 		}
 	}

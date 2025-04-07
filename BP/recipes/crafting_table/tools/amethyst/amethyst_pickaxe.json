@@ -1,0 +1,32 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "minespawn:amethyst_pickaxe"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AAA",
+            " B ",
+            " B "
+        ],
+        "key": {
+            "A": {
+                "item": "minespawn:amethyst"
+            },
+            "B": {
+                "item": "minecraft:stick"
+            }
+        },
+        "result": {
+            "item": "minespawn:amethyst_pickaxe"
+        },
+        "unlock": [
+            {
+                "item": "minespawn:amethyst"
+            }
+        ]
+    }
+}

@@ -45,6 +45,24 @@ item.minespawn:miners_dream=Miner's Dream
 item.minespawn:amethyst=Amethyst
 item.minespawn:ruby=Ruby
 
+item.minespawn:emerald_sword=Emerald Sword
+item.minespawn:emerald_axe=Emerald Axe
+item.minespawn:emerald_hoe=Emerald Hoe
+item.minespawn:emerald_pickaxe=Emerald Pickaxe
+item.minespawn:emerald_shovel=Emerald Shovel
+
+item.minespawn:amethyst_sword=Amethyst Sword
+item.minespawn:amethyst_axe=Amethyst Axe
+item.minespawn:amethyst_hoe=Amethyst Hoe
+item.minespawn:amethyst_pickaxe=Amethyst Pickaxe
+item.minespawn:amethyst_shovel=Amethyst Shovel
+
+item.minespawn:ruby_sword=Ruby Sword
+item.minespawn:ruby_axe=Ruby Axe
+item.minespawn:ruby_hoe=Ruby Hoe
+item.minespawn:ruby_pickaxe=Ruby Pickaxe
+item.minespawn:ruby_shovel=Ruby Shovel
+
 item.spawn_egg.entity.minespawn:golden_apple_cow.name=Spawn Golden Apple Cow
 item.spawn_egg.entity.minespawn:apple_cow.name=Spawn Apple Cow
 item.spawn_egg.entity.minespawn:mobjira.name=Spawn Mobjira

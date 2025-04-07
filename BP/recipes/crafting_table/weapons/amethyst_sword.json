@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minespawn:amethyst_sword"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A",
+			"A",
+			"B"
+		],
+		"key": {
+			"A": {
+				"item": "minespawn:amethyst"
+			},
+			"B": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "minespawn:amethyst_sword"
+		},
+		"unlock": [
+			{
+				"item": "minespawn:amethyst"
+			}
+		]
+	}
+}

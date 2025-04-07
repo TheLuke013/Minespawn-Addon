@@ -127,6 +127,51 @@
 		},
 		"minespawn_ruby": {
 			"textures": "textures/items/ores/ruby"
+		},
+		"minespawn_emerald_sword": {
+			"textures": "textures/items/weapons/emerald_sword"
+		},
+		"minespawn_emerald_axe": {
+			"textures": "textures/items/tools/emerald/emerald_axe"
+		},
+		"minespawn_emerald_hoe": {
+			"textures": "textures/items/tools/emerald/emerald_hoe"
+		},
+		"minespawn_emerald_pickaxe": {
+			"textures": "textures/items/tools/emerald/emerald_pickaxe"
+		},
+		"minespawn_emerald_shovel": {
+			"textures": "textures/items/tools/emerald/emerald_shovel"
+		},
+		"minespawn_ruby_sword": {
+			"textures": "textures/items/weapons/ruby_sword"
+		},
+		"minespawn_ruby_axe": {
+			"textures": "textures/items/tools/ruby/ruby_axe"
+		},
+		"minespawn_ruby_hoe": {
+			"textures": "textures/items/tools/ruby/ruby_hoe"
+		},
+		"minespawn_ruby_pickaxe": {
+			"textures": "textures/items/tools/ruby/ruby_pickaxe"
+		},
+		"minespawn_ruby_shovel": {
+			"textures": "textures/items/tools/ruby/ruby_shovel"
+		},
+		"minespawn_amethyst_sword": {
+			"textures": "textures/items/weapons/amethyst_sword"
+		},
+		"minespawn_amethyst_axe": {
+			"textures": "textures/items/tools/amethyst/amethyst_axe"
+		},
+		"minespawn_amethyst_hoe": {
+			"textures": "textures/items/tools/amethyst/amethyst_hoe"
+		},
+		"minespawn_amethyst_pickaxe": {
+			"textures": "textures/items/tools/amethyst/amethyst_pickaxe"
+		},
+		"minespawn_amethyst_shovel": {
+			"textures": "textures/items/tools/amethyst/amethyst_shovel"
 		}
 	}
 }

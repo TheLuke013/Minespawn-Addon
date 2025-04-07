@@ -1,0 +1,32 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "minespawn:emerald_axe"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AA",
+            "AB",
+            " B"
+        ],
+        "key": {
+            "A": {
+                "item": "minecraft:emerald"
+            },
+            "B": {
+                "item": "minecraft:stick"
+            }
+        },
+        "result": {
+            "item": "minespawn:emerald_axe"
+        },
+        "unlock": [
+            {
+                "item": "minecraft:emerald"
+            }
+        ]
+    }
+}

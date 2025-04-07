@@ -1,0 +1,32 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "minespawn:emerald_shovel"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "A",
+            "B",
+            "B"
+        ],
+        "key": {
+            "A": {
+                "item": "minecraft:emerald"
+            },
+            "B": {
+                "item": "minecraft:stick"
+            }
+        },
+        "result": {
+            "item": "minespawn:emerald_shovel"
+        },
+        "unlock": [
+            {
+                "item": "minecraft:emerald"
+            }
+        ]
+    }
+}

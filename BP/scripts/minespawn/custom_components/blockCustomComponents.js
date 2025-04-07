@@ -64,8 +64,9 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
             const mainhandItem = getPlayerMainhandItem(e.player);
 
             const pickaxes = [
-                'minecraft:iron_pickaxe', 'minecraft:golden_pickaxe',
-                'minecraft:diamond_pickaxe', 'minecraft:netherite_pickaxe'];
+                'minecraft:iron_pickaxe', 'minecraft:golden_pickaxe', 'minecraft:diamond_pickaxe',
+                'minecraft:netherite_pickaxe', 'minespawn:emerald_pickaxe', 'minespawn:amethyst_pickaxe',
+                'minespawn:ruby_pickaxe'];
 
             if (!(mainhandItem && pickaxes.includes(mainhandItem.typeId))) return;
 

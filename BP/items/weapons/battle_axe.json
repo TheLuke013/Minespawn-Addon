@@ -54,7 +54,10 @@
 					"minecraft:is_sword",
 					"minecraft:is_tool"
 				]
-			}
+			},
+			"minecraft:custom_components": [
+				"minespawn:durability"
+			]
 		}
 	}
 }
