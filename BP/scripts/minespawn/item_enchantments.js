@@ -30,6 +30,16 @@ export function enchantItems(player) {
         player.runCommand('enchant @s unbreaking 3');
         player.runCommand('enchant @s efficiency 5');
     }
+    //EMERALD PICKAXE
+    else if (mainhandItem?.typeId === 'minespawn:emerald_pickaxe') {
+        player.runCommand('enchant @s silk_touch');
+    }
+    //ENCHANTED EMERALD SWORD
+    else if (mainhandItem?.typeId === 'minespawn:experience_sword') {
+        player.runCommand('enchant @s sharpness 2');
+        player.runCommand('enchant @s unbreaking 3');
+        player.runCommand('enchant @s mending');
+    }
     //ENCHANTED EMERALD ARMOR
     else if (mainhandItem?.typeId === 'minespawn:experience_helmet' ||
         mainhandItem?.typeId === 'minespawn:experience_chestplate' ||
@@ -40,5 +50,21 @@ export function enchantItems(player) {
         player.runCommand('enchant @s protection 2');
         player.runCommand('enchant @s feather_falling');
         player.runCommand('enchant @s mending');
+    }
+    //ROYAL ARMOR
+    else if (mainhandItem?.typeId === 'minespawn:royal_helmet') {
+        player.runCommand('enchant @s protection 4');
+        player.runCommand('enchant @s unbreaking 3');
+        player.runCommand('enchant @s aqua_affinity');
+        player.runCommand('enchant @s respiration 2');
+    } else if (mainhandItem?.typeId === 'minespawn:royal_chestplate' ||
+        mainhandItem?.typeId === 'minespawn:royal_leggings') {
+        player.runCommand('enchant @s protection 4');
+        player.runCommand('enchant @s unbreaking 3');
+    } else if (mainhandItem?.typeId === 'minespawn:royal_boots') {
+        player.runCommand('enchant @s protection 4');
+        player.runCommand('enchant @s unbreaking 3');
+        player.runCommand('enchant @s feather_falling 4');
+
     }
 }

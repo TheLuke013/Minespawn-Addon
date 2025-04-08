@@ -172,6 +172,9 @@
 		},
 		"minespawn_amethyst_shovel": {
 			"textures": "textures/items/tools/amethyst/amethyst_shovel"
+		},
+		"minespawn_experience_sword": {
+			"textures": "textures/items/weapons/experience_sword"
 		}
 	}
 }

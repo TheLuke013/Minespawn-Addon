@@ -1,7 +1,8 @@
 import { world, system } from '@minecraft/server';
 import { ultimateHammerAttack } from './weapons.js';
 import { getPlayerMainhandItem } from './utils/utils.js';
-import { enchantItems } from './self_enchantments.js';
+import { enchantItems } from './item_enchantments.js';
+import { royalArmorEffects, detectFullArmor } from './armor_effects.js';
 
 import './custom_components/itemCustomComponents.js';
 import './custom_components/blockCustomComponents.js';
@@ -26,12 +27,24 @@ world.afterEvents.entityHitBlock.subscribe(e => {
     }
 });
 
+world.afterEvents.entityHitEntity.subscribe(e => {
+    const player = e.damagingEntity;
+    if (!(player.typeId === 'minecraft:player')) return;
+
+    //summon more xp when player hits with enchanted emerald armor and sword
+    if (detectFullArmor(player, 'minespawn:experience') && getPlayerMainhandItem(player)?.typeId === 'minespawn:experience_sword') {
+        for (let i = 0; i < 5; i++) { player.dimension.spawnEntity('minecraft:xp_orb', player.location); }
+    }
+
+})
+
 system.runInterval(() => {
     const players = world.getPlayers();
 
     players.forEach(player => {
         //self-enchantment of items
         enchantItems(player);
+        royalArmorEffects(player);
 
         //long range attack
         if (player.getTags().includes('royal_guardian_attacking')) {

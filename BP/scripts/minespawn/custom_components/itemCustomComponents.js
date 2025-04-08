@@ -1,4 +1,4 @@
-import { world, EquipmentSlot } from '@minecraft/server';
+import { world } from '@minecraft/server';
 import { shootEntityFromPlayer, getPlayerMainhandItem, getCardinalDirection } from '../utils/utils.js';
 import { ultimateChainsaw } from '../weapons.js';
 import { itemDurability } from '../item_durability.js';
@@ -81,6 +81,7 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
 
                 e.source.playSound('gun.blaster_fire');
                 e.source.runCommand('camerashake add @s 0.06 0.5 rotational');
+                itemDurability(e.source);
             }
         }
     });
