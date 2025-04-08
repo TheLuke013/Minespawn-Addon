@@ -41,7 +41,7 @@
 			]
 		},
 		"mob.mobjira.atomic_breath": {
-			"category": "ambient",
+			"category": "neutral",
 			"max_distance": 150,
 			"sounds": [
 				"sounds/mob/mobjira/atomic_breath"

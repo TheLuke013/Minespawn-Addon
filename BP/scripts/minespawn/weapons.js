@@ -1,6 +1,8 @@
 import { world } from '@minecraft/server';
+import { getPlayerMainhandItem } from './utils/utils.js';
+import { detectFullArmor } from './armor_effects.js';
 
-export function ultimateHammerAttack(player, attackLoc) {
+function ultimateHammerAttack(player, attackLoc) {
     world.getDimension(player.dimension.id).createExplosion(attackLoc, 3, { causesFire: true, source: player });
 
     const entities = player.dimension.getEntities({
@@ -50,3 +52,28 @@ export function ultimateChainsaw(dimension, entryLoc) {
         dimension.runCommand(`setblock ${block.x} ${block.y} ${block.z} air destroy`);
     })
 }
+
+world.afterEvents.entityHitBlock.subscribe(e => {
+    const entity = e.damagingEntity;
+    const block = e.hitBlock;
+
+    //ultimate hammer explosion on hit block
+    if (entity.typeId === 'minecraft:player') {
+        const mainhandItem = getPlayerMainhandItem(entity);
+
+        if (mainhandItem?.typeId === 'minespawn:ultimate_hammer') {
+            ultimateHammerAttack(entity, block.location);
+        }
+    }
+});
+
+world.afterEvents.entityHitEntity.subscribe(e => {
+    const player = e.damagingEntity;
+    if (!(player.typeId === 'minecraft:player')) return;
+
+    //summon more xp when player hits with enchanted emerald armor and sword
+    if (detectFullArmor(player, 'minespawn:experience') && getPlayerMainhandItem(player)?.typeId === 'minespawn:experience_sword') {
+        for (let i = 0; i < 5; i++) { player.dimension.spawnEntity('minecraft:xp_orb', player.location); }
+    }
+
+})

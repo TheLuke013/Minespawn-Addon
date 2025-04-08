@@ -54,7 +54,7 @@
 				"default": {
 					"transitions": [
 						{
-							"jump": "query.skin_id == 4"
+							"jump": "query.is_jumping || query.skin_id == 4"
 						}
 					]
 				},
@@ -77,7 +77,33 @@
 						}
 					],
 					"on_entry": [
-						"/effect @s levitation 1 40 true"
+						"/effect @s levitation 1 30 true",
+						"/tag @s add mobjira_is_jumping"
+					]
+				}
+			}
+		},
+		"controller.animation.mobjira_atomic": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"atomic": "query.health <= 4000 && query.health != 0 && query.skin_id != 7 && query.skin_id != 8"
+						}
+					]
+				},
+				"atomic": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 7"
+						}
+					],
+					"on_entry": [
+						"/say Breath Atomic",
+						"/tag @s remove ready_for_breath",
+						"/event entity @s minespawn:prepare_for_breath_atomic",
+						"/execute as @e[rm=0,r=100,c=1,family=!mobjira] at @s run camerashake add @p[r=100] 1 11 positional"
 					]
 				}
 			}

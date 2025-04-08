@@ -12,7 +12,7 @@
 				"minecraft:explode": {
 					"fuse_length": 0,
 					"fuse_lit": true,
-					"power": 3,
+					"power": 5,
 					"causes_fire": true,
 					"fire_affected_by_griefing": true,
 					"destroy_affected_by_griefing": true
@@ -48,8 +48,8 @@
 						}
 					}
 				},
-				"power": 10,
-				"gravity": 0.00,
+				"power": 5,
+				"gravity": 0.04,
 				"inertia": 1,
 				"liquid_inertia": 1,
 				"uncertainty_base": 0,
@@ -58,7 +58,7 @@
 				"offset": [
 					0,
 					55,
-					-10
+					15
 				],
 				"reflect_on_hurt": true,
 				"catch_fire": true
