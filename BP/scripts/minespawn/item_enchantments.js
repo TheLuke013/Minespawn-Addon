@@ -23,7 +23,7 @@ export function enchantItems(player) {
         player.runCommand('enchant @s unbreaking 3');
         player.runCommand('enchant @s looting 3');
         player.runCommand('enchant @s fire_aspect 2');
-        player.runCommand('enchant @s sharpness 5');
+        //player.runCommand('enchant @s sharpness 5');
     }
     //ULTIMATE HAMMER
     else if (mainhandItem?.typeId === 'minespawn:ultimate_chainsaw') {

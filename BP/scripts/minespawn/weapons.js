@@ -1,8 +1,8 @@
 import { world } from '@minecraft/server';
 import { getPlayerMainhandItem } from './utils/utils.js';
-import { detectFullArmor } from './armor_effects.js';
+import { detectFullArmor } from './armors.js';
 
-function ultimateHammerAttack(player, attackLoc) {
+export function ultimateHammerAttack(player, attackLoc) {
     world.getDimension(player.dimension.id).createExplosion(attackLoc, 3, { causesFire: true, source: player });
 
     const entities = player.dimension.getEntities({
@@ -35,9 +35,11 @@ export function ultimateChainsaw(dimension, entryLoc) {
 
     let blocksCoords = [];
 
-    for (let x = -2; x <= 2; x++) {
-        for (let y = 0; y <= 5; y++) {
-            for (let z = -2; z <= 2; z++) {
+    const wDestroy = 2;
+    const hDestroy = 5
+    for (let x = -wDestroy; x <= wDestroy; x++) {
+        for (let y = 0; y <= hDestroy; y++) {
+            for (let z = -wDestroy; z <= wDestroy; z++) {
                 const blockLoc = { x: entryLoc.x + x, y: entryLoc.y + y, z: entryLoc.z + z };
                 const block = dimension.getBlock(blockLoc);
 

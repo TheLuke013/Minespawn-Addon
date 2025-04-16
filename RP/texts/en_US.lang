@@ -8,7 +8,7 @@ item.minespawn:big_bertha_blade=Big Bertha Blade
 item.minespawn:big_bertha=Big Bertha Sword\n\n§9+500 Attack Damage
 item.minespawn:royal_guardian=Royal Guardian Sword\n\n§9+750 Attack Damage
 item.minespawn:stelix_bertha=Stelix Bertha Sword\n\n§9+580 Attack Damage
-item.minespawn:queen_battle_axe=Queen Ghidorah Battle Axe\n\n§4Demon §9Attack Damage
+item.minespawn:queen_battle_axe=Queen Ghidorah Battle Axe\n\n§4666 §9Attack Damage
 item.minespawn:ultimate_chainsaw=Ultimate Chainsaw
 item.minespawn:royal_armor_stand=Ultimate Royal Armor Stand
 
@@ -67,7 +67,7 @@ item.minespawn:ruby_shovel=Ruby Shovel
 item.spawn_egg.entity.minespawn:golden_apple_cow.name=Spawn Golden Apple Cow
 item.spawn_egg.entity.minespawn:apple_cow.name=Spawn Apple Cow
 item.spawn_egg.entity.minespawn:mobjira.name=Spawn Mobjira
-item.spawn_egg.entity.minespawn:dummy.name=Spawn Dummy
+item.spawn_egg.entity.minespawn:nastysaurus.name=Spawn Nastysaurus
 
 entity.minespawn:golden_apple_cow.name=Golden Apple Cow
 entity.minespawn:enchanted_golden_apple_cow.name=Enchanted Golden Apple Cow
@@ -77,7 +77,14 @@ entity.minespawn:mobjira.name=Mobjira
 entity.minespawn:mj_fireball.name=Mobjira Fireball
 entity.minespawn:water_rocket.name=Water Rocket
 entity.minespawn:fire_rocket.name=Fire Rocket
+entity.minespawn:nastysaurus.name=Nastysaurus
+
 entity.minespawn:dummy.name=Dummy
+entity.minespawn:bap.name=a player with Battle Axe
+entity.minespawn:bbp.name=a player with Big Bertha
+entity.minespawn:qba.name=a player with Queen Battle Axe
+entity.minespawn:rgp.name=a player with Royal Guardian
+entity.minespawn:sbp.name=a player with Stelix Bertha
 
 tile.minespawn:extreme_torch.name=Extreme Torch
 tile.minespawn:amethyst_ore.name=Amethyst Ore

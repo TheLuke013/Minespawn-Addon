@@ -1,4 +1,4 @@
-import { world, EquipmentSlot } from '@minecraft/server';
+import { EquipmentSlot } from '@minecraft/server';
 
 export function detectFullArmor(source, armorName) {
     const equippable = source.getComponent("minecraft:equippable");
@@ -29,5 +29,11 @@ export function royalArmorEffects(player) {
         player.addEffect('minecraft:fire_resistance', 100, { amplifier: 1, showParticles: false });
         player.addEffect('minecraft:regeneration', 100, { amplifier: 1, showParticles: false });
         player.addEffect('minecraft:slow_falling', 100, { amplifier: 0, showParticles: false });
+
+        if (!(player.getTags().includes('knockback_resistance')))
+            player.addTag('add_knockback_resistance');
+    } else if (!(fullRoyal) && player.getTags().includes('knockback_resistance')) {
+        player.removeTag('knockback_resistance');
+        player.addTag('remove_knockback_resistance');
     }
 }

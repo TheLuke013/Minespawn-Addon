@@ -1,6 +1,13 @@
 import { world } from '@minecraft/server';
 import { getCardinalDirection } from './utils/utils.js';
 
+const pos = {
+    normal: 1,
+    turned: 2
+}
+
+const structuresCount = 6;
+
 function minersDreamFill(coords1, coords2, dimension) {
     const blocksToDestroy = [
         'minecraft:stone', 'minecraft:blackstone', 'minecraft:netherrack',
@@ -33,16 +40,15 @@ function minersDreamFill(coords1, coords2, dimension) {
     })
 }
 
-function placeMinersDreamStructures(blockLoc, dimension, xT, zT, xOrigin, zOrigin, pos = 1) {
+function placeMinersDreamStructures(blockLoc, dimension, xT, zT, xOrigin, zOrigin, position = pos.normal) {
     blockLoc.x += xOrigin;
     blockLoc.z += zOrigin;
 
-    let strucName = pos == 2 ? 'miners_dream/miners_dream_2' : 'miners_dream/miners_dream';
+    let strucName = position == pos.turned ? 'miners_dream/miners_dream_2' : 'miners_dream/miners_dream';
     strucName += dimension === 'minecraft:nether' ? '_nether' : '';
 
     //world.sendMessage(`${strucName}`);
-
-    for (let i = 0; i <= 6; i++) {
+    for (let i = 0; i <= structuresCount; i++) {
         world.getDimension(dimension).runCommand(`structure load "${strucName}" ${blockLoc.x} ${blockLoc.y} ${blockLoc.z}`);
         blockLoc.x += xT;
         blockLoc.z += zT;
@@ -53,19 +59,22 @@ world.afterEvents.itemUseOn.subscribe(e => {
     if (e.itemStack.typeId === 'minespawn:miners_dream' && e.source.typeId === 'minecraft:player') {
         const playerDirection = getCardinalDirection(e.source);
         const bLoc = e.block.location;
+        const xBlocks = 4;
+        const yBlocks = 5;
+        const zBlocks = 64;
 
         if (playerDirection == 'south') {
-            minersDreamFill({ x: bLoc.x - 4, y: bLoc.y, z: bLoc.z - 64 }, { x: bLoc.x + 4, y: bLoc.y + 5, z: bLoc.z }, e.source.dimension);
-            placeMinersDreamStructures(bLoc, e.source.dimension.id, 0, -10, -4, 0);
+            minersDreamFill({ x: bLoc.x - xBlocks, y: bLoc.y, z: bLoc.z - zBlocks }, { x: bLoc.x + xBlocks, y: bLoc.y + yBlocks, z: bLoc.z }, e.source.dimension);
+            placeMinersDreamStructures(bLoc, e.source.dimension.id, 0, -10, -xBlocks, pos.normal);
         } else if (playerDirection == 'north') {
-            minersDreamFill({ x: bLoc.x - 4, y: bLoc.y, z: bLoc.z + 64 }, { x: bLoc.x + 4, y: bLoc.y + 5, z: bLoc.z }, e.source.dimension);
-            placeMinersDreamStructures(bLoc, e.source.dimension.id, 0, 10, -4, 0);
+            minersDreamFill({ x: bLoc.x - xBlocks, y: bLoc.y, z: bLoc.z + zBlocks }, { x: bLoc.x + xBlocks, y: bLoc.y + yBlocks, z: bLoc.z }, e.source.dimension);
+            placeMinersDreamStructures(bLoc, e.source.dimension.id, 0, 10, -xBlocks, pos.normal);
         } else if (playerDirection == 'east') {
-            minersDreamFill({ x: bLoc.x, y: bLoc.y, z: bLoc.z - 4 }, { x: bLoc.x - 64, y: bLoc.y + 5, z: bLoc.z + 4 }, e.source.dimension);
-            placeMinersDreamStructures(bLoc, e.source.dimension.id, -10, 0, 0, -4, 2);
+            minersDreamFill({ x: bLoc.x, y: bLoc.y, z: bLoc.z - xBlocks }, { x: bLoc.x - zBlocks, y: bLoc.y + yBlocks, z: bLoc.z + xBlocks }, e.source.dimension);
+            placeMinersDreamStructures(bLoc, e.source.dimension.id, -10, 0, 0, -xBlocks, pos.turned);
         } else if (playerDirection == 'west') {
-            minersDreamFill({ x: bLoc.x, y: bLoc.y, z: bLoc.z - 4 }, { x: bLoc.x + 64, y: bLoc.y + 5, z: bLoc.z + 4 }, e.source.dimension);
-            placeMinersDreamStructures(bLoc, e.source.dimension.id, 10, 0, 0, -4, 2);
+            minersDreamFill({ x: bLoc.x, y: bLoc.y, z: bLoc.z - xBlocks }, { x: bLoc.x + zBlocks, y: bLoc.y + yBlocks, z: bLoc.z + xBlocks }, e.source.dimension);
+            placeMinersDreamStructures(bLoc, e.source.dimension.id, 10, 0, 0, -xBlocks, pos.turned);
         }
 
         e.source.dimension.playSound('random.explode', e.source.location);

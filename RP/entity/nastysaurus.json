@@ -1,0 +1,37 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "minespawn:nastysaurus",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/nastysaurus"
+			},
+			"geometry": {
+				"default": "geometry.nastysaurus"
+			},
+			"render_controllers": [
+				"controller.render.nastysaurus"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			},
+			"animations": {
+				"nastysaurus": "controller.animation.nastysaurus",
+				"idle": "animation.nastysaurus.idle",
+				"move": "animation.nastysaurus.walk",
+				"attack": "animation.nastysaurus.attack",
+				"run_attack": "animation.nastysaurus.run_attack",
+				"roar": "animation.nastysaurus.roar"
+			},
+			"scripts": {
+				"animate": [
+					"nastysaurus"
+				]
+			}
+		}
+	}
+}

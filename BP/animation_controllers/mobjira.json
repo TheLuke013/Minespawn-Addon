@@ -32,11 +32,11 @@
 				"default": {
 					"transitions": [
 						{
-							"destroy": "query.skin_id == 3"
+							"lightning": "query.skin_id == 3"
 						}
 					]
 				},
-				"destroy": {
+				"lightning": {
 					"transitions": [
 						{
 							"default": "query.skin_id != 3"
@@ -77,7 +77,7 @@
 						}
 					],
 					"on_entry": [
-						"/effect @s levitation 1 30 true",
+						"/effect @s levitation 1 15 true",
 						"/tag @s add mobjira_is_jumping"
 					]
 				}

@@ -12,6 +12,7 @@ export function shootEntityFromPlayer(entityId, player) {
 
     projectile.applyImpulse({ x: projectileVelocity.x, y: projectileVelocity.y, z: projectileVelocity.z });
     projectile.setRotation(player.getRotation());
+    projectile.addTag(`player:${player.name}`);
 }
 
 export function getPlayerMainhandItem(player) {

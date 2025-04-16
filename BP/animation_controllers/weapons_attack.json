@@ -109,6 +109,7 @@
 						}
 					],
 					"on_entry": [
+						"/tag @s add battle_axe_attacking",
 						"/playsound weapon.weapon_swoosh"
 					]
 				}
@@ -131,6 +132,7 @@
 						}
 					],
 					"on_entry": [
+						"/tag @s add queen_battle_axe_attacking",
 						"/playsound weapon.weapon_swoosh"
 					]
 				}

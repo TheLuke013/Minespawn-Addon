@@ -26,6 +26,16 @@
       }
     },
     "component_groups": {
+      "minespawn:knockback_resistance": {
+        "minecraft:knockback_resistance": {
+          "value": 1
+        }
+      },
+      "minespawn:remove_kbr": {
+        "minecraft:knockback_resistance": {
+          "value": 0
+        }
+      },
       "minecraft:add_raid_omen": {
         "minecraft:spell_effects": {
           "add_effects": [
@@ -198,6 +208,30 @@
       }
     },
     "events": {
+      "minespawn:add_kb_resistance": {
+        "add": {
+          "component_groups": [
+            "minespawn:knockback_resistance"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minespawn:remove_kbr"
+          ]
+        }
+      },
+      "minespawn:remove_kb_resistance": {
+        "add": {
+          "component_groups": [
+            "minespawn:remove_kbr"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minespawn:knockback_resistance"
+          ]
+        }
+      },
       "minecraft:gain_raid_omen": {
         "add": {
           "component_groups": [

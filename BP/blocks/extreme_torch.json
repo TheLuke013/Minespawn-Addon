@@ -158,7 +158,7 @@
 						],
 						"block_filter": [
 							{
-								"tags": "q.any_tag('grass','stone','wood')"
+								"tags": "q.any_tag('grass','stone','wood', 'minecraft:is_pickaxe_item_destructible')"
 							}
 						]
 					}

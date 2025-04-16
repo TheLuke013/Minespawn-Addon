@@ -1,33 +1,21 @@
 import { world } from '@minecraft/server';
 import { shootEntityFromPlayer, getPlayerMainhandItem, getCardinalDirection } from '../utils/utils.js';
-import { ultimateChainsaw } from '../weapons.js';
+import { ultimateChainsaw, ultimateHammerAttack } from '../weapons.js';
 import { itemDurability } from '../item_durability.js';
+import { knockbackAttack, flamingAttack } from '../big_weapons_attack.js';
 
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
     initEvent.itemComponentRegistry.registerCustomComponent('minespawn:knockback', {
         onHitEntity: e => {
-            const dir = e.attackingEntity.getViewDirection();
-            const weapon = e.itemStack;
-
-            if (weapon.typeId === 'minespawn:stelix_bertha') {
-                e.hitEntity.applyKnockback(dir.x, dir.z, 30, 1);
-            } else {
-                e.hitEntity.applyKnockback(dir.x, dir.z, 10, 1);
-            }
+            knockbackAttack(e.attackingEntity, e.itemStack, e.hitEntity);
         }
     });
 
     initEvent.itemComponentRegistry.registerCustomComponent('minespawn:flaming_damage', {
         onHitEntity: e => {
             const weapon = e.itemStack;
+            flamingAttack(e.hitEntity, weapon);
 
-            if (e.hitEntity.typeId != 'minespawn:mobjira') {
-                if (weapon.typeId === 'minespawn:stelix_bertha') {
-                    e.hitEntity.setOnFire(30, false);
-                } else {
-                    e.hitEntity.setOnFire(10, false);
-                }
-            }
         }
     });
 
@@ -74,7 +62,7 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
 
                 const mainhandItem = getPlayerMainhandItem(e.source);
                 if (mainhandItem?.typeId === 'minespawn:waterzooka') {
-                    shootEntityFromPlayer('minespawn:water_rocket', e.source)
+                    shootEntityFromPlayer('minespawn:water_rocket', e.source);
                 } else if (mainhandItem?.typeId === 'minespawn:firezooka') {
                     shootEntityFromPlayer('minespawn:fire_rocket', e.source);
                 }

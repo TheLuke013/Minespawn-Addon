@@ -41,7 +41,7 @@
 				"destroy_speeds": [
 					{
 						"block": {
-							"tags": "query.any_tag('stone', 'metal', 'iron_pick_diggable')"
+							"tags": "query.any_tag('stone', 'metal', 'minecraft:is_pickaxe_item_destructible')"
 						},
 						"speed": 12
 					},

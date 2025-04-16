@@ -22,6 +22,22 @@
 			}
 		},
 		"component_groups": {
+			"minespawn:remove_kbr": {
+				"minecraft:knockback_resistance": {
+					"value": 0
+				},
+				"minecraft:timer": {
+					"looping": false,
+					"time": [
+						0.1,
+						0.1
+					],
+					"time_down_event": {
+						"event": "minespawn:remove_kbr",
+						"target": "self"
+					}
+				}
+			},
 			"minespawn:melee_attack": {
 				"minecraft:skin_id": {
 					"value": 1
@@ -347,6 +363,20 @@
 				"add": {
 					"component_groups": [
 						"minespawn:melee_attack"
+					]
+				}
+			},
+			"minespawn:add_kbr": {
+				"add": {
+					"component_groups": [
+						"minespawn:remove_kbr"
+					]
+				}
+			},
+			"minespawn:remove_kbr": {
+				"remove": {
+					"component_groups": [
+						"minespawn:remove_kbr"
 					]
 				}
 			},
