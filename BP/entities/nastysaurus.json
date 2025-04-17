@@ -6,9 +6,59 @@
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false,
-			"runtime_identifier": "minecraft:warden"
+			"scripts": {
+				"animate": [
+					"roar"
+				]
+			},
+			"animations": {
+				"roar": "controller.animation.nastysaurus.roar"
+			}
 		},
-		"component_groups": {},
+		"component_groups": {
+			"minespawn:angry": {
+				"minecraft:skin_id": {
+					"value": 2
+				},
+				"minecraft:angry": {
+					"duration": 100,
+					"broadcastAnger": false,
+					"broadcastRange": 2,
+					"calm_event": {
+						"event": "minespawn:on_calm",
+						"target": "self"
+					}
+				},
+				"minecraft:on_target_acquired": {}
+			},
+			"minespawn:roar": {
+				"minecraft:on_target_acquired": {},
+				"minecraft:skin_id": {
+					"value": 1
+				},
+				"minecraft:timer": {
+					"looping": false,
+					"time": [
+						2,
+						2
+					],
+					"time_down_event": {
+						"event": "minecraft:become_angry",
+						"target": "self"
+					}
+				}
+			},
+			"minespawn:calm": {
+				"minecraft:skin_id": {
+					"value": 0
+				},
+				"minecraft:is_sheared": {},
+				"minecraft:on_target_acquired": {
+					"event": "minespawn:roar",
+					"target": "self"
+				}
+			}
+		},
 		"components": {
 			"minecraft:physics": {},
 			"minecraft:pushable": {
@@ -28,9 +78,7 @@
 			},
 			"minecraft:type_family": {
 				"family": [
-					"nastysaurus",
-					"monster",
-					"mob"
+					"nastysaurus"
 				]
 			},
 			"minecraft:collision_box": {
@@ -50,7 +98,11 @@
 			"minecraft:navigation.walk": {
 				"avoid_water": true,
 				"can_jump": true,
-				"avoid_damage_blocks": true
+				"avoid_damage_blocks": true,
+				"can_break_doors": true
+			},
+			"minecraft:behavior.break_door": {
+				"priority": 1
 			},
 			"minecraft:behavior.float": {
 				"priority": 0
@@ -82,20 +134,7 @@
 			},
 			"minecraft:behavior.melee_attack": {
 				"priority": 1,
-				"speed_multiplier": 2.0,
-				"reach_multiplier": 8.5,
-				"melee_fov": 360
-			},
-			"minecraft:behavior.delayed_attack": {
-				"priority": 4,
-				"attack_once": false,
-				"track_target": true,
-				"require_complete_path": false,
-				"random_stop_interval": 0,
-				"reach_multiplier": 1.5,
-				"speed_multiplier": 1.0,
-				"attack_duration": 0.75,
-				"hit_delay_pct": 0.5
+				"speed_multiplier": 2.0
 			},
 			"minecraft:behavior.nearest_prioritized_attackable_target": {
 				"priority": 1,
@@ -135,11 +174,7 @@
 				"priority": 2
 			},
 			"minecraft:follow_range": {
-				"value": 25
-			},
-			"minecraft:behavior.roar": {
-				"priority": 0,
-				"duration": 4.0
+				"value": 35
 			},
 			"minecraft:conditional_bandwidth_optimization": {},
 			"minecraft:damage_sensor": {
@@ -151,6 +186,52 @@
 				]
 			}
 		},
-		"events": {}
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"minespawn:calm"
+					]
+				}
+			},
+			"minespawn:roar": {
+				"add": {
+					"component_groups": [
+						"minespawn:roar"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minespawn:calm"
+					]
+				}
+			},
+			"minecraft:become_angry": {
+				"add": {
+					"component_groups": [
+						"minespawn:angry"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minespawn:calm",
+						"minespawn:roar"
+					]
+				}
+			},
+			"minespawn:on_calm": {
+				"remove": {
+					"component_groups": [
+						"minespawn:angry",
+						"minespawn:roar"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minespawn:calm"
+					]
+				}
+			}
+		}
 	}
 }

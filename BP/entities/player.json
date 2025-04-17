@@ -28,6 +28,7 @@
     "component_groups": {
       "minespawn:knockback_resistance": {
         "minecraft:knockback_resistance": {
+          "max": 1,
           "value": 1
         }
       },

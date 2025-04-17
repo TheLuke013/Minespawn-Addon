@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.nastysaurus.roar": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"roar": "!query.is_sheared || query.skin_id == 1"
+						}
+					],
+					"on_entry": [
+						"/stopsound @p[r=100] mob.dino.roar",
+						"/effect @s clear slowness"
+					]
+				},
+				"roar": {
+					"transitions": [
+						{
+							"default": "query.is_sheared"
+						}
+					],
+					"on_entry": [
+						"/playsound mob.dino.roar @p[r=100]",
+						"/effect @s slowness 2 255 true",
+						"/playanimation @s animation.nastysaurus.roar"
+					]
+				}
+			}
+		}
+	}
+}

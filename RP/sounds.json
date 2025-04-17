@@ -66,6 +66,26 @@
 					"fall.big": "mob.mobjira.jump_impact",
 					"fall.small": "mob.mobjira.jump_impact"
 				}
+			},
+			"minespawn:nastysaurus": {
+				"volume": 1.0,
+				"pitch": 1.0,
+				"events": {
+					"hurt": "mob.dino.hurt",
+					"step": {
+						"sound": "mob.dino.step",
+						"volume": 10.0
+					},
+					"ambient": {
+						"sound": "mob.dino.ambient",
+						"volume": 20.0
+					},
+					"death": {
+						"sound": "mob.dino.roar",
+						"volume": 10.0,
+						"pitch": 0.7
+					}
+				}
 			}
 		}
 	}

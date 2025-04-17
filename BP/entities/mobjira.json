@@ -232,6 +232,10 @@
 					{
 						"cause": "fall",
 						"deals_damage": false
+					},
+					{
+						"cause": "void",
+						"deals_damage": false
 					}
 				]
 			},

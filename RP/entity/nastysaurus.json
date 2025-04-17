@@ -20,16 +20,25 @@
 				"overlay_color": "#FFFFFF"
 			},
 			"animations": {
-				"nastysaurus": "controller.animation.nastysaurus",
 				"idle": "animation.nastysaurus.idle",
-				"move": "animation.nastysaurus.walk",
-				"attack": "animation.nastysaurus.attack",
+				"walk": "animation.nastysaurus.walk",
+				"melee_attack": "animation.nastysaurus.attack",
+				"melee_attack_controller": "controller.animation.warden.melee_attacking",
 				"run_attack": "animation.nastysaurus.run_attack",
-				"roar": "animation.nastysaurus.roar"
+				"look_at_target": "animation.nastysaurus.look_at_target"
 			},
 			"scripts": {
 				"animate": [
-					"nastysaurus"
+					"look_at_target",
+					{
+						"idle": "query.modified_move_speed <= 0.01"
+					},
+					{
+						"walk": "query.modified_move_speed >= 0.25 && query.modified_move_speed < 0.5"
+					},
+					{
+						"run_attack": "query.modified_move_speed >= 0.5"
+					}
 				]
 			}
 		}

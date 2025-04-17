@@ -64,6 +64,33 @@
 			"sounds": [
 				"sounds/guns/blaster_fire"
 			]
+		},
+		"mob.dino.step": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/dino/step1",
+				"sounds/mob/dino/step2",
+				"sounds/mob/dino/step3",
+				"sounds/mob/dino/step4"
+			]
+		},
+		"mob.dino.ambient": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/dino/ambient"
+			]
+		},
+		"mob.dino.roar": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/dino/roar"
+			]
+		},
+		"mob.dino.hurt": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/dino/hurt"
+			]
 		}
 	}
 }

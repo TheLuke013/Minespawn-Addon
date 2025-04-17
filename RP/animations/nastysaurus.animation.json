@@ -1685,6 +1685,21 @@
 					}
 				}
 			}
+		},
+		"animation.nastysaurus.look_at_target": {
+			"loop": true,
+			"bones": {
+				"upper_neck": {
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": [
+						"math.clamp(query.target_x_rotation - this, -60, 60)",
+						"math.clamp(query.target_y_rotation - this, -37, 37)",
+						0
+					]
+				}
+			}
 		}
 	}
 }
