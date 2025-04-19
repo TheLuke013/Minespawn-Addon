@@ -22,7 +22,11 @@
 			"spawn_egg": {
 				"texture": "minespawn_mobjira_spawn_egg"
 			},
+			"particle_effects": {
+				"glow": "minespawn:mj_glow"
+			},
 			"animations": {
+				"mobjira": "controller.animation.mobjira",
 				"idle": "animation.mobjira.idle",
 				"move": "animation.mobjira.moving",
 				"roar": "animation.mobjira.roar",
@@ -30,6 +34,8 @@
 			},
 			"scripts": {
 				"animate": [
+					"look_at_target",
+					"mobjira",
 					{
 						"idle": "query.is_on_ground"
 					},
@@ -38,8 +44,7 @@
 					},
 					{
 						"roar": "variable.has_target"
-					},
-					"look_at_target"
+					}
 				]
 			}
 		}

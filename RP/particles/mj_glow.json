@@ -1,0 +1,73 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "minespawn:mj_glow",
+			"basic_render_parameters": {
+				"material": "particles_add",
+				"texture": "textures/entity/atomic_breath"
+			}
+		},
+		"components": {
+			"minecraft:emitter_local_space": {
+				"position": true,
+				"rotation": true,
+				"velocity": true
+			},
+			"minecraft:emitter_rate_steady": {
+				"spawn_rate": 4,
+				"max_particles": 4
+			},
+			"minecraft:emitter_lifetime_looping": {
+				"active_time": 1
+			},
+			"minecraft:emitter_shape_sphere": {
+				"offset": [
+					0,
+					10,
+					0
+				],
+				"radius": 1,
+				"direction": "inwards"
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "Math.random(1, 1.4)"
+			},
+			"minecraft:particle_initial_speed": 0,
+			"minecraft:particle_motion_dynamic": {},
+			"minecraft:particle_kill_plane": [
+				0,
+				2,
+				0,
+				0
+			],
+			"minecraft:particle_appearance_billboard": {
+				"size": [
+					30,
+					30
+				],
+				"facing_camera_mode": "lookat_xyz",
+				"uv": {
+					"texture_width": 32,
+					"texture_height": 32,
+					"uv": [
+						0,
+						0
+					],
+					"uv_size": [
+						32,
+						32
+					]
+				}
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": [
+					0.83137,
+					0.66667,
+					1,
+					0.10196
+				]
+			}
+		}
+	}
+}

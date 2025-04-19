@@ -57,14 +57,17 @@ export function enchantItems(player) {
         player.runCommand('enchant @s unbreaking 3');
         player.runCommand('enchant @s aqua_affinity');
         player.runCommand('enchant @s respiration 2');
+        player.runCommand('enchant @s mending');
     } else if (mainhandItem?.typeId === 'minespawn:royal_chestplate' ||
         mainhandItem?.typeId === 'minespawn:royal_leggings') {
         player.runCommand('enchant @s protection 4');
         player.runCommand('enchant @s unbreaking 3');
+        player.runCommand('enchant @s mending');
     } else if (mainhandItem?.typeId === 'minespawn:royal_boots') {
         player.runCommand('enchant @s protection 4');
         player.runCommand('enchant @s unbreaking 3');
         player.runCommand('enchant @s feather_falling 4');
+        player.runCommand('enchant @s mending');
 
     }
 }

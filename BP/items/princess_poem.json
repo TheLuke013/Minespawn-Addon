@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "minespawn:princess_poem",
+			"menu_category": {
+				"category": "none"
+			}
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "p_poem.title"
+			},
+			"minecraft:cooldown": {
+				"category": "princess_poem",
+				"duration": 100.0
+			},
+			"minecraft:use_modifiers": {
+				"use_duration": 999999
+			},
+			"minecraft:food": {
+				"can_always_eat": true
+			},
+			"minecraft:icon": "book_written",
+			"minecraft:max_stack_size": 1,
+			"minecraft:stacked_by_data": true,
+			"minecraft:interact_button": true,
+			"minecraft:hover_text_color": "aqua"
+		}
+	}
+}

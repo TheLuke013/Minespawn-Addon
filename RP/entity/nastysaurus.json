@@ -34,7 +34,7 @@
 						"idle": "query.modified_move_speed <= 0.01"
 					},
 					{
-						"walk": "query.modified_move_speed >= 0.25 && query.modified_move_speed < 0.5"
+						"walk": "query.modified_move_speed >= 0.1 && query.modified_move_speed < 0.5"
 					},
 					{
 						"run_attack": "query.modified_move_speed >= 0.5"

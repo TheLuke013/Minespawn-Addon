@@ -1,6 +1,6 @@
-import { world } from '@minecraft/server';
+import { world, system } from '@minecraft/server';
 import * as Vector3 from './utils/vector3.js';
-import { getPlayerMainhandItem } from './utils/utils.js';
+import { getPlayerMainhandItem, shootEntityFromPlayer } from './utils/utils.js';
 import { bigWeapons } from './main.js';
 
 world.afterEvents.entityHitEntity.subscribe(e => {
@@ -21,6 +21,11 @@ export function mobjiraBehaviours(mobjira, player) {
         const direction = Vector3.fromRotation(mobjira.getRotation()).multiply(5);
         mobjira.applyImpulse({ x: direction.x, y: direction.y, z: direction.z });
         mobjira.removeTag('mobjira_is_jumping');
+    } else if (mobjira.getTags().includes('ready_for_breath')) {
+        world.playSound('mob.mobjira.atomic_breath', player.location, {
+            volume: 1000
+        });
+        mobjira.removeTag('ready_for_breath');
     }
 
     //regeneration

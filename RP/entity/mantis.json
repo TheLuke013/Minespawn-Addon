@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "minespawn:mantis",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/mantis"
+			},
+			"geometry": {
+				"default": "geometry.mantis"
+			},
+			"render_controllers": [
+				"controller.render.mantis"
+			],
+			"spawn_egg": {
+				"texture": "minespawn_mantis_spawn_egg"
+			},
+			"sound_effects": {
+				"flap": "mob.buzzing"
+			},
+			"animations": {
+				"fly": "animation.mantis.wings_fast"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"fly": "query.modified_move_speed > 0.2"
+					}
+				]
+			}
+		}
+	}
+}

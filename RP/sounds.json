@@ -86,6 +86,13 @@
 						"pitch": 0.7
 					}
 				}
+			},
+			"minespawn:mantis": {
+				"volume": 1.0,
+				"pitch": 1.0,
+				"events": {
+					"ambient": "mob.buzzing"
+				}
 			}
 		}
 	}

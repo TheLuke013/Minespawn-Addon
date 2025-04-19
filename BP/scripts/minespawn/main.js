@@ -19,6 +19,12 @@ export const giantMonsters = [
     'minespawn:mobjira'
 ]
 
+world.afterEvents.itemUse.subscribe(e => {
+    if (e.itemStack.typeId === 'minespawn:princess_poem') {
+        e.source.runCommand('tellraw @a {"rawtext":[{"translate":"p_poem.content"}]}');
+    }
+})
+
 system.runInterval(() => {
     const players = world.getPlayers();
 

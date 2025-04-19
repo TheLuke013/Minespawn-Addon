@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.mobjira": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"glow": "query.skin_id == 7"
+						}
+					]
+				},
+				"glow": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 7"
+						}
+					],
+					"particle_effects": [
+						{
+							"effect": "glow"
+						}
+					]
+				}
+			}
+		}
+	}
+}

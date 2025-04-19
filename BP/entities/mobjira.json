@@ -198,6 +198,41 @@
 						12
 					],
 					"time_down_event": {
+						"event": "minespawn:atomic_shock",
+						"target": "self"
+					}
+				}
+			},
+			"minespawn:atomic_shock": {
+				"minecraft:skin_id": {
+					"value": 9
+				},
+				"minecraft:behavior.knockback_roar": {
+					"priority": 1,
+					"attack_time": 0.0,
+					"cooldown_time": 0,
+					"duration": 1,
+					"knockback_damage": 175,
+					"knockback_range": 100,
+					"knockback_horizontal_strength": 200,
+					"damage_filters": {
+						"all_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"operator": "!=",
+								"value": "mobjira"
+							}
+						]
+					}
+				},
+				"minecraft:timer": {
+					"looping": true,
+					"time": [
+						2,
+						2
+					],
+					"time_down_event": {
 						"event": "minespawn:atomic_attack",
 						"target": "self"
 					}
@@ -206,6 +241,19 @@
 			"minespawn:breath_atomic_attack": {
 				"minecraft:skin_id": {
 					"value": 8
+				},
+				"minecraft:behavior.ranged_attack": {
+					"priority": 1,
+					"burst_shots": 50,
+					"burst_interval": 0.1,
+					"attack_interval_max": 1,
+					"attack_interval_min": 1,
+					"attack_radius": 300,
+					"charge_shoot_trigger": 1,
+					"charge_charged_trigger": 0
+				},
+				"minecraft:shooter": {
+					"def": "minespawn:mj_atomic_breath"
 				},
 				"minecraft:is_charged": {}
 			}
@@ -295,7 +343,7 @@
 				]
 			},
 			"minecraft:health": {
-				"value": 25000
+				"value": 5000
 			},
 			"minecraft:type_family": {
 				"family": [
@@ -352,7 +400,7 @@
 				"priority": 2
 			},
 			"minecraft:follow_range": {
-				"value": 300
+				"value": 1024
 			},
 			"minecraft:conditional_bandwidth_optimization": {}
 		},
@@ -392,6 +440,24 @@
 				},
 				"remove": {
 					"component_groups": [
+						"minespawn:atomic_shock"
+					]
+				},
+				"queue_command": {
+					"target": "self",
+					"command": [
+						"tag @s add atomic_breath"
+					]
+				}
+			},
+			"minespawn:atomic_shock": {
+				"add": {
+					"component_groups": [
+						"minespawn:atomic_shock"
+					]
+				},
+				"remove": {
+					"component_groups": [
 						"minespawn:prepare_for_breath_atomic"
 					]
 				}
@@ -414,7 +480,6 @@
 				"queue_command": {
 					"target": "self",
 					"command": [
-						"execute as @e[type=player, r=100] at @s run playsound mob.mobjira.atomic_breath @s ~~~ 100 1 100",
 						"tag @s add ready_for_breath"
 					]
 				}

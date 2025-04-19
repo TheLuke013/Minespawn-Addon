@@ -1,5 +1,5 @@
 pack.name=Minespawn Addon RP (V1.0)
-pack.description=A addon remake of Orespawn
+pack.description=Adds lots of crazy and bizarre stuff to your world!\nAddon Made by TheLuke013
 
 item.minespawn:big_bertha_handle=Big Bertha Handle
 item.minespawn:big_bertha_guard=Big Bertha Guard
@@ -68,16 +68,19 @@ item.spawn_egg.entity.minespawn:golden_apple_cow.name=Spawn Golden Apple Cow
 item.spawn_egg.entity.minespawn:apple_cow.name=Spawn Apple Cow
 item.spawn_egg.entity.minespawn:mobjira.name=Spawn Mobjira
 item.spawn_egg.entity.minespawn:nastysaurus.name=Spawn Nastysaurus
+item.spawn_egg.entity.minespawn:mantis.name=Spawn Mantis
 
 entity.minespawn:golden_apple_cow.name=Golden Apple Cow
 entity.minespawn:enchanted_golden_apple_cow.name=Enchanted Golden Apple Cow
 entity.minespawn:apple_cow.name=Apple Cow
 entity.minespawn:mobjira.name=Mobjira
+entity.minespawn:nastysaurus.name=Nastysaurus
+entity.minespawn:mantis.name=Mantis
 
 entity.minespawn:mj_fireball.name=Mobjira Fireball
 entity.minespawn:water_rocket.name=Water Rocket
 entity.minespawn:fire_rocket.name=Fire Rocket
-entity.minespawn:nastysaurus.name=Nastysaurus
+entity.minespawn:mj_atomic_breath.name=Mobjira Atomic Breath
 
 entity.minespawn:dummy.name=Dummy
 entity.minespawn:bap.name=a player with Battle Axe
@@ -93,3 +96,6 @@ tile.minespawn:deepslate_amethyst_ore.name=Deepslate Amethyst Ore
 tile.minespawn:deepslate_ruby_ore.name=Deepslate Ruby Ore
 tile.minespawn:amethyst_block.name=Amethyst Block
 tile.minespawn:ruby_block.name=Ruby Block
+
+p_poem.title=Princess Poem
+p_poem.content=§5Princess's Poem\n\n\n§7That young woman who walks forever through the valley\nKnown as a princess\nSaid to be a remnant of an ancient kingdom\nThat never truly existed.\nAlways wandering through the four corners of the earth\nPerhaps fleeing, or hiding something.\nOne day, a demon corrupts her\nMakes her believe she is a queen\nShe forges weapons and armor for war\nHer mind crumbles with every sunrise and sunset.\nThen, something terrible comes to pass\nThe one known as a princess, who thinks herself a queen\nIs no longer safe.\nFor without a kingdom, there are no castles or walls\nAnd there is no princess, nor queen\nAnd so the poor princess is found dead\nDead by her own unknown madness.\n\n§3Written by an old peasant

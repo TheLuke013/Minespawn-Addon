@@ -89,7 +89,10 @@
 				"default": {
 					"transitions": [
 						{
-							"atomic": "query.health <= 4000 && query.health != 0 && query.skin_id != 7 && query.skin_id != 8"
+							"atomic": "query.health <= 4000 && query.health != 0 && query.skin_id < 7"
+						},
+						{
+							"atomic_shock": "query.skin_id == 9"
 						}
 					]
 				},
@@ -100,10 +103,22 @@
 						}
 					],
 					"on_entry": [
-						"/say Breath Atomic",
+						"/playsound mob.mobjira.atomic_breath @p[r=100] ~~~ 100 1 100",
 						"/tag @s remove ready_for_breath",
 						"/event entity @s minespawn:prepare_for_breath_atomic",
 						"/execute as @e[rm=0,r=100,c=1,family=!mobjira] at @s run camerashake add @p[r=100] 1 11 positional"
+					]
+				},
+				"atomic_shock": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 9"
+						}
+					],
+					"on_entry": [
+						"/particle minespawn:atomic_shock ~~~",
+						"/function mobjira_ultimate_destroy",
+						"/summon minespawn:mj_atomic_explosion ~~~"
 					]
 				}
 			}

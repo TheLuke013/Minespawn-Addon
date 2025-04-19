@@ -1,0 +1,30 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mantis.wings_fast": {
+			"loop": true,
+			"animation_length": 0.224,
+			"bones": {
+				"rightwing": {
+					"rotation": [
+						0,
+						"-50 + Math.cos(query.life_time * 180*6) * 35",
+						0
+					]
+				},
+				"leftwing": {
+					"rotation": [
+						0,
+						"50 + Math.cos(query.life_time * 180*6) * -35",
+						0
+					]
+				}
+			},
+			"sound_effects": {
+				"0.2222": {
+					"effect": "flap"
+				}
+			}
+		}
+	}
+}

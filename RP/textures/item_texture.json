@@ -175,6 +175,9 @@
 		},
 		"minespawn_experience_sword": {
 			"textures": "textures/items/weapons/experience_sword"
+		},
+		"minespawn_mantis_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/mantis_spawn_egg"
 		}
 	}
 }

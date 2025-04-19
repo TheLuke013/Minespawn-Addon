@@ -1,6 +1,24 @@
 {
 	"format_version": "1.14.0",
 	"sound_definitions": {
+		"weapon.weapon_swoosh": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/weapon/weapon_swoosh"
+			]
+		},
+		"weapon.chainsaw": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/weapon/chainsaw"
+			]
+		},
+		"gun.blaster_fire": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/guns/blaster_fire"
+			]
+		},
 		"mob.mobjira.step": {
 			"category": "neutral",
 			"max_distance": 150,
@@ -47,24 +65,6 @@
 				"sounds/mob/mobjira/atomic_breath"
 			]
 		},
-		"weapon.weapon_swoosh": {
-			"category": "neutral",
-			"sounds": [
-				"sounds/weapon/weapon_swoosh"
-			]
-		},
-		"weapon.chainsaw": {
-			"category": "neutral",
-			"sounds": [
-				"sounds/weapon/chainsaw"
-			]
-		},
-		"gun.blaster_fire": {
-			"category": "neutral",
-			"sounds": [
-				"sounds/guns/blaster_fire"
-			]
-		},
 		"mob.dino.step": {
 			"category": "neutral",
 			"sounds": [
@@ -90,6 +90,12 @@
 			"category": "neutral",
 			"sounds": [
 				"sounds/mob/dino/hurt"
+			]
+		},
+		"mob.buzzing": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mob/buzzing"
 			]
 		}
 	}

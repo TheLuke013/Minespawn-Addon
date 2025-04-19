@@ -66,6 +66,7 @@
 				"is_pushable_by_piston": true
 			},
 			"minecraft:nameable": {},
+			"minecraft:is_hidden_when_invisible": {},
 			"minecraft:health": {
 				"value": 625
 			},
@@ -174,7 +175,7 @@
 				"priority": 2
 			},
 			"minecraft:follow_range": {
-				"value": 35
+				"value": 100
 			},
 			"minecraft:conditional_bandwidth_optimization": {},
 			"minecraft:damage_sensor": {

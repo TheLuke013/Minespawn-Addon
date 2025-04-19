@@ -1,4 +1,4 @@
-pack.description=Um addon remake de Orespawn
+pack.description=Adiciona varias coisas loucas e bizarras ao seu mundo!\nAddon Feito por TheLuke013
 
 item.minespawn:big_bertha=Big Bertha Sword\n\n§9+500 Dano de Ataque
 item.minespawn:royal_guardian=Royal Guardian Sword\n\n§9+750 Dano de Ataque
@@ -10,3 +10,6 @@ entity.minespawn:bbp.name=um jogador com Big Bertha
 entity.minespawn:qba.name=um jogador com Queen Battle Axe
 entity.minespawn:rgp.name=um jogador com Royal Guardian
 entity.minespawn:sbp.name=um jogador com Stelix Bertha
+
+p_poem.title=Poema da Princesa
+p_poem.content=§5Poema da princesa\n\n\n§7Aquela moça que caminha sempre pelo vale\nConhecida como princesa\nQue se diz resquício de um antigo reino\nQue nunca existiu.\nSempre vagando pelos 4 cantos da terra\nTalvez fugindo ou escondendo algo.\nUm dia um demônio a corrompe\nA faz pensar que é rainha\nCria armas e armadura para guerra\nSua mente sucumbir a cada dia que nasce e morre.\nUm dia algo terrível acontece\nA conhecida como princesa que se acha rainha\nNão está a salva.\nPois, sem reino, não há castelo ou muros\nE não há princesa ou rainha\nE enfim a pobre princesa se encontra morta\nMorta pela sua desconhecida loucura.\n\n§3Escrito por um velho camponês
