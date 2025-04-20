@@ -1,4 +1,4 @@
-pack.name=Minespawn Addon RP (V1.0)
+pack.name=Bizarre Lands Addon RP (V1.0)
 pack.description=Adds lots of crazy and bizarre stuff to your world!\nAddon Made by TheLuke013
 
 item.minespawn:big_bertha_handle=Big Bertha Handle
@@ -8,8 +8,10 @@ item.minespawn:big_bertha_blade=Big Bertha Blade
 item.minespawn:big_bertha=Big Bertha Sword\n\n§9+500 Attack Damage
 item.minespawn:royal_guardian=Royal Guardian Sword\n\n§9+750 Attack Damage
 item.minespawn:stelix_bertha=Stelix Bertha Sword\n\n§9+580 Attack Damage
-item.minespawn:queen_battle_axe=Queen Ghidorah Battle Axe\n\n§4666 §9Attack Damage
+item.minespawn:queen_battle_axe=Queen Battle Axe\n\n§4666 §9Attack Damage
+item.minespawn:battle_axe=Big Battle Axe
 item.minespawn:ultimate_chainsaw=Ultimate Chainsaw
+item.minespawn:ultimate_hammer=Ultimate Hammer
 item.minespawn:royal_armor_stand=Ultimate Royal Armor Stand
 
 item.minespawn:waterzooka=Water Blaster
@@ -40,6 +42,7 @@ item.minespawn:royal_helmet=Royal Guardian Helmet
 item.minespawn:royal_chestplate=Royal Guardian Chestplate
 item.minespawn:royal_leggings=Royal Guardian Leggings
 item.minespawn:royal_boots=Royal Guardian Boots
+item.minespawn:royal_shield=Royal Shield
 
 item.minespawn:extreme_torch=Extreme Torch
 item.minespawn:miners_dream=Miner's Dream
@@ -65,6 +68,7 @@ item.minespawn:ruby_pickaxe=Ruby Pickaxe
 item.minespawn:ruby_shovel=Ruby Shovel
 
 item.spawn_egg.entity.minespawn:golden_apple_cow.name=Spawn Golden Apple Cow
+item.spawn_egg.entity.minespawn:enchanted_gac.name=Spawn Enchanted Golden Apple Cow
 item.spawn_egg.entity.minespawn:apple_cow.name=Spawn Apple Cow
 item.spawn_egg.entity.minespawn:mobjira.name=Spawn Mobjira
 item.spawn_egg.entity.minespawn:nastysaurus.name=Spawn Nastysaurus
