@@ -11,7 +11,7 @@
 		"components": {
 			"minecraft:icon": "minespawn_golden_apple_cow_spawn_egg",
 			"minecraft:display_name": {
-				"value": "Spawn Enchanted Golden Apple Cow"
+				"value": "item.spawn_egg.entity.minespawn:enchanted_gac.name"
 			},
 			"minecraft:glint": true,
 			"minecraft:entity_placer": {

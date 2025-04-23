@@ -23,9 +23,6 @@
 			"minecraft:damage": {
 				"value": 86
 			},
-			"minecraft:display_name": {
-				"value": "Ultimate Hammer"
-			},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [

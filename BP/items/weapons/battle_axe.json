@@ -23,9 +23,6 @@
 			"minecraft:damage": {
 				"value": 50
 			},
-			"minecraft:display_name": {
-				"value": "Battle Axe"
-			},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [

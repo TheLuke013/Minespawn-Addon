@@ -1,6 +1,6 @@
 import { world } from '@minecraft/server';
 import { giantMonsters } from './main.js';
-import { getPlayerMainhandItem, shootEntityFromPlayer } from './utils/utils.js';
+import { getPlayerSlotItem, shootEntityFromPlayer } from './utils/utils.js';
 
 export function flamingAttack(hitEntity, itemStack) {
     if (hitEntity.typeId != 'minespawn:mobjira') {
@@ -74,7 +74,7 @@ world.afterEvents.projectileHitEntity.subscribe(e => {
 
         if (!ownerPlayer) return;
 
-        const mainhandItem = getPlayerMainhandItem(ownerPlayer);
+        const mainhandItem = getPlayerSlotItem(ownerPlayer);
         const weaponsFlameFilter = [
             'minespawn:battle_axe',
             'minespawn:royal_guardian'

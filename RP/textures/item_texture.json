@@ -178,6 +178,9 @@
 		},
 		"minespawn_mantis_spawn_egg": {
 			"textures": "textures/items/spawn_eggs/mantis_spawn_egg"
+		},
+		"minespawn_royal_shield": {
+			"textures": "textures/items/royal_shield"
 		}
 	}
 }

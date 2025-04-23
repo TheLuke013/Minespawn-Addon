@@ -1,7 +1,7 @@
-import { getPlayerMainhandItem } from './utils/utils.js';
+import { getPlayerSlotItem } from './utils/utils.js';
 
 export function enchantItems(player) {
-    const mainhandItem = getPlayerMainhandItem(player);
+    const mainhandItem = getPlayerSlotItem(player);
     //BIG BERTHA | STELIX BERTHA
     if (mainhandItem?.typeId === 'minespawn:big_bertha' ||
         mainhandItem?.typeId === 'minespawn:stelix_bertha') {
@@ -12,6 +12,11 @@ export function enchantItems(player) {
     //ROYAL GUARDIAN
     else if (mainhandItem?.typeId === 'minespawn:royal_guardian') {
         player.runCommand('enchant @s unbreaking 3');
+    }
+    //ROYAL SHIELD
+    else if (mainhandItem?.typeId === 'minespawn:royal_shield') {
+        player.runCommand('enchant @s unbreaking 3');
+        player.runCommand('enchant @s mending');
     }
     //BATTLE AXE
     else if (mainhandItem?.typeId === 'minespawn:battle_axe') {

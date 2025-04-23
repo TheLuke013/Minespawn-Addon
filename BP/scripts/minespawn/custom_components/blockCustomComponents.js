@@ -1,5 +1,5 @@
 import { world, MolangVariableMap } from '@minecraft/server';
-import { replaceBlocks, getPlayerMainhandItem, randomInt } from '../utils/utils.js';
+import { replaceBlocks, getPlayerSlotItem, randomInt } from '../utils/utils.js';
 
 function getExtremeTorchLightLocations(e) {
     return [
@@ -61,7 +61,7 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
 
     initEvent.blockComponentRegistry.registerCustomComponent('minespawn:ore_xp_reward', {
         onPlayerDestroy: e => {
-            const mainhandItem = getPlayerMainhandItem(e.player);
+            const mainhandItem = getPlayerSlotItem(e.player);
 
             const pickaxes = [
                 'minecraft:iron_pickaxe', 'minecraft:golden_pickaxe', 'minecraft:diamond_pickaxe',

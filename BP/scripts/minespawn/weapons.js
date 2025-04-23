@@ -1,5 +1,5 @@
 import { world } from '@minecraft/server';
-import { getPlayerMainhandItem } from './utils/utils.js';
+import { getPlayerSlotItem } from './utils/utils.js';
 import { detectFullArmor } from './armors.js';
 
 export function ultimateHammerAttack(player, attackLoc) {
@@ -61,7 +61,7 @@ world.afterEvents.entityHitBlock.subscribe(e => {
 
     //ultimate hammer explosion on hit block
     if (entity.typeId === 'minecraft:player') {
-        const mainhandItem = getPlayerMainhandItem(entity);
+        const mainhandItem = getPlayerSlotItem(entity);
 
         if (mainhandItem?.typeId === 'minespawn:ultimate_hammer') {
             ultimateHammerAttack(entity, block.location);
@@ -74,7 +74,7 @@ world.afterEvents.entityHitEntity.subscribe(e => {
     if (!(player.typeId === 'minecraft:player')) return;
 
     //summon more xp when player hits with enchanted emerald armor and sword
-    if (detectFullArmor(player, 'minespawn:experience') && getPlayerMainhandItem(player)?.typeId === 'minespawn:experience_sword') {
+    if (detectFullArmor(player, 'minespawn:experience') && getPlayerSlotItem(player)?.typeId === 'minespawn:experience_sword') {
         for (let i = 0; i < 5; i++) { player.dimension.spawnEntity('minecraft:xp_orb', player.location); }
     }
 

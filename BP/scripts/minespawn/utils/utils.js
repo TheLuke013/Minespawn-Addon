@@ -15,9 +15,9 @@ export function shootEntityFromPlayer(entityId, player) {
     projectile.addTag(`player:${player.name}`);
 }
 
-export function getPlayerMainhandItem(player) {
+export function getPlayerSlotItem(player, slot = 'Mainhand') {
     const equippable = player.getComponent('equippable');
-    return equippable.getEquipment('Mainhand');
+    return equippable.getEquipment(slot);
 }
 
 export function replaceBlocks(locations, replaceBlock, block, dimension) {

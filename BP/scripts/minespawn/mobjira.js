@@ -1,13 +1,13 @@
 import { world, system } from '@minecraft/server';
 import * as Vector3 from './utils/vector3.js';
-import { getPlayerMainhandItem, shootEntityFromPlayer } from './utils/utils.js';
+import { getPlayerSlotItem } from './utils/utils.js';
 import { bigWeapons } from './main.js';
 
 world.afterEvents.entityHitEntity.subscribe(e => {
     if (e.damagingEntity.typeId === 'minecraft:player' && e.hitEntity.typeId === 'minespawn:mobjira') {
         const player = e.damagingEntity;
         const mobjira = e.hitEntity;
-        const mainhandItem = getPlayerMainhandItem(player);
+        const mainhandItem = getPlayerSlotItem(player);
 
         if (bigWeapons.includes(mainhandItem?.typeId)) {
             mobjira.runCommand('event entity @s minespawn:add_kbr');

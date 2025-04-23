@@ -1,0 +1,24 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "minespawn:royal_horse",
+			"materials": {
+				"default": "horse"
+			},
+			"textures": {
+				"default": "textures/entity/horse/horse_white"
+			},
+			"geometry": {
+				"default": "geometry.horse"
+			},
+			"render_controllers": [
+				"controller.render.royal_horse"
+			],
+			"spawn_egg": {
+				"texture": "spawn_egg",
+				"texture_index": 23
+			}
+		}
+	}
+}

@@ -93,6 +93,66 @@
 				"events": {
 					"ambient": "mob.buzzing"
 				}
+			},
+			"minespawn:royal_horse": {
+				"events": {
+					"add.chest": {
+						"pitch": [
+							0.80,
+							1.20
+						],
+						"sound": "mob.horse.armor",
+						"volume": 1.0
+					},
+					"ambient": "mob.horse.idle",
+					"armor": {
+						"pitch": 1.0,
+						"sound": "mob.horse.armor",
+						"volume": 0.60
+					},
+					"breathe": {
+						"pitch": 1.0,
+						"sound": "mob.horse.breathe",
+						"volume": 0.70
+					},
+					"death": "mob.horse.death",
+					"eat": {
+						"pitch": [
+							0.80,
+							1.20
+						],
+						"sound": "mob.horse.eat",
+						"volume": [
+							0.50,
+							1.50
+						]
+					},
+					"hurt": "mob.horse.hit",
+					"jump": {
+						"pitch": 1.0,
+						"sound": "mob.horse.jump",
+						"volume": 0.40
+					},
+					"land": {
+						"pitch": 1.0,
+						"sound": "mob.horse.land",
+						"volume": 0.40
+					},
+					"mad": "mob.horse.angry",
+					"saddle": {
+						"pitch": 1.0,
+						"sound": "mob.horse.leather",
+						"volume": 0.60
+					}
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"variants": {
+					"key": null
+				},
+				"volume": 0.80
 			}
 		}
 	}

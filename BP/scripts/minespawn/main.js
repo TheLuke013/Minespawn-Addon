@@ -3,6 +3,7 @@ import { enchantItems } from './item_enchantments.js';
 import { royalArmorEffects } from './armors.js';
 import { mobjiraBehaviours } from './mobjira.js';
 import { longRangeAttack } from './big_weapons_attack.js';
+import { shieldSystem } from './shield.js';;
 
 import './custom_components/itemCustomComponents.js';
 import './custom_components/blockCustomComponents.js';
@@ -36,6 +37,8 @@ system.runInterval(() => {
             }
         })
 
+        shieldSystem(player);
+
         //self-enchantment of items
         enchantItems(player);
         royalArmorEffects(player);
@@ -53,4 +56,4 @@ system.runInterval(() => {
             player.removeTag('remove_knockback_resistance');
         }
     })
-});
+}, 1);

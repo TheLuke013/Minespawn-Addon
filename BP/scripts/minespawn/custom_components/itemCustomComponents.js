@@ -1,5 +1,5 @@
 import { world } from '@minecraft/server';
-import { shootEntityFromPlayer, getPlayerMainhandItem, getCardinalDirection } from '../utils/utils.js';
+import { shootEntityFromPlayer, getPlayerSlotItem, getCardinalDirection } from '../utils/utils.js';
 import { ultimateChainsaw, ultimateHammerAttack } from '../weapons.js';
 import { itemDurability } from '../item_durability.js';
 import { knockbackAttack, flamingAttack } from '../big_weapons_attack.js';
@@ -60,7 +60,7 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
         onUse: e => {
             if (e.source.typeId === 'minecraft:player' && e.itemStack.getTags().includes('minespawn:is_gun')) {
 
-                const mainhandItem = getPlayerMainhandItem(e.source);
+                const mainhandItem = getPlayerSlotItem(e.source);
                 if (mainhandItem?.typeId === 'minespawn:waterzooka') {
                     shootEntityFromPlayer('minespawn:water_rocket', e.source);
                 } else if (mainhandItem?.typeId === 'minespawn:firezooka') {

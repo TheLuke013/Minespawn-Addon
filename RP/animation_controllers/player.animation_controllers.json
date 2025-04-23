@@ -252,10 +252,10 @@
 							"attack.rotations": "variable.attack_time >= 0.0"
 						},
 						{
-							"shield_block_main_hand": "query.blocking && query.get_equipped_item_name('off_hand') != 'shield' && query.get_equipped_item_name == 'shield'"
+							"shield_block_main_hand": "(query.blocking && query.get_equipped_item_name('off_hand') != 'shield' && query.get_equipped_item_name == 'shield') || (query.blocking && query.get_equipped_item_name('off_hand') != 'royal_shield' && query.get_equipped_item_name == 'royal_shield')"
 						},
 						{
-							"shield_block_off_hand": "query.blocking && query.get_equipped_item_name('off_hand') == 'shield'"
+							"shield_block_off_hand": "(query.blocking && query.get_equipped_item_name('off_hand') == 'shield') || (query.blocking && query.get_equipped_item_name('off_hand') == 'royal_shield')"
 						},
 						{
 							"crossbow_controller": "query.get_equipped_item_name == 'crossbow'"
