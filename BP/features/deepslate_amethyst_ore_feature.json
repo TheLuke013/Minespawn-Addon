@@ -2,13 +2,13 @@
 	"format_version": "1.20.80",
 	"minecraft:ore_feature": {
 		"description": {
-			"identifier": "minespawn:deepslate_amethyst_ore_feature"
+			"identifier": "twisted:deepslate_amethyst_ore_feature"
 		},
 		"count": 4,
 		"replace_rules": [
 			{
 				"places_block": {
-					"name": "minespawn:deepslate_amethyst_ore",
+					"name": "twisted:deepslate_amethyst_ore",
 					"states": {}
 				},
 				"may_replace": [

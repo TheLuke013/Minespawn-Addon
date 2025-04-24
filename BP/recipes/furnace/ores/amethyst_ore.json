@@ -2,13 +2,13 @@
 	"format_version": "1.21.0",
 	"minecraft:recipe_furnace": {
 		"description": {
-			"identifier": "minespawn:amethyst_ore"
+			"identifier": "twisted:amethyst_ore"
 		},
 		"tags": [
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "minespawn:amethyst_ore",
-		"output": "minespawn:amethyst"
+		"input": "twisted:amethyst_ore",
+		"output": "twisted:amethyst"
 	}
 }

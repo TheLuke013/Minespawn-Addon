@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:royal_boots",
+			"identifier": "twisted:royal_boots",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.boots"
@@ -21,7 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "minespawn_royal_boots",
+			"minecraft:icon": "twisted:royal_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 8
@@ -30,7 +30,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"minespawn:royal_boots"
+							"twisted:royal_boots"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}

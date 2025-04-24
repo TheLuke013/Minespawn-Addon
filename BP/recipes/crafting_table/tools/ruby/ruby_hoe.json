@@ -1,8 +1,8 @@
-{
+	{
     "format_version": "1.20.80",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "minespawn:ruby_hoe"
+            "identifier": "twisted:ruby_hoe"
         },
         "tags": [
             "crafting_table"
@@ -14,18 +14,18 @@
         ],
         "key": {
             "A": {
-                "item": "minespawn:ruby"
+                "item": "twisted:ruby"
             },
             "B": {
                 "item": "minecraft:stick"
             }
         },
         "result": {
-            "item": "minespawn:ruby_hoe"
+            "item": "twisted:ruby_hoe"
         },
         "unlock": [
             {
-                "item": "minespawn:ruby"
+                "item": "twisted:ruby"
             }
         ]
     }

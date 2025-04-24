@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:princess_poem",
+			"identifier": "twisted:princess_poem",
 			"menu_category": {
 				"category": "none"
 			}

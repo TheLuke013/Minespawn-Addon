@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "minespawn:big_bertha"
+			"identifier": "twisted:big_bertha"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,21 +14,21 @@
 		],
 		"key": {
 			"h": {
-				"item": "minespawn:big_bertha_handle"
+				"item": "twisted:big_bertha_handle"
 			},
 			"g": {
-				"item": "minespawn:big_bertha_guard"
+				"item": "twisted:big_bertha_guard"
 			},
 			"b": {
-				"item": "minespawn:big_bertha_blade"
+				"item": "twisted:big_bertha_blade"
 			}
 		},
 		"result": {
-			"item": "minespawn:big_bertha"
+			"item": "twisted:big_bertha"
 		},
 		"unlock": [
 			{
-				"item": "minespawn:big_bertha_handle"
+				"item": "twisted:big_bertha_handle"
 			}
 		]
 	}

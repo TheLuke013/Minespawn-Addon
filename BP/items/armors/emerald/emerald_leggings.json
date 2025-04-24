@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:emerald_leggings",
+			"identifier": "twisted:emerald_leggings",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.leggings"
@@ -21,7 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "minespawn_emerald_leggings",
+			"minecraft:icon": "twisted:emerald_leggings",
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs",
 				"protection": 6
@@ -36,7 +36,7 @@
 					},
 					{
 						"items": [
-							"minespawn:emerald_leggings"
+							"twisted:emerald_leggings"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}

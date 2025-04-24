@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:emerald_shovel",
+			"identifier": "twisted:emerald_shovel",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.shovel"
@@ -14,7 +14,7 @@
 			"minecraft:durability": {
 				"max_durability": 1300
 			},
-			"minecraft:icon": "minespawn_emerald_shovel",
+			"minecraft:icon": "twisted:emerald_shovel",
 			"minecraft:damage": 7,
 			"minecraft:enchantable": {
 				"value": 14,
@@ -30,7 +30,7 @@
 					},
 					{
 						"items": [
-							"minespawn:emerald_shovel"
+							"twisted:emerald_shovel"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}
@@ -53,7 +53,7 @@
 				]
 			},
 			"minecraft:custom_components": [
-				"minespawn:durability"
+				"twisted:durability"
 			]
 		}
 	}

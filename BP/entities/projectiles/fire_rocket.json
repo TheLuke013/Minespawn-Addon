@@ -2,14 +2,14 @@
 	"format_version": "1.20.80",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "minespawn:fire_rocket",
+			"identifier": "twisted:fire_rocket",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,
 			"runtime_identifier": "minecraft:snowball"
 		},
 		"component_groups": {
-			"minespawn:hit": {
+			"twisted:hit": {
 				"minecraft:explode": {
 					"fuse_length": 0,
 					"fuse_lit": true,
@@ -40,7 +40,7 @@
 					},
 					"definition_event": {
 						"event_trigger": {
-							"event": "minespawn:hit",
+							"event": "twisted:hit",
 							"target": "self"
 						}
 					}
@@ -64,12 +64,12 @@
 			}
 		},
 		"events": {
-			"minespawn:hit": {
+			"twisted:hit": {
 				"sequence": [
 					{
 						"add": {
 							"component_groups": [
-								"minespawn:hit"
+								"twisted:hit"
 							]
 						}
 					}

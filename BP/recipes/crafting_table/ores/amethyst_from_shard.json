@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "minespawn:amethyst_from_shard"
+            "identifier": "twisted:amethyst_from_shard"
         },
         "tags": [
             "crafting_table"
@@ -18,7 +18,7 @@
             }
         },
         "result": {
-            "item": "minespawn:amethyst"
+            "item": "twisted:amethyst"
         },
         "unlock": [
             {

@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "minespawn:mj_atomic_explosion",
+			"identifier": "twisted:mj_atomic_explosion",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false

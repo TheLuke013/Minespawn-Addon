@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "minespawn:amethyst_hoe"
+            "identifier": "twisted:amethyst_hoe"
         },
         "tags": [
             "crafting_table"
@@ -14,18 +14,18 @@
         ],
         "key": {
             "A": {
-                "item": "minespawn:amethyst"
+                "item": "twisted:amethyst"
             },
             "B": {
                 "item": "minecraft:stick"
             }
         },
         "result": {
-            "item": "minespawn:amethyst_hoe"
+            "item": "twisted:amethyst_hoe"
         },
         "unlock": [
             {
-                "item": "minespawn:amethyst"
+                "item": "twisted:amethyst"
             }
         ]
     }

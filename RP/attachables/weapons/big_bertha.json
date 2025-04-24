@@ -2,7 +2,7 @@
     "format_version": "1.20.0",
     "minecraft:attachable": {
         "description": {
-            "identifier": "minespawn:big_bertha",
+            "identifier": "twisted:big_bertha",
             "materials": {
                 "default": "entity"
             },

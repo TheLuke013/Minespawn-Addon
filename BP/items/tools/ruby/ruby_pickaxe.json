@@ -1,8 +1,8 @@
-{
+	{
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:ruby_pickaxe",
+			"identifier": "twisted:ruby_pickaxe",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.pickaxe"
@@ -14,18 +14,18 @@
 			"minecraft:durability": {
 				"max_durability": 1500
 			},
-			"minecraft:icon": "minespawn_ruby_pickaxe",
+			"minecraft:icon": "twisted:ruby_pickaxe",
 			"minecraft:repairable": {
 				"repair_items": [
 					{
 						"items": [
-							"minespawn:ruby"
+							"twisted:ruby"
 						],
 						"repair_amount": "query.max_durability * 0.25"
 					},
 					{
 						"items": [
-							"minespawn:ruby_pickaxe"
+							"twisted:ruby_pickaxe"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}
@@ -61,7 +61,7 @@
 				]
 			},
 			"minecraft:custom_components": [
-				"minespawn:durability"
+				"twisted:durability"
 			]
 		}
 	}

@@ -2,15 +2,15 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:extreme_torch",
+			"identifier": "twisted:extreme_torch",
 			"menu_category": {
 				"category": "items"
 			}
 		},
 		"components": {
-			"minecraft:icon": "minespawn_extreme_torch",
+			"minecraft:icon": "twisted:extreme_torch",
 			"minecraft:block_placer": {
-				"block": "minespawn:extreme_torch"
+				"block": "twisted:extreme_torch"
 			}
 		}
 	}

@@ -2,8 +2,8 @@
 	"format_version": "1.20.80",
 	"minecraft:feature_rules": {
 		"description": {
-			"identifier": "minespawn:overworld_underground_ruby_ore",
-			"places_feature": "minespawn:ruby_ore_feature"
+			"identifier": "twisted:overworld_underground_ruby_ore",
+			"places_feature": "twisted:ruby_ore_feature"
 		},
 		"conditions": {
 			"placement_pass": "underground_pass",

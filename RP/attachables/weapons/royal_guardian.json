@@ -2,7 +2,7 @@
     "format_version": "1.10.0",
     "minecraft:attachable": {
         "description": {
-            "identifier": "minespawn:royal_guardian",
+            "identifier": "twisted:royal_guardian",
             "materials": {
                 "default": "entity"
             },

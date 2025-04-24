@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:ruby_shovel",
+			"identifier": "twisted:ruby_shovel",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.shovel"
@@ -14,7 +14,7 @@
 			"minecraft:durability": {
 				"max_durability": 1500
 			},
-			"minecraft:icon": "minespawn_ruby_shovel",
+			"minecraft:icon": "twisted:ruby_shovel",
 			"minecraft:damage": 7,
 			"minecraft:enchantable": {
 				"value": 14,
@@ -24,13 +24,13 @@
 				"repair_items": [
 					{
 						"items": [
-							"minespawn:ruby"
+							"twisted:ruby"
 						],
 						"repair_amount": "query.max_durability * 0.25"
 					},
 					{
 						"items": [
-							"minespawn:ruby_shovel"
+							"twisted:ruby_shovel"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}
@@ -53,7 +53,7 @@
 				]
 			},
 			"minecraft:custom_components": [
-				"minespawn:durability"
+				"twisted:durability"
 			]
 		}
 	}

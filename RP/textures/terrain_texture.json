@@ -1,28 +1,28 @@
 {
 	"num_mip_levels": 4,
 	"padding": 8,
-	"resource_pack_name": "Minespawn Addon",
+	"resource_pack_name": "Twisted Lands",
 	"texture_name": "atlas.terrain",
 	"texture_data": {
-		"minespawn_extreme_torch": {
+		"twisted:extreme_torch": {
 			"textures": "textures/items/extreme_torch"
 		},
-		"minespawn_amethyst_ore": {
+		"twisted:amethyst_ore": {
 			"textures": "textures/blocks/ores/amethyst_ore"
 		},
-		"minespawn_ruby_ore": {
+		"twisted:ruby_ore": {
 			"textures": "textures/blocks/ores/ruby_ore"
 		},
-		"minespawn_deepslate_amethyst_ore": {
+		"twisted:deepslate_amethyst_ore": {
 			"textures": "textures/blocks/ores/deepslate_amethyst_ore"
 		},
-		"minespawn_deepslate_ruby_ore": {
+		"twisted:deepslate_ruby_ore": {
 			"textures": "textures/blocks/ores/deepslate_ruby_ore"
 		},
-		"minespawn_amethyst_block": {
+		"twisted:amethyst_block": {
 			"textures": "textures/blocks/ores/blocks/amethyst_block"
 		},
-		"minespawn_ruby_block": {
+		"twisted:ruby_block": {
 			"textures": "textures/blocks/ores/blocks/ruby_block"
 		}
 	}

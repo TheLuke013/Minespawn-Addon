@@ -1,12 +1,12 @@
 {
 	"type": "minecraftBedrock",
-	"name": "Minespawn Addon",
-	"namespace": "minespawn",
+	"name": "Twisted Lands",
+	"namespace": "twisted",
 	"authors": [
 		"TheLuke013"
 	],
-	"targetVersion": "1.21.50",
-	"description": "A remake of Orespawn",
+	"targetVersion": "1.21.73",
+	"description": "Add lots of crazy and bizarre stuff to your world! Like creatures, dungeons and dimensions",
 	"experimentalGameplay": {
 		"creationOfCustomBiomes": true,
 		"upcomingCreatorFeatures": true,
@@ -35,7 +35,7 @@
 			[
 				"simpleRewrite",
 				{
-					"packName": "Minespawn Addon"
+					"packName": "Twisted Lands"
 				}
 			]
 		]

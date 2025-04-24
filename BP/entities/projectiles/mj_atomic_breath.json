@@ -2,7 +2,7 @@
 	"format_version": "1.21.40",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "minespawn:mj_atomic_breath",
+			"identifier": "twisted:mj_atomic_breath",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"runtime_identifier": "minecraft:snowball"

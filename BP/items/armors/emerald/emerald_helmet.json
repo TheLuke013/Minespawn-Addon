@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:emerald_helmet",
+			"identifier": "twisted:emerald_helmet",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.helmet"
@@ -21,7 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "minespawn_emerald_helmet",
+			"minecraft:icon": "twisted:emerald_helmet",
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
 				"protection": 3
@@ -36,7 +36,7 @@
 					},
 					{
 						"items": [
-							"minespawn:emerald_helmet"
+							"twisted:emerald_helmet"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}

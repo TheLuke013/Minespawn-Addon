@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "minespawn:mj_fireball",
+			"identifier": "twisted:mj_fireball",
 			"materials": {
 				"default": "fireball"
 			},

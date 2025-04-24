@@ -2,185 +2,188 @@
 	"resource_pack_name": "Minespawn Resource Pack",
 	"texture_name": "atlas.items",
 	"texture_data": {
-		"minespawn_big_bertha": {
+		"twisted:big_bertha": {
 			"textures": "textures/items/weapons/big_bertha/big_bertha"
 		},
-		"minespawn_big_bertha_handle": {
+		"twisted:big_bertha_handle": {
 			"textures": "textures/items/weapons/big_bertha/big_bertha_handle"
 		},
-		"minespawn_big_bertha_guard": {
+		"twisted:big_bertha_guard": {
 			"textures": "textures/items/weapons/big_bertha/big_bertha_guard"
 		},
-		"minespawn_big_bertha_blade": {
+		"twisted:big_bertha_blade": {
 			"textures": "textures/items/weapons/big_bertha/big_bertha_blade"
 		},
-		"minespawn_royal_guardian": {
+		"twisted:royal_guardian": {
 			"textures": "textures/items/weapons/royal_guardian"
 		},
-		"minespawn_stelix_bertha": {
+		"twisted:stelix_bertha": {
 			"textures": "textures/items/weapons/stelix_bertha"
 		},
-		"minespawn_wither_spawn_egg": {
+		"twisted:wither_spawn_egg": {
 			"textures": "textures/items/spawn_eggs/spawn_egg_wither"
 		},
-		"minespawn_ender_dragon_spawn_egg": {
+		"twisted:ender_dragon_spawn_egg": {
 			"textures": "textures/items/spawn_eggs/spawn_egg_ender_dragon"
 		},
-		"minespawn_ultimate_hammer": {
+		"twisted:ultimate_hammer": {
 			"textures": "textures/items/weapons/ultimate_hammer"
 		},
-		"minespawn_amethyst_helmet": {
+		"twisted:amethyst_helmet": {
 			"textures": "textures/items/armors/amethyst/amethyst_helmet"
 		},
-		"minespawn_amethyst_chestplate": {
+		"twisted:amethyst_chestplate": {
 			"textures": "textures/items/armors/amethyst/amethyst_chestplate"
 		},
-		"minespawn_amethyst_leggings": {
+		"twisted:amethyst_leggings": {
 			"textures": "textures/items/armors/amethyst/amethyst_leggings"
 		},
-		"minespawn_amethyst_boots": {
+		"twisted:amethyst_boots": {
 			"textures": "textures/items/armors/amethyst/amethyst_boots"
 		},
-		"minespawn_apple_cow_spawn_egg": {
+		"twisted:apple_cow_spawn_egg": {
 			"textures": "textures/items/spawn_eggs/apple_cow_spawn_egg"
 		},
-		"minespawn_golden_apple_cow_spawn_egg": {
+		"twisted:golden_apple_cow_spawn_egg": {
 			"textures": "textures/items/spawn_eggs/golden_apple_cow_spawn_egg"
 		},
-		"minespawn_mobjira_spawn_egg": {
+		"twisted:mobjira_spawn_egg": {
 			"textures": "textures/items/spawn_eggs/mobjira_spawn_egg"
 		},
-		"minespawn_ruby_helmet": {
+		"twisted:ruby_helmet": {
 			"textures": "textures/items/armors/ruby/ruby_helmet"
 		},
-		"minespawn_ruby_chestplate": {
+		"twisted:ruby_chestplate": {
 			"textures": "textures/items/armors/ruby/ruby_chestplate"
 		},
-		"minespawn_ruby_leggings": {
+		"twisted:ruby_leggings": {
 			"textures": "textures/items/armors/ruby/ruby_leggings"
 		},
-		"minespawn_ruby_boots": {
+		"twisted:ruby_boots": {
 			"textures": "textures/items/armors/ruby/ruby_boots"
 		},
-		"minespawn_emerald_helmet": {
+		"twisted:emerald_helmet": {
 			"textures": "textures/items/armors/emerald/emerald_helmet"
 		},
-		"minespawn_emerald_chestplate": {
+		"twisted:emerald_chestplate": {
 			"textures": "textures/items/armors/emerald/emerald_chestplate"
 		},
-		"minespawn_emerald_leggings": {
+		"twisted:emerald_leggings": {
 			"textures": "textures/items/armors/emerald/emerald_leggings"
 		},
-		"minespawn_emerald_boots": {
+		"twisted:emerald_boots": {
 			"textures": "textures/items/armors/emerald/emerald_boots"
 		},
-		"minespawn_experience_helmet": {
-			"textures": "textures/items/armors/experience/experience_helmet"
+		"twisted:enchanted_emerald_helmet": {
+			"textures": "textures/items/armors/enchanted_emerald/enchanted_emerald_helmet"
 		},
-		"minespawn_experience_chestplate": {
-			"textures": "textures/items/armors/experience/experience_chestplate"
+		"twisted:enchanted_emerald_chestplate": {
+			"textures": "textures/items/armors/enchanted_emerald/enchanted_emerald_chestplate"
 		},
-		"minespawn_experience_leggings": {
-			"textures": "textures/items/armors/experience/experience_leggings"
+		"twisted:enchanted_emerald_leggings": {
+			"textures": "textures/items/armors/enchanted_emerald/enchanted_emerald_leggings"
 		},
-		"minespawn_experience_boots": {
-			"textures": "textures/items/armors/experience/experience_boots"
+		"twisted:enchanted_emerald_boots": {
+			"textures": "textures/items/armors/enchanted_emerald/enchanted_emerald_boots"
 		},
-		"minespawn_battle_axe": {
+		"twisted:battle_axe": {
 			"textures": "textures/items/weapons/battle_axe"
 		},
-		"minespawn_queen_battle_axe": {
+		"twisted:queen_battle_axe": {
 			"textures": "textures/items/weapons/queen_battle_axe"
 		},
-		"minespawn_ultimate_chainsaw": {
+		"twisted:ultimate_chainsaw": {
 			"textures": "textures/items/weapons/ultimate_chainsaw"
 		},
-		"minespawn_waterzooka": {
-			"textures": "textures/items/guns/waterzooka"
+		"twisted:water_blaster": {
+			"textures": "textures/items/blasters/water_blaster"
 		},
-		"minespawn_firezooka": {
-			"textures": "textures/items/guns/firezooka"
+		"twisted:fire_blaster": {
+			"textures": "textures/items/blasters/fire_blaster"
 		},
-		"minespawn_royal_helmet": {
+		"twisted:royal_helmet": {
 			"textures": "textures/items/armors/royal/royal_helmet"
 		},
-		"minespawn_royal_chestplate": {
+		"twisted:royal_chestplate": {
 			"textures": "textures/items/armors/royal/royal_chestplate"
 		},
-		"minespawn_royal_leggings": {
+		"twisted:royal_leggings": {
 			"textures": "textures/items/armors/royal/royal_leggings"
 		},
-		"minespawn_royal_boots": {
+		"twisted:royal_boots": {
 			"textures": "textures/items/armors/royal/royal_boots"
 		},
-		"minespawn_royal_armor_stand": {
+		"twisted:royal_armor_stand": {
 			"textures": "textures/items/armors/royal/royal_armor_stand"
 		},
-		"minespawn_extreme_torch": {
+		"twisted:extreme_torch": {
 			"textures": "textures/items/extreme_torch"
 		},
-		"minespawn_miners_dream": {
+		"twisted:miners_dream": {
 			"textures": "textures/items/miners_dream"
 		},
-		"minespawn_amethyst": {
+		"twisted:amethyst": {
 			"textures": "textures/items/ores/amethyst"
 		},
-		"minespawn_ruby": {
+		"twisted:ruby": {
 			"textures": "textures/items/ores/ruby"
 		},
-		"minespawn_emerald_sword": {
+		"twisted:emerald_sword": {
 			"textures": "textures/items/weapons/emerald_sword"
 		},
-		"minespawn_emerald_axe": {
+		"twisted:emerald_axe": {
 			"textures": "textures/items/tools/emerald/emerald_axe"
 		},
-		"minespawn_emerald_hoe": {
+		"twisted:emerald_hoe": {
 			"textures": "textures/items/tools/emerald/emerald_hoe"
 		},
-		"minespawn_emerald_pickaxe": {
+		"twisted:emerald_pickaxe": {
 			"textures": "textures/items/tools/emerald/emerald_pickaxe"
 		},
-		"minespawn_emerald_shovel": {
+		"twisted:emerald_shovel": {
 			"textures": "textures/items/tools/emerald/emerald_shovel"
 		},
-		"minespawn_ruby_sword": {
+		"twisted:ruby_sword": {
 			"textures": "textures/items/weapons/ruby_sword"
 		},
-		"minespawn_ruby_axe": {
+		"twisted:ruby_axe": {
 			"textures": "textures/items/tools/ruby/ruby_axe"
 		},
-		"minespawn_ruby_hoe": {
+		"twisted:ruby_hoe": {
 			"textures": "textures/items/tools/ruby/ruby_hoe"
 		},
-		"minespawn_ruby_pickaxe": {
+		"twisted:ruby_pickaxe": {
 			"textures": "textures/items/tools/ruby/ruby_pickaxe"
 		},
-		"minespawn_ruby_shovel": {
+		"twisted:ruby_shovel": {
 			"textures": "textures/items/tools/ruby/ruby_shovel"
 		},
-		"minespawn_amethyst_sword": {
+		"twisted:amethyst_sword": {
 			"textures": "textures/items/weapons/amethyst_sword"
 		},
-		"minespawn_amethyst_axe": {
+		"twisted:amethyst_axe": {
 			"textures": "textures/items/tools/amethyst/amethyst_axe"
 		},
-		"minespawn_amethyst_hoe": {
+		"twisted:amethyst_hoe": {
 			"textures": "textures/items/tools/amethyst/amethyst_hoe"
 		},
-		"minespawn_amethyst_pickaxe": {
+		"twisted:amethyst_pickaxe": {
 			"textures": "textures/items/tools/amethyst/amethyst_pickaxe"
 		},
-		"minespawn_amethyst_shovel": {
+		"twisted:amethyst_shovel": {
 			"textures": "textures/items/tools/amethyst/amethyst_shovel"
 		},
-		"minespawn_experience_sword": {
-			"textures": "textures/items/weapons/experience_sword"
+		"twisted:enchanted_emerald_sword": {
+			"textures": "textures/items/weapons/enchanted_emerald_sword"
 		},
-		"minespawn_mantis_spawn_egg": {
+		"twisted:mantis_spawn_egg": {
 			"textures": "textures/items/spawn_eggs/mantis_spawn_egg"
 		},
-		"minespawn_royal_shield": {
+		"twisted:royal_shield": {
 			"textures": "textures/items/royal_shield"
+		},
+		"twisted:royal_horse_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/royal_horse_spawn_egg"
 		}
 	}
 }

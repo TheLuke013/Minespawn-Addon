@@ -12,7 +12,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "minespawn:ruby"
+					"name": "twisted:ruby"
 				}
 			]
 		},
@@ -28,7 +28,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "minespawn:ruby"
+					"name": "twisted:ruby"
 				}
 			]
 		},
@@ -44,7 +44,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "minespawn:ruby"
+					"name": "twisted:ruby"
 				}
 			]
 		},
@@ -60,7 +60,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "minespawn:ruby"
+					"name": "twisted:ruby"
 				}
 			]
 		},
@@ -69,14 +69,14 @@
 			"conditions": [
 				{
 					"condition": "match_tool",
-					"item": "minespawn:emerald_pickaxe",
+					"item": "twisted:emerald_pickaxe",
 					"count": 1
 				}
 			],
 			"entries": [
 				{
 					"type": "item",
-					"name": "minespawn:ruby"
+					"name": "twisted:ruby"
 				}
 			]
 		},
@@ -85,14 +85,14 @@
 			"conditions": [
 				{
 					"condition": "match_tool",
-					"item": "minespawn:amethyst_pickaxe",
+					"item": "twisted:amethyst_pickaxe",
 					"count": 1
 				}
 			],
 			"entries": [
 				{
 					"type": "item",
-					"name": "minespawn:ruby"
+					"name": "twisted:ruby"
 				}
 			]
 		},
@@ -101,14 +101,14 @@
 			"conditions": [
 				{
 					"condition": "match_tool",
-					"item": "minespawn:ruby_pickaxe",
+					"item": "twisted:ruby_pickaxe",
 					"count": 1
 				}
 			],
 			"entries": [
 				{
 					"type": "item",
-					"name": "minespawn:ruby"
+					"name": "twisted:ruby"
 				}
 			]
 		},
@@ -134,7 +134,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "minespawn:ruby",
+					"name": "twisted:ruby",
 					"functions": [
 						{
 							"function": "set_count",
@@ -169,7 +169,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "minespawn:ruby",
+					"name": "twisted:ruby",
 					"functions": [
 						{
 							"function": "set_count",
@@ -204,7 +204,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "minespawn:ruby",
+					"name": "twisted:ruby",
 					"functions": [
 						{
 							"function": "set_count",
@@ -239,7 +239,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "minespawn:ruby",
+					"name": "twisted:ruby",
 					"functions": [
 						{
 							"function": "set_count",
@@ -257,7 +257,7 @@
 			"conditions": [
 				{
 					"condition": "match_tool",
-					"item": "minespawn:emerald_pickaxe",
+					"item": "twisted:emerald_pickaxe",
 					"count": 1,
 					"enchantments": [
 						{
@@ -274,7 +274,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "minespawn:ruby",
+					"name": "twisted:ruby",
 					"functions": [
 						{
 							"function": "set_count",
@@ -292,7 +292,7 @@
 			"conditions": [
 				{
 					"condition": "match_tool",
-					"item": "minespawn:amethyst_pickaxe",
+					"item": "twisted:amethyst_pickaxe",
 					"count": 1,
 					"enchantments": [
 						{
@@ -309,7 +309,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "minespawn:ruby",
+					"name": "twisted:ruby",
 					"functions": [
 						{
 							"function": "set_count",
@@ -327,7 +327,7 @@
 			"conditions": [
 				{
 					"condition": "match_tool",
-					"item": "minespawn:ruby_pickaxe",
+					"item": "twisted:ruby_pickaxe",
 					"count": 1,
 					"enchantments": [
 						{
@@ -344,7 +344,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "minespawn:ruby",
+					"name": "twisted:ruby",
 					"functions": [
 						{
 							"function": "set_count",

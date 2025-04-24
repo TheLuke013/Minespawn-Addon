@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:ruby_sword",
+			"identifier": "twisted:ruby_sword",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.sword"
@@ -15,7 +15,7 @@
 			"minecraft:durability": {
 				"max_durability": 1500
 			},
-			"minecraft:icon": "minespawn_ruby_sword",
+			"minecraft:icon": "twisted:ruby_sword",
 			"minecraft:damage": 20,
 			"minecraft:enchantable": {
 				"value": 14,
@@ -25,13 +25,13 @@
 				"repair_items": [
 					{
 						"items": [
-							"minespawn:ruby"
+							"twisted:ruby"
 						],
 						"repair_amount": "query.max_durability * 0.25"
 					},
 					{
 						"items": [
-							"minespawn:ruby_sword"
+							"twisted:ruby_sword"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}
@@ -57,7 +57,7 @@
 				]
 			},
 			"minecraft:custom_components": [
-				"minespawn:durability"
+				"twisted:durability"
 			]
 		}
 	}

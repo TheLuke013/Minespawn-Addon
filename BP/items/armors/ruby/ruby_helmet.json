@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:ruby_helmet",
+			"identifier": "twisted:ruby_helmet",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.helmet"
@@ -21,7 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "minespawn_ruby_helmet",
+			"minecraft:icon": "twisted:ruby_helmet",
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
 				"protection": 4
@@ -30,13 +30,13 @@
 				"repair_items": [
 					{
 						"items": [
-							"minespawn:ruby"
+							"twisted:ruby"
 						],
 						"repair_amount": "query.max_durability * 0.25"
 					},
 					{
 						"items": [
-							"minespawn:ruby_helmet"
+							"twisted:ruby_helmet"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}

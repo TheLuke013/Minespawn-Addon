@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "minespawn:ultimate_hammer",
+			"identifier": "twisted:ultimate_hammer",
 			"materials": {
 				"default": "entity"
 			},

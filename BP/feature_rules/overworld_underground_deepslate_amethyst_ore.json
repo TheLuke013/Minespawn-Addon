@@ -2,8 +2,8 @@
 	"format_version": "1.20.80",
 	"minecraft:feature_rules": {
 		"description": {
-			"identifier": "minespawn:overworld_underground_deepslate_amethyst_ore",
-			"places_feature": "minespawn:deepslate_amethyst_ore_feature"
+			"identifier": "twisted:overworld_underground_deepslate_amethyst_ore",
+			"places_feature": "twisted:deepslate_amethyst_ore_feature"
 		},
 		"conditions": {
 			"placement_pass": "underground_pass",

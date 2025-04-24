@@ -2,20 +2,20 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:enchanted_golden_apple_cow_spawn_egg",
+			"identifier": "twisted:enchanted_golden_apple_cow_spawn_egg",
 			"menu_category": {
 				"category": "nature",
 				"group": "itemGroup.name.mobEgg"
 			}
 		},
 		"components": {
-			"minecraft:icon": "minespawn_golden_apple_cow_spawn_egg",
+			"minecraft:icon": "twisted:golden_apple_cow_spawn_egg",
 			"minecraft:display_name": {
-				"value": "item.spawn_egg.entity.minespawn:enchanted_gac.name"
+				"value": "item.spawn_egg.entity.twisted:enchanted_gac.name"
 			},
 			"minecraft:glint": true,
 			"minecraft:entity_placer": {
-				"entity": "minespawn:enchanted_golden_apple_cow"
+				"entity": "twisted:enchanted_golden_apple_cow"
 			}
 		}
 	}

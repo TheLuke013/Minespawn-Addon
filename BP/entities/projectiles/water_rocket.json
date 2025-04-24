@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "minespawn:water_rocket",
+			"identifier": "twisted:water_rocket",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,
@@ -17,7 +17,7 @@
 			}
 		},
 		"component_groups": {
-			"minespawn:hit": {
+			"twisted:hit": {
 				"minecraft:explode": {
 					"fuse_length": 0,
 					"fuse_lit": true,
@@ -48,7 +48,7 @@
 					},
 					"definition_event": {
 						"event_trigger": {
-							"event": "minespawn:hit",
+							"event": "twisted:hit",
 							"target": "self"
 						}
 					}
@@ -72,12 +72,12 @@
 			}
 		},
 		"events": {
-			"minespawn:hit": {
+			"twisted:hit": {
 				"sequence": [
 					{
 						"add": {
 							"component_groups": [
-								"minespawn:hit"
+								"twisted:hit"
 							]
 						},
 						"queue_command": {

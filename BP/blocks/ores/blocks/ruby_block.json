@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "minespawn:ruby_block",
+			"identifier": "twisted:ruby_block",
 			"menu_category": {
 				"category": "construction"
 			}

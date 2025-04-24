@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "minespawn:miners_dream"
+            "identifier": "twisted:miners_dream"
         },
         "tags": [
             "crafting_table"
@@ -24,7 +24,7 @@
             }
         },
         "result": {
-            "item": "minespawn:miners_dream"
+            "item": "twisted:miners_dream"
         },
         "unlock": [
             {

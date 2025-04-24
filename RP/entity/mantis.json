@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "minespawn:mantis",
+			"identifier": "twisted:mantis",
 			"materials": {
 				"default": "entity_alphatest"
 			},
@@ -16,7 +16,7 @@
 				"controller.render.mantis"
 			],
 			"spawn_egg": {
-				"texture": "minespawn_mantis_spawn_egg"
+				"texture": "twisted:mantis_spawn_egg"
 			},
 			"sound_effects": {
 				"flap": "mob.buzzing"

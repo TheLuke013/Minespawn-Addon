@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "twisted:enchanted_emerald_boots"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"eee",
+			"e#e",
+			"eee"
+		],
+		"key": {
+			"#": {
+				"item": "twisted:emerald_boots"
+			},
+			"e": {
+				"item": "minecraft:experience_bottle"
+			}
+		},
+		"result": {
+			"item": "twisted:enchanted_emerald_boots"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:experience_bottle"
+			}
+		]
+	}
+}

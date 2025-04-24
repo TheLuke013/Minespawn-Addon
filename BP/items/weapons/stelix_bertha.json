@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:stelix_bertha",
+			"identifier": "twisted:stelix_bertha",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.sword"
@@ -15,7 +15,7 @@
 			"minecraft:durability": {
 				"max_durability": 14000
 			},
-			"minecraft:icon": "minespawn_stelix_bertha",
+			"minecraft:icon": "twisted:stelix_bertha",
 			"minecraft:enchantable": {
 				"value": 14,
 				"slot": "sword"
@@ -37,7 +37,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"minespawn:stelix_bertha"
+							"twisted:stelix_bertha"
 						],
 						"repair_amount": "context.other->q.remaining_durability + 0.05 * context.other->q.max_durability"
 					}
@@ -50,10 +50,10 @@
 				]
 			},
 			"minecraft:custom_components": [
-				"minespawn:knockback",
-				"minespawn:flaming_damage",
-				"minespawn:on_damage",
-				"minespawn:durability"
+				"twisted:knockback",
+				"twisted:flaming_damage",
+				"twisted:on_damage",
+				"twisted:durability"
 			]
 		}
 	}

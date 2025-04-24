@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "minespawn:amethyst_leggings"
+			"identifier": "twisted:amethyst_leggings"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,15 +14,15 @@
 		],
 		"key": {
 			"#": {
-				"item": "minespawn:amethyst"
+				"item": "twisted:amethyst"
 			}
 		},
 		"result": {
-			"item": "minespawn:amethyst_leggings"
+			"item": "twisted:amethyst_leggings"
 		},
 		"unlock": [
 			{
-				"item": "minespawn:amethyst"
+				"item": "twisted:amethyst"
 			}
 		]
 	}

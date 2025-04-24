@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "minespawn:ruby_leggings"
+			"identifier": "twisted:ruby_leggings"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,15 +14,15 @@
 		],
 		"key": {
 			"#": {
-				"item": "minespawn:ruby"
+				"item": "twisted:ruby"
 			}
 		},
 		"result": {
-			"item": "minespawn:ruby_leggings"
+			"item": "twisted:ruby_leggings"
 		},
 		"unlock": [
 			{
-				"item": "minespawn:ruby"
+				"item": "twisted:ruby"
 			}
 		]
 	}

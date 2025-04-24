@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "minespawn:emerald_leggings"
+			"identifier": "twisted:emerald_leggings"
 		},
 		"tags": [
 			"crafting_table"
@@ -18,7 +18,7 @@
 			}
 		},
 		"result": {
-			"item": "minespawn:emerald_leggings"
+			"item": "twisted:emerald_leggings"
 		},
 		"unlock": [
 			{

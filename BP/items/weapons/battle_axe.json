@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:battle_axe",
+			"identifier": "twisted:battle_axe",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.sword"
@@ -15,7 +15,7 @@
 			"minecraft:durability": {
 				"max_durability": 1300
 			},
-			"minecraft:icon": "minespawn_battle_axe",
+			"minecraft:icon": "twisted:battle_axe",
 			"minecraft:enchantable": {
 				"value": 14,
 				"slot": "sword"
@@ -40,7 +40,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"minespawn:battle_axe"
+							"twisted:battle_axe"
 						],
 						"repair_amount": "context.other->q.remaining_durability + 0.05 * context.other->q.max_durability"
 					}
@@ -53,7 +53,7 @@
 				]
 			},
 			"minecraft:custom_components": [
-				"minespawn:durability"
+				"twisted:durability"
 			]
 		}
 	}

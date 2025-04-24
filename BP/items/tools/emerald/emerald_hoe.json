@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:emerald_hoe",
+			"identifier": "twisted:emerald_hoe",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.hoe"
@@ -14,7 +14,7 @@
 			"minecraft:durability": {
 				"max_durability": 1300
 			},
-			"minecraft:icon": "minespawn_emerald_hoe",
+			"minecraft:icon": "twisted:emerald_hoe",
 			"minecraft:damage": 1,
 			"minecraft:enchantable": {
 				"value": 14,
@@ -30,7 +30,7 @@
 					},
 					{
 						"items": [
-							"minespawn:emerald_hoe"
+							"twisted:emerald_hoe"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}
@@ -50,11 +50,11 @@
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_hoe",
-					"minespawn:hoe"
+					"twisted:hoe"
 				]
 			},
 			"minecraft:custom_components": [
-				"minespawn:durability"
+				"twisted:durability"
 			]
 		}
 	}

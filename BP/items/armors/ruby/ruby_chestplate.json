@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:ruby_chestplate",
+			"identifier": "twisted:ruby_chestplate",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.chestplate"
@@ -21,7 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "minespawn_ruby_chestplate",
+			"minecraft:icon": "twisted:ruby_chestplate",
 			"minecraft:wearable": {
 				"slot": "slot.armor.chest",
 				"protection": 9
@@ -30,13 +30,13 @@
 				"repair_items": [
 					{
 						"items": [
-							"minespawn:ruby"
+							"twisted:ruby"
 						],
 						"repair_amount": "query.max_durability * 0.25"
 					},
 					{
 						"items": [
-							"minespawn:ruby_chestplate"
+							"twisted:ruby_chestplate"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}

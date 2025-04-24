@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:emerald_axe",
+			"identifier": "twisted:emerald_axe",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.axe"
@@ -14,7 +14,7 @@
 			"minecraft:durability": {
 				"max_durability": 1300
 			},
-			"minecraft:icon": "minespawn_emerald_axe",
+			"minecraft:icon": "twisted:emerald_axe",
 			"minecraft:damage": 9,
 			"minecraft:enchantable": {
 				"value": 14,
@@ -30,7 +30,7 @@
 					},
 					{
 						"items": [
-							"minespawn:emerald_axe"
+							"twisted:emerald_axe"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}
@@ -61,7 +61,7 @@
 				]
 			},
 			"minecraft:custom_components": [
-				"minespawn:durability"
+				"twisted:durability"
 			]
 		}
 	}

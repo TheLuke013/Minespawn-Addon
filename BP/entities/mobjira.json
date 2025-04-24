@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "minespawn:mobjira",
+			"identifier": "twisted:mobjira",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false,
@@ -22,7 +22,7 @@
 			}
 		},
 		"component_groups": {
-			"minespawn:remove_kbr": {
+			"twisted:remove_kbr": {
 				"minecraft:knockback_resistance": {
 					"value": 0
 				},
@@ -33,12 +33,12 @@
 						0.1
 					],
 					"time_down_event": {
-						"event": "minespawn:remove_kbr",
+						"event": "twisted:remove_kbr",
 						"target": "self"
 					}
 				}
 			},
-			"minespawn:melee_attack": {
+			"twisted:melee_attack": {
 				"minecraft:skin_id": {
 					"value": 1
 				},
@@ -61,13 +61,12 @@
 						3
 					],
 					"time_down_event": {
-						"event": "minespawn:toggle_random_attack",
-						//"event": "minespawn:prepare_for_breath_atomic",
+						"event": "twisted:toggle_random_attack",
 						"target": "self"
 					}
 				}
 			},
-			"minespawn:fireball_attack": {
+			"twisted:fireball_attack": {
 				"minecraft:skin_id": {
 					"value": 2
 				},
@@ -82,7 +81,7 @@
 					"charge_charged_trigger": 0
 				},
 				"minecraft:shooter": {
-					"def": "minespawn:mj_fireball"
+					"def": "twisted:mj_fireball"
 				},
 				"minecraft:timer": {
 					"looping": true,
@@ -91,12 +90,12 @@
 						15
 					],
 					"time_down_event": {
-						"event": "minespawn:toggle_random_attack",
+						"event": "twisted:toggle_random_attack",
 						"target": "self"
 					}
 				}
 			},
-			"minespawn:lightning_attack": {
+			"twisted:lightning_attack": {
 				"minecraft:skin_id": {
 					"value": 3
 				},
@@ -107,12 +106,12 @@
 						3
 					],
 					"time_down_event": {
-						"event": "minespawn:toggle_random_attack",
+						"event": "twisted:toggle_random_attack",
 						"target": "self"
 					}
 				}
 			},
-			"minespawn:jump": {
+			"twisted:jump": {
 				"minecraft:skin_id": {
 					"value": 4
 				},
@@ -123,12 +122,12 @@
 						1
 					],
 					"time_down_event": {
-						"event": "minespawn:jumping",
+						"event": "twisted:jumping",
 						"target": "self"
 					}
 				}
 			},
-			"minespawn:jumping": {
+			"twisted:jumping": {
 				"minecraft:skin_id": {
 					"value": 6
 				},
@@ -139,12 +138,12 @@
 						5
 					],
 					"time_down_event": {
-						"event": "minespawn:toggle_random_attack",
+						"event": "twisted:toggle_random_attack",
 						"target": "self"
 					}
 				}
 			},
-			"minespawn:knockback": {
+			"twisted:knockback": {
 				"minecraft:skin_id": {
 					"value": 5
 				},
@@ -174,12 +173,12 @@
 						3
 					],
 					"time_down_event": {
-						"event": "minespawn:toggle_random_attack",
+						"event": "twisted:toggle_random_attack",
 						"target": "self"
 					}
 				}
 			},
-			"minespawn:prepare_for_breath_atomic": {
+			"twisted:prepare_for_breath_atomic": {
 				"minecraft:skin_id": {
 					"value": 7
 				},
@@ -198,12 +197,12 @@
 						12
 					],
 					"time_down_event": {
-						"event": "minespawn:atomic_shock",
+						"event": "twisted:atomic_shock",
 						"target": "self"
 					}
 				}
 			},
-			"minespawn:atomic_shock": {
+			"twisted:atomic_shock": {
 				"minecraft:skin_id": {
 					"value": 9
 				},
@@ -233,12 +232,12 @@
 						2
 					],
 					"time_down_event": {
-						"event": "minespawn:atomic_attack",
+						"event": "twisted:atomic_attack",
 						"target": "self"
 					}
 				}
 			},
-			"minespawn:breath_atomic_attack": {
+			"twisted:breath_atomic_attack": {
 				"minecraft:skin_id": {
 					"value": 8
 				},
@@ -253,7 +252,7 @@
 					"charge_charged_trigger": 0
 				},
 				"minecraft:shooter": {
-					"def": "minespawn:mj_atomic_breath"
+					"def": "twisted:mj_atomic_breath"
 				},
 				"minecraft:is_charged": {}
 			}
@@ -343,7 +342,7 @@
 				]
 			},
 			"minecraft:health": {
-				"value": 5000
+				"value": 25000
 			},
 			"minecraft:type_family": {
 				"family": [
@@ -414,33 +413,33 @@
 				},
 				"add": {
 					"component_groups": [
-						"minespawn:melee_attack"
+						"twisted:melee_attack"
 					]
 				}
 			},
-			"minespawn:add_kbr": {
+			"twisted:add_kbr": {
 				"add": {
 					"component_groups": [
-						"minespawn:remove_kbr"
+						"twisted:remove_kbr"
 					]
 				}
 			},
-			"minespawn:remove_kbr": {
+			"twisted:remove_kbr": {
 				"remove": {
 					"component_groups": [
-						"minespawn:remove_kbr"
+						"twisted:remove_kbr"
 					]
 				}
 			},
-			"minespawn:atomic_attack": {
+			"twisted:atomic_attack": {
 				"add": {
 					"component_groups": [
-						"minespawn:breath_atomic_attack"
+						"twisted:breath_atomic_attack"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"minespawn:atomic_shock"
+						"twisted:atomic_shock"
 					]
 				},
 				"queue_command": {
@@ -450,31 +449,31 @@
 					]
 				}
 			},
-			"minespawn:atomic_shock": {
+			"twisted:atomic_shock": {
 				"add": {
 					"component_groups": [
-						"minespawn:atomic_shock"
+						"twisted:atomic_shock"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"minespawn:prepare_for_breath_atomic"
+						"twisted:prepare_for_breath_atomic"
 					]
 				}
 			},
-			"minespawn:prepare_for_breath_atomic": {
+			"twisted:prepare_for_breath_atomic": {
 				"add": {
 					"component_groups": [
-						"minespawn:prepare_for_breath_atomic"
+						"twisted:prepare_for_breath_atomic"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"minespawn:fireball_attack",
-						"minespawn:jump",
-						"minespawn:knockback",
-						"minespawn:lightning_attack",
-						"minespawn:melee_attack"
+						"twisted:fireball_attack",
+						"twisted:jump",
+						"twisted:knockback",
+						"twisted:lightning_attack",
+						"twisted:melee_attack"
 					]
 				},
 				"queue_command": {
@@ -484,33 +483,33 @@
 					]
 				}
 			},
-			"minespawn:jumping": {
+			"twisted:jumping": {
 				"add": {
 					"component_groups": [
-						"minespawn:jumping"
+						"twisted:jumping"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"minespawn:jump"
+						"twisted:jump"
 					]
 				}
 			},
-			"minespawn:toggle_random_attack": {
+			"twisted:toggle_random_attack": {
 				"randomize": [
 					{
 						"weight": 50,
 						"add": {
 							"component_groups": [
-								"minespawn:melee_attack"
+								"twisted:melee_attack"
 							]
 						},
 						"remove": {
 							"component_groups": [
-								"minespawn:fireball_attack",
-								"minespawn:jump",
-								"minespawn:knockback",
-								"minespawn:lightning_attack"
+								"twisted:fireball_attack",
+								"twisted:jump",
+								"twisted:knockback",
+								"twisted:lightning_attack"
 							]
 						}
 					},
@@ -518,15 +517,15 @@
 						"weight": 50,
 						"add": {
 							"component_groups": [
-								"minespawn:fireball_attack"
+								"twisted:fireball_attack"
 							]
 						},
 						"remove": {
 							"component_groups": [
-								"minespawn:melee_attack",
-								"minespawn:jump",
-								"minespawn:knockback",
-								"minespawn:lightning_attack"
+								"twisted:melee_attack",
+								"twisted:jump",
+								"twisted:knockback",
+								"twisted:lightning_attack"
 							]
 						}
 					},
@@ -534,15 +533,15 @@
 						"weight": 25,
 						"add": {
 							"component_groups": [
-								"minespawn:lightning_attack"
+								"twisted:lightning_attack"
 							]
 						},
 						"remove": {
 							"component_groups": [
-								"minespawn:fireball_attack",
-								"minespawn:jump",
-								"minespawn:knockback",
-								"minespawn:melee_attack"
+								"twisted:fireball_attack",
+								"twisted:jump",
+								"twisted:knockback",
+								"twisted:melee_attack"
 							]
 						}
 					},
@@ -550,15 +549,15 @@
 						"weight": 25,
 						"add": {
 							"component_groups": [
-								"minespawn:jump"
+								"twisted:jump"
 							]
 						},
 						"remove": {
 							"component_groups": [
-								"minespawn:fireball_attack",
-								"minespawn:knockback",
-								"minespawn:lightning_attack",
-								"minespawn:melee_attack"
+								"twisted:fireball_attack",
+								"twisted:knockback",
+								"twisted:lightning_attack",
+								"twisted:melee_attack"
 							]
 						}
 					},
@@ -566,15 +565,15 @@
 						"weight": 25,
 						"add": {
 							"component_groups": [
-								"minespawn:knockback"
+								"twisted:knockback"
 							]
 						},
 						"remove": {
 							"component_groups": [
-								"minespawn:fireball_attack",
-								"minespawn:jump",
-								"minespawn:lightning_attack",
-								"minespawn:melee_attack"
+								"twisted:fireball_attack",
+								"twisted:jump",
+								"twisted:lightning_attack",
+								"twisted:melee_attack"
 							]
 						}
 					}

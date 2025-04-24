@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "minespawn:extreme_torch_2"
+            "identifier": "twisted:extreme_torch_2"
         },
         "tags": [
             "crafting_table"
@@ -19,7 +19,7 @@
             }
         },
         "result": {
-            "item": "minespawn:extreme_torch"
+            "item": "twisted:extreme_torch"
         },
         "unlock": [
             {

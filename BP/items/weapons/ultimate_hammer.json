@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:ultimate_hammer",
+			"identifier": "twisted:ultimate_hammer",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.sword"
@@ -15,7 +15,7 @@
 			"minecraft:durability": {
 				"max_durability": 9000
 			},
-			"minecraft:icon": "minespawn_ultimate_hammer",
+			"minecraft:icon": "twisted:ultimate_hammer",
 			"minecraft:enchantable": {
 				"value": 14,
 				"slot": "sword"
@@ -40,7 +40,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"minespawn:ultimate_hammer"
+							"twisted:ultimate_hammer"
 						],
 						"repair_amount": "context.other->q.remaining_durability + 0.05 * context.other->q.max_durability"
 					}
@@ -53,8 +53,8 @@
 				]
 			},
 			"minecraft:custom_components": [
-				"minespawn:on_damage",
-				"minespawn:durability"
+				"twisted:on_damage",
+				"twisted:durability"
 			]
 		}
 	}

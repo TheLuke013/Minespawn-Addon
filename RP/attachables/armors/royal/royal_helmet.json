@@ -1,8 +1,8 @@
-{
+	{
 	"format_version": "1.20.80",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "minespawn:royal_helmet",
+			"identifier": "twisted:royal_helmet",
 			"materials": {
 				"default": "armor",
 				"enchanted": "armor_enchanted"

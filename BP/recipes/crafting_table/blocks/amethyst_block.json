@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "minespawn:amethyst_block"
+            "identifier": "twisted:amethyst_block"
         },
         "tags": [
             "crafting_table"
@@ -14,15 +14,15 @@
         ],
         "key": {
             "A": {
-                "item": "minespawn:amethyst"
+                "item": "twisted:amethyst"
             }
         },
         "result": {
-            "item": "minespawn:amethyst_block"
+            "item": "twisted:amethyst_block"
         },
         "unlock": [
             {
-                "item": "minespawn:amethyst"
+                "item": "twisted:amethyst"
             }
         ]
     }

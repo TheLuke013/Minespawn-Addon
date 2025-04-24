@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:ultimate_chainsaw",
+			"identifier": "twisted:ultimate_chainsaw",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.axe"
@@ -14,7 +14,7 @@
 			"minecraft:durability": {
 				"max_durability": 1250
 			},
-			"minecraft:icon": "minespawn_ultimate_chainsaw",
+			"minecraft:icon": "twisted:ultimate_chainsaw",
 			"minecraft:damage": 60,
 			"minecraft:enchantable": {
 				"value": 14,
@@ -24,7 +24,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"minespawn:ultimate_chainsaw"
+							"twisted:ultimate_chainsaw"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}
@@ -55,8 +55,8 @@
 				]
 			},
 			"minecraft:custom_components": [
-				"minespawn:chainsaw",
-				"minespawn:durability"
+				"twisted:chainsaw",
+				"twisted:durability"
 			]
 		}
 	}

@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "minespawn:amethyst_pickaxe"
+            "identifier": "twisted:amethyst_pickaxe"
         },
         "tags": [
             "crafting_table"
@@ -14,18 +14,18 @@
         ],
         "key": {
             "A": {
-                "item": "minespawn:amethyst"
+                "item": "twisted:amethyst"
             },
             "B": {
                 "item": "minecraft:stick"
             }
         },
         "result": {
-            "item": "minespawn:amethyst_pickaxe"
+            "item": "twisted:amethyst_pickaxe"
         },
         "unlock": [
             {
-                "item": "minespawn:amethyst"
+                "item": "twisted:amethyst"
             }
         ]
     }

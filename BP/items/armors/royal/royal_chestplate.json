@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:royal_chestplate",
+			"identifier": "twisted:royal_chestplate",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.chestplate"
@@ -21,7 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "minespawn_royal_chestplate",
+			"minecraft:icon": "twisted:royal_chestplate",
 			"minecraft:wearable": {
 				"slot": "slot.armor.chest",
 				"protection": 14
@@ -30,7 +30,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"minespawn:royal_chestplate"
+							"twisted:royal_chestplate"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}

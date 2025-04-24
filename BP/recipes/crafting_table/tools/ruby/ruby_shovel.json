@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "minespawn:ruby_shovel"
+            "identifier": "twisted:ruby_shovel"
         },
         "tags": [
             "crafting_table"
@@ -14,18 +14,18 @@
         ],
         "key": {
             "A": {
-                "item": "minespawn:ruby"
+                "item": "twisted:ruby"
             },
             "B": {
                 "item": "minecraft:stick"
             }
         },
         "result": {
-            "item": "minespawn:ruby_shovel"
+            "item": "twisted:ruby_shovel"
         },
         "unlock": [
             {
-                "item": "minespawn:ruby"
+                "item": "twisted:ruby"
             }
         ]
     }

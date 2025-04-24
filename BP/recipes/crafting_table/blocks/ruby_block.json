@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "minespawn:ruby_block"
+            "identifier": "twisted:ruby_block"
         },
         "tags": [
             "crafting_table"
@@ -14,15 +14,15 @@
         ],
         "key": {
             "A": {
-                "item": "minespawn:ruby"
+                "item": "twisted:ruby"
             }
         },
         "result": {
-            "item": "minespawn:ruby_block"
+            "item": "twisted:ruby_block"
         },
         "unlock": [
             {
-                "item": "minespawn:ruby"
+                "item": "twisted:ruby"
             }
         ]
     }

@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:amethyst_hoe",
+			"identifier": "twisted:amethyst_hoe",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.hoe"
@@ -14,7 +14,7 @@
 			"minecraft:durability": {
 				"max_durability": 2000
 			},
-			"minecraft:icon": "minespawn_amethyst_hoe",
+			"minecraft:icon": "twisted:amethyst_hoe",
 			"minecraft:damage": 1,
 			"minecraft:enchantable": {
 				"value": 14,
@@ -24,13 +24,13 @@
 				"repair_items": [
 					{
 						"items": [
-							"minespawn:amethyst"
+							"twisted:amethyst"
 						],
 						"repair_amount": "query.max_durability * 0.25"
 					},
 					{
 						"items": [
-							"minespawn:amethyst_hoe"
+							"twisted:amethyst_hoe"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}
@@ -50,11 +50,11 @@
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_hoe",
-					"minespawn:hoe"
+					"twisted:hoe"
 				]
 			},
 			"minecraft:custom_components": [
-				"minespawn:durability"
+				"twisted:durability"
 			]
 		}
 	}

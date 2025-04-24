@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "minespawn:nastysaurus",
+			"identifier": "twisted:nastysaurus",
 			"materials": {
 				"default": "entity_alphatest"
 			},

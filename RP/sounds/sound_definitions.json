@@ -13,10 +13,10 @@
 				"sounds/weapon/chainsaw"
 			]
 		},
-		"gun.blaster_fire": {
+		"blaster.fire": {
 			"category": "neutral",
 			"sounds": [
-				"sounds/guns/blaster_fire"
+				"sounds/blaster/blaster_fire"
 			]
 		},
 		"mob.mobjira.step": {

@@ -1,31 +1,31 @@
 {
 	"format_version": "1.21.10",
-	"minespawn:extreme_torch": {
+	"twisted:extreme_torch": {
 		"sound": "wood",
-		"textures": "minespawn_extreme_torch"
+		"textures": "twisted:extreme_torch"
 	},
-	"minespawn:amethyst_ore": {
+	"twisted:amethyst_ore": {
 		"sound": "stone",
-		"textures": "minespawn_amethyst_ore"
+		"textures": "twisted:amethyst_ore"
 	},
-	"minespawn:ruby_ore": {
+	"twisted:ruby_ore": {
 		"sound": "stone",
-		"textures": "minespawn_ruby_ore"
+		"textures": "twisted:ruby_ore"
 	},
-	"minespawn:deepslate_amethyst_ore": {
+	"twisted:deepslate_amethyst_ore": {
 		"sound": "deepslate",
-		"textures": "minespawn_deepslate_amethyst_ore"
+		"textures": "twisted:deepslate_amethyst_ore"
 	},
-	"minespawn:deepslate_ruby_ore": {
+	"twisted:deepslate_ruby_ore": {
 		"sound": "deepslate",
-		"textures": "minespawn_deepslate_ruby_ore"
+		"textures": "twisted:deepslate_ruby_ore"
 	},
-	"minespawn:amethyst_block": {
+	"twisted:amethyst_block": {
 		"sound": "stone",
-		"textures": "minespawn_amethyst_block"
+		"textures": "twisted:amethyst_block"
 	},
-	"minespawn:ruby_block": {
+	"twisted:ruby_block": {
 		"sound": "stone",
-		"textures": "minespawn_ruby_block"
+		"textures": "twisted:ruby_block"
 	}
 }

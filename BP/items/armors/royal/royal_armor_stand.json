@@ -2,22 +2,22 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:royal_armor_stand",
+			"identifier": "twisted:royal_armor_stand",
 			"menu_category": {
 				"category": "equipment"
 			}
 		},
 		"components": {
-			"minecraft:icon": "minespawn_royal_armor_stand",
+			"minecraft:icon": "twisted:royal_armor_stand",
 			"minecraft:max_stack_size": 1,
 			"minecraft:stacked_by_data": true,
 			"minecraft:glint": true,
 			"minecraft:hover_text_color": "aqua",
 			"minecraft:entity_placer": {
-				"entity": "minespawn:dummy"
+				"entity": "twisted:dummy"
 			},
 			"minecraft:custom_components": [
-				"minespawn:placer"
+				"twisted:placer"
 			]
 		}
 	}

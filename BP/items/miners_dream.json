@@ -2,16 +2,16 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:miners_dream",
+			"identifier": "twisted:miners_dream",
 			"menu_category": {
 				"category": "items"
 			}
 		},
 		"components": {
-			"minecraft:icon": "minespawn_miners_dream",
+			"minecraft:icon": "twisted:miners_dream",
 			"minecraft:max_stack_size": 64,
 			"minecraft:entity_placer": {
-				"entity": "minespawn:dummy",
+				"entity": "twisted:dummy",
 				"use_on": [
 					"minecraft:netherrack",
 					"minecraft:stone",

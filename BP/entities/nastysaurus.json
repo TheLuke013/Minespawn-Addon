@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "minespawn:nastysaurus",
+			"identifier": "twisted:nastysaurus",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false,
@@ -16,7 +16,7 @@
 			}
 		},
 		"component_groups": {
-			"minespawn:angry": {
+			"twisted:angry": {
 				"minecraft:skin_id": {
 					"value": 2
 				},
@@ -25,13 +25,13 @@
 					"broadcastAnger": false,
 					"broadcastRange": 2,
 					"calm_event": {
-						"event": "minespawn:on_calm",
+						"event": "twisted:on_calm",
 						"target": "self"
 					}
 				},
 				"minecraft:on_target_acquired": {}
 			},
-			"minespawn:roar": {
+			"twisted:roar": {
 				"minecraft:on_target_acquired": {},
 				"minecraft:skin_id": {
 					"value": 1
@@ -48,13 +48,13 @@
 					}
 				}
 			},
-			"minespawn:calm": {
+			"twisted:calm": {
 				"minecraft:skin_id": {
 					"value": 0
 				},
 				"minecraft:is_sheared": {},
 				"minecraft:on_target_acquired": {
-					"event": "minespawn:roar",
+					"event": "twisted:roar",
 					"target": "self"
 				}
 			}
@@ -191,45 +191,45 @@
 			"minecraft:entity_spawned": {
 				"add": {
 					"component_groups": [
-						"minespawn:calm"
+						"twisted:calm"
 					]
 				}
 			},
-			"minespawn:roar": {
+			"twisted:roar": {
 				"add": {
 					"component_groups": [
-						"minespawn:roar"
+						"twisted:roar"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"minespawn:calm"
+						"twisted:calm"
 					]
 				}
 			},
 			"minecraft:become_angry": {
 				"add": {
 					"component_groups": [
-						"minespawn:angry"
+						"twisted:angry"
 					]
 				},
 				"remove": {
 					"component_groups": [
-						"minespawn:calm",
-						"minespawn:roar"
+						"twisted:calm",
+						"twisted:roar"
 					]
 				}
 			},
-			"minespawn:on_calm": {
+			"twisted:on_calm": {
 				"remove": {
 					"component_groups": [
-						"minespawn:angry",
-						"minespawn:roar"
+						"twisted:angry",
+						"twisted:roar"
 					]
 				},
 				"add": {
 					"component_groups": [
-						"minespawn:calm"
+						"twisted:calm"
 					]
 				}
 			}

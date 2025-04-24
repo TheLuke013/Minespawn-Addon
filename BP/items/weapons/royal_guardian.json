@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:royal_guardian",
+			"identifier": "twisted:royal_guardian",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.sword"
@@ -15,7 +15,7 @@
 			"minecraft:durability": {
 				"max_durability": 18000
 			},
-			"minecraft:icon": "minespawn_royal_guardian",
+			"minecraft:icon": "twisted:royal_guardian",
 			"minecraft:enchantable": {
 				"value": 14,
 				"slot": "sword"
@@ -37,7 +37,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"minespawn:royal_guardian"
+							"twisted:royal_guardian"
 						],
 						"repair_amount": "context.other->q.remaining_durability + 0.05 * context.other->q.max_durability"
 					}
@@ -50,9 +50,9 @@
 				]
 			},
 			"minecraft:custom_components": [
-				"minespawn:knockback",
-				"minespawn:on_damage",
-				"minespawn:durability"
+				"twisted:knockback",
+				"twisted:on_damage",
+				"twisted:durability"
 			]
 		}
 	}

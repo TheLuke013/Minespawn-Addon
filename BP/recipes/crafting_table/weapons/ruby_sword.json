@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "minespawn:ruby_sword"
+			"identifier": "twisted:ruby_sword"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,18 +14,18 @@
 		],
 		"key": {
 			"A": {
-				"item": "minespawn:ruby"
+				"item": "twisted:ruby"
 			},
 			"B": {
 				"item": "minecraft:stick"
 			}
 		},
 		"result": {
-			"item": "minespawn:ruby_sword"
+			"item": "twisted:ruby_sword"
 		},
 		"unlock": [
 			{
-				"item": "minespawn:ruby"
+				"item": "twisted:ruby"
 			}
 		]
 	}

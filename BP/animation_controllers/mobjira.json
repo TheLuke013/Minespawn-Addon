@@ -105,7 +105,7 @@
 					"on_entry": [
 						"/playsound mob.mobjira.atomic_breath @p[r=100] ~~~ 100 1 100",
 						"/tag @s remove ready_for_breath",
-						"/event entity @s minespawn:prepare_for_breath_atomic",
+						"/event entity @s twisted:prepare_for_breath_atomic",
 						"/execute as @e[rm=0,r=100,c=1,family=!mobjira] at @s run camerashake add @p[r=100] 1 11 positional"
 					]
 				},
@@ -116,9 +116,9 @@
 						}
 					],
 					"on_entry": [
-						"/particle minespawn:atomic_shock ~~~",
+						"/particle twisted:atomic_shock ~~~",
 						"/function mobjira_ultimate_destroy",
-						"/summon minespawn:mj_atomic_explosion ~~~"
+						"/summon twisted:mj_atomic_explosion ~~~"
 					]
 				}
 			}

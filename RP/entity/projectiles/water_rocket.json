@@ -2,12 +2,12 @@
 	"format_version": "1.20.80",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "minespawn:water_rocket",
+			"identifier": "twisted:water_rocket",
 			"materials": {
 				"default": "snowball"
 			},
 			"textures": {
-				"default": "textures/guns/waterzooka"
+				"default": "textures/blasters/water_blaster"
 			},
 			"geometry": {
 				"default": "geometry.rocket"

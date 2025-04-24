@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "minespawn:queen_battle_axe",
+			"identifier": "twisted:queen_battle_axe",
 			"materials": {
 				"default": "entity"
 			},

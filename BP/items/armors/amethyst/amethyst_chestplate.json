@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:amethyst_chestplate",
+			"identifier": "twisted:amethyst_chestplate",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.chestplate"
@@ -21,7 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "minespawn_amethyst_chestplate",
+			"minecraft:icon": "twisted:amethyst_chestplate",
 			"minecraft:wearable": {
 				"slot": "slot.armor.chest",
 				"protection": 8
@@ -36,7 +36,7 @@
 					},
 					{
 						"items": [
-							"minespawn:amethyst_chestplate"
+							"twisted:amethyst_chestplate"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}

@@ -2,13 +2,13 @@
 	"format_version": "1.20.80",
 	"minecraft:ore_feature": {
 		"description": {
-			"identifier": "minespawn:amethyst_ore_feature"
+			"identifier": "twisted:amethyst_ore_feature"
 		},
 		"count": 4,
 		"replace_rules": [
 			{
 				"places_block": {
-					"name": "minespawn:amethyst_ore",
+					"name": "twisted:amethyst_ore",
 					"states": {}
 				},
 				"may_replace": [

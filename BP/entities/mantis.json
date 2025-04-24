@@ -2,12 +2,11 @@
 	"format_version": "1.20.80",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "minespawn:mantis",
+			"identifier": "twisted:mantis",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
 		},
-		"component_groups": {},
 		"components": {
 			"minecraft:physics": {},
 			"minecraft:pushable": {
@@ -117,7 +116,6 @@
 				]
 			},
 			"minecraft:conditional_bandwidth_optimization": {}
-		},
-		"events": {}
+		}
 	}
 }

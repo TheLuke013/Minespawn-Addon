@@ -1,105 +1,107 @@
-pack.name=Bizarre Lands Addon RP (V1.0)
-pack.description=Adds lots of crazy and bizarre stuff to your world!\nAddon Made by TheLuke013
+pack.name=Twisted Lands RP (V1.0)
+pack.description=Add lots of crazy and bizarre stuff to your world! Like creatures, dungeons and dimensions.\nAddon Made by TheLuke013
 
-item.minespawn:big_bertha_handle=Big Bertha Handle
-item.minespawn:big_bertha_guard=Big Bertha Guard
-item.minespawn:big_bertha_blade=Big Bertha Blade
+item.twisted:big_bertha_handle=Big Bertha Handle
+item.twisted:big_bertha_guard=Big Bertha Guard
+item.twisted:big_bertha_blade=Big Bertha Blade
 
-item.minespawn:big_bertha=Big Bertha Sword\n\n§9+500 Attack Damage
-item.minespawn:royal_guardian=Royal Guardian Sword\n\n§9+750 Attack Damage
-item.minespawn:stelix_bertha=Stelix Bertha Sword\n\n§9+580 Attack Damage
-item.minespawn:queen_battle_axe=Queen Battle Axe\n\n§4666 §9Attack Damage
-item.minespawn:battle_axe=Big Battle Axe
-item.minespawn:ultimate_chainsaw=Ultimate Chainsaw
-item.minespawn:ultimate_hammer=Ultimate Hammer
-item.minespawn:royal_armor_stand=Ultimate Royal Armor Stand
+item.twisted:big_bertha=Big Bertha Sword\n\n§9+500 Attack Damage
+item.twisted:royal_guardian=Big Royal Guardian Sword\n\n§9+750 Attack Damage
+item.twisted:stelix_bertha=Big Stelix Bertha Sword\n\n§9+580 Attack Damage
+item.twisted:queen_battle_axe=Big Queen Battle Axe\n\n§4666 §9Attack Damage
+item.twisted:battle_axe=Big Battle Axe
+item.twisted:ultimate_chainsaw=Ultimate Chainsaw
+item.twisted:ultimate_hammer=Ultimate Hammer
+item.twisted:royal_armor_stand=Ultimate Royal Armor Stand
 
-item.minespawn:waterzooka=Water Blaster
-item.minespawn:firezooka=Fire Blaster
+item.twisted:water_blaster=Water Blaster
+item.twisted:fire_blaster=Fire Blaster
 
-item.minespawn:amethyst_helmet=Amethyst Helmet
-item.minespawn:amethyst_chestplate=Amethyst Chestplate
-item.minespawn:amethyst_leggings=Amethyst Leggings
-item.minespawn:amethyst_boots=Amethyst Boots
+item.twisted:amethyst_helmet=Amethyst Helmet
+item.twisted:amethyst_chestplate=Amethyst Chestplate
+item.twisted:amethyst_leggings=Amethyst Leggings
+item.twisted:amethyst_boots=Amethyst Boots
 
-item.minespawn:ruby_helmet=Ruby Helmet
-item.minespawn:ruby_chestplate=Ruby Chestplate
-item.minespawn:ruby_leggings=Ruby Leggings
-item.minespawn:ruby_boots=Ruby Boots
+item.twisted:ruby_helmet=Ruby Helmet
+item.twisted:ruby_chestplate=Ruby Chestplate
+item.twisted:ruby_leggings=Ruby Leggings
+item.twisted:ruby_boots=Ruby Boots
 
-item.minespawn:emerald_helmet=Emerald Helmet
-item.minespawn:emerald_chestplate=Emerald Chestplate
-item.minespawn:emerald_leggings=Emerald Leggings
-item.minespawn:emerald_boots=Emerald Boots
+item.twisted:emerald_helmet=Emerald Helmet
+item.twisted:emerald_chestplate=Emerald Chestplate
+item.twisted:emerald_leggings=Emerald Leggings
+item.twisted:emerald_boots=Emerald Boots
 
-item.minespawn:experience_sword=Enchanted Emerald Sword
-item.minespawn:experience_helmet=Enchanted Emerald Helmet
-item.minespawn:experience_chestplate=Enchanted Emerald Chestplate
-item.minespawn:experience_leggings=Enchanted Emerald Leggings
-item.minespawn:experience_boots=Enchanted Emerald Boots
+item.twisted:enchanted_emerald_sword=Enchanted Emerald Sword
+item.twisted:enchanted_emerald_helmet=Enchanted Emerald Helmet
+item.twisted:enchanted_emerald_chestplate=Enchanted Emerald Chestplate
+item.twisted:enchanted_emerald_leggings=Enchanted Emerald Leggings
+item.twisted:enchanted_emerald_boots=Enchanted Emerald Boots
 
-item.minespawn:royal_helmet=Royal Guardian Helmet
-item.minespawn:royal_chestplate=Royal Guardian Chestplate
-item.minespawn:royal_leggings=Royal Guardian Leggings
-item.minespawn:royal_boots=Royal Guardian Boots
-item.minespawn:royal_shield=Royal Shield
+item.twisted:royal_helmet=Royal Guardian Helmet
+item.twisted:royal_chestplate=Royal Guardian Chestplate
+item.twisted:royal_leggings=Royal Guardian Leggings
+item.twisted:royal_boots=Royal Guardian Boots
+item.twisted:royal_shield=Royal Shield
 
-item.minespawn:extreme_torch=Extreme Torch
-item.minespawn:miners_dream=Miner's Dream
-item.minespawn:amethyst=Amethyst
-item.minespawn:ruby=Ruby
+item.twisted:extreme_torch=Extreme Torch
+item.twisted:miners_dream=Miner's Dream
+item.twisted:amethyst=Amethyst
+item.twisted:ruby=Ruby
 
-item.minespawn:emerald_sword=Emerald Sword
-item.minespawn:emerald_axe=Emerald Axe
-item.minespawn:emerald_hoe=Emerald Hoe
-item.minespawn:emerald_pickaxe=Emerald Pickaxe
-item.minespawn:emerald_shovel=Emerald Shovel
+item.twisted:emerald_sword=Emerald Sword
+item.twisted:emerald_axe=Emerald Axe
+item.twisted:emerald_hoe=Emerald Hoe
+item.twisted:emerald_pickaxe=Emerald Pickaxe
+item.twisted:emerald_shovel=Emerald Shovel
 
-item.minespawn:amethyst_sword=Amethyst Sword
-item.minespawn:amethyst_axe=Amethyst Axe
-item.minespawn:amethyst_hoe=Amethyst Hoe
-item.minespawn:amethyst_pickaxe=Amethyst Pickaxe
-item.minespawn:amethyst_shovel=Amethyst Shovel
+item.twisted:amethyst_sword=Amethyst Sword
+item.twisted:amethyst_axe=Amethyst Axe
+item.twisted:amethyst_hoe=Amethyst Hoe
+item.twisted:amethyst_pickaxe=Amethyst Pickaxe
+item.twisted:amethyst_shovel=Amethyst Shovel
 
-item.minespawn:ruby_sword=Ruby Sword
-item.minespawn:ruby_axe=Ruby Axe
-item.minespawn:ruby_hoe=Ruby Hoe
-item.minespawn:ruby_pickaxe=Ruby Pickaxe
-item.minespawn:ruby_shovel=Ruby Shovel
+item.twisted:ruby_sword=Ruby Sword
+item.twisted:ruby_axe=Ruby Axe
+item.twisted:ruby_hoe=Ruby Hoe
+item.twisted:ruby_pickaxe=Ruby Pickaxe
+item.twisted:ruby_shovel=Ruby Shovel
 
-item.spawn_egg.entity.minespawn:golden_apple_cow.name=Spawn Golden Apple Cow
-item.spawn_egg.entity.minespawn:enchanted_gac.name=Spawn Enchanted Golden Apple Cow
-item.spawn_egg.entity.minespawn:apple_cow.name=Spawn Apple Cow
-item.spawn_egg.entity.minespawn:mobjira.name=Spawn Mobjira
-item.spawn_egg.entity.minespawn:nastysaurus.name=Spawn Nastysaurus
-item.spawn_egg.entity.minespawn:mantis.name=Spawn Mantis
+item.spawn_egg.entity.twisted:golden_apple_cow.name=Spawn Golden Apple Cow
+item.spawn_egg.entity.twisted:enchanted_gac.name=Spawn Enchanted Golden Apple Cow
+item.spawn_egg.entity.twisted:apple_cow.name=Spawn Apple Cow
+item.spawn_egg.entity.twisted:mobjira.name=Spawn Mobjira
+item.spawn_egg.entity.twisted:nastysaurus.name=Spawn Nastysaurus
+item.spawn_egg.entity.twisted:mantis.name=Spawn Mantis
+item.spawn_egg.entity.twisted:royal_horse.name=Spawn Royal Horse
 
-entity.minespawn:golden_apple_cow.name=Golden Apple Cow
-entity.minespawn:enchanted_golden_apple_cow.name=Enchanted Golden Apple Cow
-entity.minespawn:apple_cow.name=Apple Cow
-entity.minespawn:mobjira.name=Mobjira
-entity.minespawn:nastysaurus.name=Nastysaurus
-entity.minespawn:mantis.name=Mantis
+entity.twisted:golden_apple_cow.name=Golden Apple Cow
+entity.twisted:enchanted_golden_apple_cow.name=Enchanted Golden Apple Cow
+entity.twisted:apple_cow.name=Apple Cow
+entity.twisted:mobjira.name=Mobjira
+entity.twisted:nastysaurus.name=Nastysaurus
+entity.twisted:mantis.name=Mantis
+entity.twisted:royal_horse.name=Royal Horse
 
-entity.minespawn:mj_fireball.name=Mobjira Fireball
-entity.minespawn:water_rocket.name=Water Rocket
-entity.minespawn:fire_rocket.name=Fire Rocket
-entity.minespawn:mj_atomic_breath.name=Mobjira Atomic Breath
+entity.twisted:mj_fireball.name=Mobjira Fireball
+entity.twisted:water_rocket.name=Water Rocket
+entity.twisted:fire_rocket.name=Fire Rocket
+entity.twisted:mj_atomic_breath.name=Mobjira Atomic Breath
 
-entity.minespawn:dummy.name=Dummy
-entity.minespawn:bap.name=a player with Battle Axe
-entity.minespawn:bbp.name=a player with Big Bertha
-entity.minespawn:qba.name=a player with Queen Battle Axe
-entity.minespawn:rgp.name=a player with Royal Guardian
-entity.minespawn:sbp.name=a player with Stelix Bertha
+entity.twisted:dummy.name=Dummy
+entity.twisted:bap.name=a player with Battle Axe
+entity.twisted:bbp.name=a player with Big Bertha
+entity.twisted:qba.name=a player with Queen Battle Axe
+entity.twisted:rgp.name=a player with Royal Guardian
+entity.twisted:sbp.name=a player with Stelix Bertha
 
-tile.minespawn:extreme_torch.name=Extreme Torch
-tile.minespawn:amethyst_ore.name=Amethyst Ore
-tile.minespawn:ruby_ore.name=Ruby Ore
-tile.minespawn:deepslate_amethyst_ore.name=Deepslate Amethyst Ore
-tile.minespawn:deepslate_ruby_ore.name=Deepslate Ruby Ore
-tile.minespawn:amethyst_block.name=Amethyst Block
-tile.minespawn:ruby_block.name=Ruby Block
+tile.twisted:extreme_torch.name=Extreme Torch
+tile.twisted:amethyst_ore.name=Amethyst Ore
+tile.twisted:ruby_ore.name=Ruby Ore
+tile.twisted:deepslate_amethyst_ore.name=Deepslate Amethyst Ore
+tile.twisted:deepslate_ruby_ore.name=Deepslate Ruby Ore
+tile.twisted:amethyst_block.name=Amethyst Block
+tile.twisted:ruby_block.name=Ruby Block
 
 p_poem.title=Princess Poem
 p_poem.content=§5Princess's Poem\n\n\n§7That young woman who walks forever through the valley\nKnown as a princess\nSaid to be a remnant of an ancient kingdom\nThat never truly existed.\nAlways wandering through the four corners of the earth\nPerhaps fleeing, or hiding something.\nOne day, a demon corrupts her\nMakes her believe she is a queen\nShe forges weapons and armor for war\nHer mind crumbles with every sunrise and sunset.\nThen, something terrible comes to pass\nThe one known as a princess, who thinks herself a queen\nIs no longer safe.\nFor without a kingdom, there are no castles or walls\nAnd there is no princess, nor queen\nAnd so the poor princess is found dead\nDead by her own unknown madness.\n\n§3Written by an old peasant

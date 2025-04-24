@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:amethyst_boots",
+			"identifier": "twisted:amethyst_boots",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.boots"
@@ -21,7 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "minespawn_amethyst_boots",
+			"minecraft:icon": "twisted:amethyst_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet",
 				"protection": 3
@@ -30,13 +30,13 @@
 				"repair_items": [
 					{
 						"items": [
-							"minespawn:amethyst"
+							"twisted:amethyst"
 						],
 						"repair_amount": "query.max_durability * 0.25"
 					},
 					{
 						"items": [
-							"minespawn:amethyst_boots"
+							"twisted:amethyst_boots"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}

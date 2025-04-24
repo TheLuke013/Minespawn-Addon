@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "minespawn:stelix_bertha"
+			"identifier": "twisted:stelix_bertha"
 		},
 		"tags": [
 			"crafting_table"
@@ -14,18 +14,18 @@
 		],
 		"key": {
 			"b": {
-				"item": "minespawn:big_bertha"
+				"item": "twisted:big_bertha"
 			},
 			"i": {
 				"item": "minecraft:iron_block"
 			}
 		},
 		"result": {
-			"item": "minespawn:stelix_bertha"
+			"item": "twisted:stelix_bertha"
 		},
 		"unlock": [
 			{
-				"item": "minespawn:big_bertha"
+				"item": "twisted:big_bertha"
 			}
 		]
 	}

@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "minespawn:amethyst_block",
+			"identifier": "twisted:amethyst_block",
 			"menu_category": {
 				"category": "construction"
 			}

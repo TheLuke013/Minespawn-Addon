@@ -1,8 +1,8 @@
-	{
+		{
 	"format_version": "1.21.40",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "minespawn:bap",
+			"identifier": "twisted:bap",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"runtime_identifier": "snowball"

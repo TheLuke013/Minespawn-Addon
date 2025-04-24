@@ -2,12 +2,12 @@
 	"format_version": "1.20.80",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "minespawn:fire_rocket",
+			"identifier": "twisted:fire_rocket",
 			"materials": {
 				"default": "snowball"
 			},
 			"textures": {
-				"default": "textures/guns/firezooka"
+				"default": "textures/blasters/fire_blaster"
 			},
 			"geometry": {
 				"default": "geometry.rocket"

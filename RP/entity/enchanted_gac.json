@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "minespawn:enchanted_golden_apple_cow",
+			"identifier": "twisted:enchanted_golden_apple_cow",
 			"materials": {
 				"default": "cow",
 				"charged": "charged_creeper"

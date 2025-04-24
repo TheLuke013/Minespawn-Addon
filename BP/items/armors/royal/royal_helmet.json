@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "minespawn:royal_helmet",
+			"identifier": "twisted:royal_helmet",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.helmet"
@@ -21,7 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "minespawn_royal_helmet",
+			"minecraft:icon": "twisted:royal_helmet",
 			"minecraft:wearable": {
 				"slot": "slot.armor.head",
 				"protection": 8
@@ -30,7 +30,7 @@
 				"repair_items": [
 					{
 						"items": [
-							"minespawn:royal_helmet"
+							"twisted:royal_helmet"
 						],
 						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}

@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "minespawn:golden_apple_cow",
+			"identifier": "twisted:golden_apple_cow",
 			"materials": {
 				"default": "cow"
 			},
@@ -34,7 +34,7 @@
 				"controller.render.cow"
 			],
 			"spawn_egg": {
-				"texture": "minespawn_golden_apple_cow_spawn_egg"
+				"texture": "twisted:golden_apple_cow_spawn_egg"
 			}
 		}
 	}
