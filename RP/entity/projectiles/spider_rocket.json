@@ -1,0 +1,28 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "twisted:spider_rocket",
+			"materials": {
+				"default": "snowball"
+			},
+			"textures": {
+				"default": "textures/blasters/spider_blaster"
+			},
+			"geometry": {
+				"default": "geometry.rocket"
+			},
+			"render_controllers": [
+				"controller.render.item_sprite"
+			],
+			"animations": {
+				"flying": "animation.actor.billboard"
+			},
+			"scripts": {
+				"animate": [
+					"flying"
+				]
+			}
+		}
+	}
+}

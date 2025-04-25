@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "twisted:fire_rocket"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A",
+			"B",
+			"C"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:iron_ingot"
+			},
+			"B": {
+				"item": "minecraft:fire_charge"
+			},
+			"C": {
+				"item": "minecraft:gunpowder"
+			}
+		},
+		"result": [
+			{
+				"item": "twisted:fire_rocket",
+				"count": 4
+			}
+		],
+		"unlock": [
+			{
+				"item": "minecraft:fire_charge"
+			}
+		]
+	}
+}

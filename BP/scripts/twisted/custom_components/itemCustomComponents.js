@@ -3,6 +3,7 @@ import { shootEntityFromPlayer, getPlayerSlotItem, getCardinalDirection } from '
 import { ultimateChainsaw, ultimateHammerAttack } from '../weapons.js';
 import { itemDurability } from '../item_durability.js';
 import { knockbackAttack, flamingAttack } from '../big_weapons_attack.js';
+import { hasAmmunition, useAmmunition } from '../shooter.js';
 
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
     initEvent.itemComponentRegistry.registerCustomComponent('twisted:knockback', {
@@ -59,17 +60,27 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
     initEvent.itemComponentRegistry.registerCustomComponent('twisted:blaster', {
         onUse: e => {
             if (e.source.typeId === 'minecraft:player' && e.itemStack.getTags().includes('twisted:is_blaster')) {
-
-                const mainhandItem = getPlayerSlotItem(e.source);
-                if (mainhandItem?.typeId === 'twisted:water_blaster') {
-                    shootEntityFromPlayer('twisted:water_rocket', e.source);
-                } else if (mainhandItem?.typeId === 'twisted:fire_blaster') {
-                    shootEntityFromPlayer('twisted:fire_rocket', e.source);
+                const player = e.source;
+                const mainhandItem = getPlayerSlotItem(player);
+                if (mainhandItem?.typeId === 'twisted:water_blaster' && hasAmmunition(player, 'twisted:water_rocket')) {
+                    shootEntityFromPlayer('twisted:water_rocket', player);
+                    useAmmunition(player, 'twisted:water_rocket');
+                } else if (mainhandItem?.typeId === 'twisted:fire_blaster' && hasAmmunition(player, 'twisted:fire_rocket')) {
+                    shootEntityFromPlayer('twisted:fire_rocket', player);
+                    useAmmunition(player, 'twisted:fire_rocket');
+                } else if (mainhandItem?.typeId === 'twisted:spider_blaster' && hasAmmunition(player, 'twisted:spider_rocket')) {
+                    shootEntityFromPlayer('twisted:spider_rocket', player);
+                    useAmmunition(player, 'twisted:spider_rocket');
+                    player.playSound('mob.spider.say');
+                } else {
+                    player.playSound('blaster.empty');
+                    player.runCommand('titleraw @s actionbar {"rawtext":[{"translate":"blaster.empty"}]}');
+                    return;
                 }
 
-                e.source.playSound('blaster.fire');
-                e.source.runCommand('camerashake add @s 0.06 0.5 rotational');
-                itemDurability(e.source);
+                player.playSound('blaster.fire');
+                player.runCommand('camerashake add @s 0.06 0.5 rotational');
+                itemDurability(player);
             }
         }
     });

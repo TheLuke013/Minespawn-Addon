@@ -1,9 +1,12 @@
-import { world, system } from '@minecraft/server';
+import { world } from '@minecraft/server';
 import * as Vector3 from './utils/vector3.js';
 import { getPlayerSlotItem } from './utils/utils.js';
 import { bigWeapons } from './main.js';
 
+const kDist = 12;
+
 world.afterEvents.entityHitEntity.subscribe(e => {
+    //player source damage
     if (e.damagingEntity.typeId === 'minecraft:player' && e.hitEntity.typeId === 'twisted:mobjira') {
         const player = e.damagingEntity;
         const mobjira = e.hitEntity;
@@ -12,6 +15,12 @@ world.afterEvents.entityHitEntity.subscribe(e => {
         if (bigWeapons.includes(mainhandItem?.typeId)) {
             mobjira.runCommand('event entity @s twisted:add_kbr');
         }
+    }
+
+    //mobjira source damage
+    if (e.damagingEntity.typeId === 'twisted:mobjira') {
+        const dir = e.damagingEntity.getViewDirection();
+        e.hitEntity.applyKnockback(dir.x, dir.z, kDist, 1);
     }
 })
 
@@ -27,6 +36,22 @@ export function mobjiraBehaviours(mobjira, player) {
         });
         mobjira.removeTag('ready_for_breath');
     }
+
+    //long distance knockback
+    const mobjiraLoc = mobjira.location;
+    const playerLoc = player.location;
+
+    const dx = mobjiraLoc.x - playerLoc.x;
+    const dy = mobjiraLoc.y - playerLoc.y;
+    const dz = mobjiraLoc.z - playerLoc.z;
+
+    const distance = Math.sqrt(dx * dx + dz * dz);
+
+    if (distance <= 10) {
+        const dir = mobjira.getViewDirection();
+        player.applyKnockback(dir.x, dir.z, kDist, 1);
+    }
+
 
     //regeneration
     const healthComponent = mobjira.getComponent('minecraft:health');

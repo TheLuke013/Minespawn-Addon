@@ -1,0 +1,49 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "twisted:spider_blaster",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": "twisted:spider_blaster",
+			"minecraft:hand_equipped": {
+				"value": true
+			},
+			"minecraft:allow_off_hand": {
+				"value": false
+			},
+			"minecraft:stacked_by_data": {
+				"value": true
+			},
+			"minecraft:durability": {
+				"max_durability": 500
+			},
+			"minecraft:food": {
+				"can_always_eat": true
+			},
+			"minecraft:cooldown": {
+				"category": "spider_blaster",
+				"duration": 10.0
+			},
+			"minecraft:use_modifiers": {
+				"use_duration": 999999
+			},
+			"minecraft:enchantable": {
+				"slot": "bow",
+				"value": 5
+			},
+			"minecraft:tags": {
+				"tags": [
+					"twisted:is_blaster"
+				]
+			},
+			"minecraft:custom_components": [
+				"twisted:blaster"
+			]
+		}
+	}
+}

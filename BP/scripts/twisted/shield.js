@@ -25,21 +25,21 @@ function shieldMustDefend(player, damager, damage) {
         if (Math.abs(angle) <= angleThreshold) {
             player.getComponent("minecraft:health")?.setCurrentValue(currentHealth + damage);
             player.applyKnockback(0, 0, 0, 0);
-            damager.applyKnockback(direction.x, direction.z, impulse, impulse * 0.4);
+            try {
+                damager.applyKnockback(direction.x, direction.z, impulse, impulse * 0.4);
+            } catch (error) {
+                console.log(error);
+            }
+
             world.playSound(`item.shield.block`, player.location);
 
-            //shield durability
-            if (mainhandItem != undefined) {
-                itemDurability(player);
-            } else if (offhandItem != undefined) {
-                itemDurability(player);
-            }
+            itemDurability(player);
         }
     }
 }
 
 export function shieldSystem(player) {
-    const entities = player.getEntitiesFromViewDirection({ maxDistance: 2, families: ['monster'] });
+    const entities = player.getEntitiesFromViewDirection({ maxDistance: 2, families: ['monster', 'twisted_monster'] });
     if (entities.length >= 1) {
         entities.forEach(entity => {
             shieldMustDefend(player, entity.entity, 0);

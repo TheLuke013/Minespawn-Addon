@@ -101,6 +101,9 @@
 		"twisted:fire_blaster": {
 			"textures": "textures/items/blasters/fire_blaster"
 		},
+		"twisted:spider_blaster": {
+			"textures": "textures/items/blasters/spider_blaster"
+		},
 		"twisted:royal_helmet": {
 			"textures": "textures/items/armors/royal/royal_helmet"
 		},
@@ -184,6 +187,15 @@
 		},
 		"twisted:royal_horse_spawn_egg": {
 			"textures": "textures/items/spawn_eggs/royal_horse_spawn_egg"
+		},
+		"twisted:water_rocket": {
+			"textures": "textures/items/rockets/water_rocket"
+		},
+		"twisted:fire_rocket": {
+			"textures": "textures/items/rockets/fire_rocket"
+		},
+		"twisted:spider_rocket": {
+			"textures": "textures/items/rockets/spider_rocket"
 		}
 	}
 }

@@ -79,7 +79,8 @@
 			},
 			"minecraft:type_family": {
 				"family": [
-					"nastysaurus"
+					"nastysaurus",
+					"twisted_monster"
 				]
 			},
 			"minecraft:collision_box": {

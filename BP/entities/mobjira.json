@@ -24,7 +24,7 @@
 		"component_groups": {
 			"twisted:remove_kbr": {
 				"minecraft:knockback_resistance": {
-					"value": 0
+					"value": 0.5
 				},
 				"minecraft:timer": {
 					"looping": false,
@@ -346,7 +346,8 @@
 			},
 			"minecraft:type_family": {
 				"family": [
-					"mobjira"
+					"mobjira",
+					"twisted_monster"
 				]
 			},
 			"minecraft:experience_reward": {

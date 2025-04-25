@@ -16,6 +16,11 @@ item.twisted:royal_armor_stand=Ultimate Royal Armor Stand
 
 item.twisted:water_blaster=Water Blaster
 item.twisted:fire_blaster=Fire Blaster
+item.twisted:spider_blaster=Spider Blaster
+
+item.twisted:water_rocket=Water Rocket
+item.twisted:fire_rocket=Fire Rocket
+item.twisted:spider_rocket=Spider Rocket
 
 item.twisted:amethyst_helmet=Amethyst Helmet
 item.twisted:amethyst_chestplate=Amethyst Chestplate
@@ -87,6 +92,7 @@ entity.twisted:mj_fireball.name=Mobjira Fireball
 entity.twisted:water_rocket.name=Water Rocket
 entity.twisted:fire_rocket.name=Fire Rocket
 entity.twisted:mj_atomic_breath.name=Mobjira Atomic Breath
+entity.twisted:mj_atomic_explosion.name=Mobjira Atomic Explosion
 
 entity.twisted:dummy.name=Dummy
 entity.twisted:bap.name=a player with Battle Axe
@@ -102,6 +108,8 @@ tile.twisted:deepslate_amethyst_ore.name=Deepslate Amethyst Ore
 tile.twisted:deepslate_ruby_ore.name=Deepslate Ruby Ore
 tile.twisted:amethyst_block.name=Amethyst Block
 tile.twisted:ruby_block.name=Ruby Block
+
+blaster.empty=§4Empty rockets!
 
 p_poem.title=Princess Poem
 p_poem.content=§5Princess's Poem\n\n\n§7That young woman who walks forever through the valley\nKnown as a princess\nSaid to be a remnant of an ancient kingdom\nThat never truly existed.\nAlways wandering through the four corners of the earth\nPerhaps fleeing, or hiding something.\nOne day, a demon corrupts her\nMakes her believe she is a queen\nShe forges weapons and armor for war\nHer mind crumbles with every sunrise and sunset.\nThen, something terrible comes to pass\nThe one known as a princess, who thinks herself a queen\nIs no longer safe.\nFor without a kingdom, there are no castles or walls\nAnd there is no princess, nor queen\nAnd so the poor princess is found dead\nDead by her own unknown madness.\n\n§3Written by an old peasant

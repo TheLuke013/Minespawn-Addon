@@ -10,6 +10,7 @@ import './custom_components/blockCustomComponents.js';
 import './miners_dream.js';
 import './weapons.js';
 import './tools.js';
+import './shooter.js';
 
 export const bigWeapons = [
     'twisted:big_bertha', 'twisted:stelix_bertha', 'twisted:royal_guardian',

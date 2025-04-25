@@ -19,6 +19,12 @@
 				"sounds/blaster/blaster_fire"
 			]
 		},
+		"blaster.empty": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/blaster/blaster_empty"
+			]
+		},
 		"mob.mobjira.step": {
 			"category": "neutral",
 			"max_distance": 150,
