@@ -241,6 +241,17 @@
 				"minecraft:skin_id": {
 					"value": 8
 				},
+				"minecraft:timer": {
+					"looping": true,
+					"time": [
+						15,
+						15
+					],
+					"time_down_event": {
+						"event": "twisted:toggle_random_attack",
+						"target": "self"
+					}
+				},
 				"minecraft:behavior.ranged_attack": {
 					"priority": 1,
 					"burst_shots": 50,
@@ -283,6 +294,16 @@
 					{
 						"cause": "void",
 						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:spell_effects": {
+				"add_effects": [
+					{
+						"effect": "regeneration",
+						"amplifier": 255,
+						"duration": "infinite",
+						"visible": false
 					}
 				]
 			},
@@ -351,7 +372,7 @@
 				]
 			},
 			"minecraft:experience_reward": {
-				"on_death": 4000
+				"on_death": 40000
 			},
 			"minecraft:behavior.look_at_target": {
 				"priority": 5,
@@ -510,7 +531,8 @@
 								"twisted:fireball_attack",
 								"twisted:jump",
 								"twisted:knockback",
-								"twisted:lightning_attack"
+								"twisted:lightning_attack",
+								"twisted:prepare_for_breath_atomic"
 							]
 						}
 					},
@@ -526,7 +548,8 @@
 								"twisted:melee_attack",
 								"twisted:jump",
 								"twisted:knockback",
-								"twisted:lightning_attack"
+								"twisted:lightning_attack",
+								"twisted:prepare_for_breath_atomic"
 							]
 						}
 					},
@@ -542,7 +565,8 @@
 								"twisted:fireball_attack",
 								"twisted:jump",
 								"twisted:knockback",
-								"twisted:melee_attack"
+								"twisted:melee_attack",
+								"twisted:prepare_for_breath_atomic"
 							]
 						}
 					},
@@ -558,7 +582,8 @@
 								"twisted:fireball_attack",
 								"twisted:knockback",
 								"twisted:lightning_attack",
-								"twisted:melee_attack"
+								"twisted:melee_attack",
+								"twisted:prepare_for_breath_atomic"
 							]
 						}
 					},
@@ -574,7 +599,25 @@
 								"twisted:fireball_attack",
 								"twisted:jump",
 								"twisted:lightning_attack",
-								"twisted:melee_attack"
+								"twisted:melee_attack",
+								"twisted:prepare_for_breath_atomic"
+							]
+						}
+					},
+					{
+						"weight": 25,
+						"add": {
+							"component_groups": [
+								"twisted:prepare_for_breath_atomic"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"twisted:fireball_attack",
+								"twisted:jump",
+								"twisted:lightning_attack",
+								"twisted:melee_attack",
+								"twisted:knockback"
 							]
 						}
 					}

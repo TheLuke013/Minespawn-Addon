@@ -23,7 +23,7 @@
 				]
 			},
 			"animations": {
-				"cape": "animation.royal_armor.cape"
+				"cape": "animation.armor.royal.cape"
 			},
 			"render_controllers": [
 				"controller.render.armor"

@@ -25,9 +25,9 @@ export function detectFullArmor(source, armorName) {
 export function royalArmorEffects(player) {
     const fullRoyal = detectFullArmor(player, 'twisted:royal');
     if (fullRoyal) {
-        player.addEffect('minecraft:resistance', 100, { amplifier: 1, showParticles: false });
-        player.addEffect('minecraft:fire_resistance', 100, { amplifier: 1, showParticles: false });
-        player.addEffect('minecraft:regeneration', 100, { amplifier: 1, showParticles: false });
+        player.addEffect('minecraft:resistance', 100, { amplifier: 0, showParticles: false });
+        player.addEffect('minecraft:fire_resistance', 100, { amplifier: 0, showParticles: false });
+        player.addEffect('minecraft:regeneration', 100, { amplifier: 0, showParticles: false });
         player.addEffect('minecraft:slow_falling', 100, { amplifier: 0, showParticles: false });
 
         if (!(player.getTags().includes('knockback_resistance')))

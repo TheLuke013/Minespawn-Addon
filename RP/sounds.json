@@ -93,6 +93,24 @@
 				"events": {
 					"ambient": "mob.buzzing"
 				}
+			},
+			"twisted:robo_jeffery": {
+				"volume": 30.0,
+				"pitch": 1.0,
+				"events": {
+					"step": {
+						"sound": "mob.robo.step",
+						"volume": 20.0
+					},
+					"hurt": {
+						"sound": "mob.robo.hurt_impact",
+						"volume": 50.0
+					},
+					"death": {
+						"sound": "mob.robo.destroyed",
+						"volume": 30.0
+					}
+				}
 			}
 		}
 	}

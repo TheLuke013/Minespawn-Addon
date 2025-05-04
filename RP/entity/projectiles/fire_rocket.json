@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "twisted:fire_rocket",
 			"materials": {
-				"default": "snowball"
+				"default": "arrow"
 			},
 			"textures": {
 				"default": "textures/blasters/fire_blaster"
@@ -16,11 +16,15 @@
 				"controller.render.item_sprite"
 			],
 			"animations": {
-				"flying": "animation.actor.billboard"
+				"move": "animation.rocket.move"
 			},
 			"scripts": {
+				"pre_animation": [
+					"variable.shake = query.shake_time - query.frame_alpha;",
+					"variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
+				],
 				"animate": [
-					"flying"
+					"move"
 				]
 			}
 		}

@@ -16,8 +16,8 @@
 				"controller.render.nastysaurus"
 			],
 			"spawn_egg": {
-				"base_color": "#000000",
-				"overlay_color": "#FFFFFF"
+				"base_color": "#987840",
+				"overlay_color": "#654122"
 			},
 			"animations": {
 				"idle": "animation.nastysaurus.idle",

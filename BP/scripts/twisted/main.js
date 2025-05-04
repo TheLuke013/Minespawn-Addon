@@ -2,7 +2,8 @@ import { world, system } from '@minecraft/server';
 import { enchantItems } from './item_enchantments.js';
 import { royalArmorEffects } from './armors.js';
 import { mobjiraBehaviours } from './mobjira.js';
-import { longRangeAttack } from './big_weapons_attack.js';
+import { roboJefferyBehaviours } from './robo_jeffery.js';
+import { longRangeAttack, handleLongRange } from './big_weapons_attack.js';
 import { shieldSystem } from './shield.js';;
 
 import './custom_components/itemCustomComponents.js';
@@ -27,6 +28,20 @@ world.afterEvents.itemUse.subscribe(e => {
     }
 })
 
+//MOBS KNOCKBACK
+world.afterEvents.entityHitEntity.subscribe(e => {
+    const dir = e.damagingEntity.getViewDirection();
+
+    //nastysaurus
+    if (e.damagingEntity.typeId === 'twisted:nastysaurus') {
+        e.hitEntity.applyKnockback(dir.x, dir.z, 5, 1);
+    }
+    //robo jeffery
+    else if (e.damagingEntity.typeId === 'twisted:robo_jeffery') {
+        e.hitEntity.applyKnockback(dir.x, dir.z, 5, 1);
+    }
+})
+
 system.runInterval(() => {
     const players = world.getPlayers();
 
@@ -35,6 +50,8 @@ system.runInterval(() => {
         worldEntities.forEach(entity => {
             if (entity.typeId === 'twisted:mobjira') {
                 mobjiraBehaviours(entity, player);
+            } else if (entity.typeId === 'twisted:robo_jeffery') {
+                roboJefferyBehaviours(entity, player);
             }
         })
 
@@ -46,6 +63,7 @@ system.runInterval(() => {
 
         //long range attack
         longRangeAttack(player);
+        handleLongRange(player);
 
         //player knockback resistance
         if (player.getTags().includes('add_knockback_resistance')) {

@@ -78,7 +78,7 @@ item.spawn_egg.entity.twisted:apple_cow.name=Spawn Apple Cow
 item.spawn_egg.entity.twisted:mobjira.name=Spawn Mobjira
 item.spawn_egg.entity.twisted:nastysaurus.name=Spawn Nastysaurus
 item.spawn_egg.entity.twisted:mantis.name=Spawn Mantis
-item.spawn_egg.entity.twisted:royal_horse.name=Spawn Royal Horse
+item.spawn_egg.entity.twisted:robo_jeffery.name=Spawn Robo Jeffery
 
 entity.twisted:golden_apple_cow.name=Golden Apple Cow
 entity.twisted:enchanted_golden_apple_cow.name=Enchanted Golden Apple Cow
@@ -86,13 +86,14 @@ entity.twisted:apple_cow.name=Apple Cow
 entity.twisted:mobjira.name=Mobjira
 entity.twisted:nastysaurus.name=Nastysaurus
 entity.twisted:mantis.name=Mantis
-entity.twisted:royal_horse.name=Royal Horse
+entity.twisted:robo_jeffery.name=Robo Jeffery
 
 entity.twisted:mj_fireball.name=Mobjira Fireball
 entity.twisted:water_rocket.name=Water Rocket
 entity.twisted:fire_rocket.name=Fire Rocket
 entity.twisted:mj_atomic_breath.name=Mobjira Atomic Breath
 entity.twisted:mj_atomic_explosion.name=Mobjira Atomic Explosion
+entity.twisted:robo_explosion.name=Robo Explosion
 
 entity.twisted:dummy.name=Dummy
 entity.twisted:bap.name=a player with Battle Axe

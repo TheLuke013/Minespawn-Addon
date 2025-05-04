@@ -1,0 +1,45 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "twisted:robo_jeffery",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/robos/jeffery"
+			},
+			"geometry": {
+				"default": "geometry.robo_jeffery"
+			},
+			"render_controllers": [
+				"controller.render.robo_jeffery"
+			],
+			"sound_effects": {
+				"attack": "mob.robo.impact"
+			},
+			"animations": {
+				"walk": "animation.poravagers_robot_bote_jenarus.walk",
+				"look_at_target": "animation.poravagers_robot_bote_jenarus.look_at_target",
+				"attack_controller": "controller.animation.robo_jeffery.attack",
+				"attack": "animation.poravagers_robot_bote_jenarus.attack",
+				"attack2": "animation.poravagers_robot_bote_jenarus.attack2",
+				"attack3": "animation.poravagers_robot_bote_jenarus.attack3",
+				"mega_smash": "animation.poravagers_robot_bote_jenarus.mega_smash"
+			},
+			"scripts": {
+				"animate": [
+					"look_at_target",
+					"attack_controller",
+					{
+						"walk": "query.modified_move_speed"
+					}
+				]
+			},
+			"spawn_egg": {
+				"base_color": "#A308F6",
+				"overlay_color": "#121111"
+			}
+		}
+	}
+}

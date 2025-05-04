@@ -1,0 +1,86 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.robo_jeffery.attack": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attack1": "query.skin_id == 1 && variable.attack_time > 0.0"
+						},
+						{
+							"attack2": "query.skin_id == 2 && variable.attack_time > 0.0"
+						},
+						{
+							"attack3": "query.skin_id == 3"
+						},
+						{
+							"mega_smash": "query.skin_id == 4"
+						}
+					]
+				},
+				"attack1": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"default": "variable.attack_time <= 0.0"
+						}
+					],
+					"sound_effects": [
+						{
+							"effect": "attack"
+						}
+					]
+				},
+				"attack2": {
+					"animations": [
+						"attack2"
+					],
+					"transitions": [
+						{
+							"default": "variable.attack_time <= 0.0"
+						}
+					],
+					"sound_effects": [
+						{
+							"effect": "attack"
+						}
+					]
+				},
+				"attack3": {
+					"animations": [
+						"attack3"
+					],
+					"transitions": [
+						{
+							"default": "query.skin_id != 3"
+						}
+					],
+					"sound_effects": [
+						{
+							"effect": "attack"
+						}
+					]
+				},
+				"mega_smash": {
+					"animations": [
+						"mega_smash"
+					],
+					"transitions": [
+						{
+							"default": "query.skin_id != 4"
+						}
+					],
+					"sound_effects": [
+						{
+							"effect": "attack"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.robo_jeffery_jump": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"jumping": "query.skin_id == 5"
+						},
+						{
+							"mega_smash": "query.skin_id == 4"
+						}
+					]
+				},
+				"mega_smash": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 5"
+						}
+					],
+					"on_entry": [
+						"/tag @s add mega_smash_attack",
+						"/playsound blaster.mega_shot @p[r=30]"
+					]
+				},
+				"jumping": {
+					"transitions": [
+						{
+							"on_ground": "query.skin_id == 6 && query.is_on_ground"
+						}
+					],
+					"on_entry": [
+						"/effect @s levitation 1 15 true",
+						"/tag @s add jeffery_is_jumping"
+					]
+				},
+				"on_ground": {
+					"transitions": [
+						{
+							"default": "query.skin_id != 6"
+						}
+					],
+					"on_entry": [
+						"/playsound mob.mobjira.jump_impact @p[r=30]",
+						"/execute as @e[rm=0,r=100,c=1,family=!jeffery] at @s run tag @p[r=30] add jeffery_jump_knockback",
+						"/execute as @e[rm=0,r=100,c=1,family=!jeffery] at @s run camerashake add @p[r=30] 1 1 positional"
+					]
+				}
+			}
+		}
+	}
+}

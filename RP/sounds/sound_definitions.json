@@ -25,30 +25,44 @@
 				"sounds/blaster/blaster_empty"
 			]
 		},
+		"blaster.laser_shoot": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/blaster/laser_shoot",
+				"sounds/blaster/laser_shoot2"
+			]
+		},
+		"blaster.mega_shot": {
+			"category": "neutral",
+			"min_distance": 100,
+			"sounds": [
+				"sounds/blaster/blaster_mega_shot"
+			]
+		},
 		"mob.mobjira.step": {
 			"category": "neutral",
-			"max_distance": 150,
+			"min_distance": 200,
 			"sounds": [
 				"sounds/mob/mobjira/mobjira_step"
 			]
 		},
 		"mob.mobjira.hurt": {
 			"category": "neutral",
-			"max_distance": 150,
+			"min_distance": 200,
 			"sounds": [
 				"sounds/mob/mobjira/mobjira_roar1"
 			]
 		},
 		"mob.mobjira.death": {
 			"category": "neutral",
-			"max_distance": 150,
+			"min_distance": 200,
 			"sounds": [
 				"sounds/mob/mobjira/mobjira_roar4"
 			]
 		},
 		"mob.mobjira.roar": {
 			"category": "neutral",
-			"max_distance": 150,
+			"min_distance": 200,
 			"sounds": [
 				"sounds/mob/mobjira/mobjira_roar1",
 				"sounds/mob/mobjira/mobjira_roar2",
@@ -59,14 +73,14 @@
 		},
 		"mob.mobjira.jump_impact": {
 			"category": "neutral",
-			"max_distance": 150,
+			"min_distance": 200,
 			"sounds": [
 				"sounds/mob/mobjira/mobjira_jump_impact"
 			]
 		},
 		"mob.mobjira.atomic_breath": {
 			"category": "neutral",
-			"max_distance": 150,
+			"min_distance": 500,
 			"sounds": [
 				"sounds/mob/mobjira/atomic_breath"
 			]
@@ -102,6 +116,34 @@
 			"category": "neutral",
 			"sounds": [
 				"sounds/mob/buzzing"
+			]
+		},
+		"mob.robo.step": {
+			"category": "neutral",
+			"min_distance": 100,
+			"sounds": [
+				"sounds/mob/robo/step"
+			]
+		},
+		"mob.robo.impact": {
+			"category": "neutral",
+			"min_distance": 100,
+			"sounds": [
+				"sounds/mob/robo/impact"
+			]
+		},
+		"mob.robo.hurt_impact": {
+			"category": "neutral",
+			"min_distance": 100,
+			"sounds": [
+				"sounds/mob/robo/impact2"
+			]
+		},
+		"mob.robo.destroyed": {
+			"category": "neutral",
+			"min_distance": 100,
+			"sounds": [
+				"sounds/mob/robo/destroyed"
 			]
 		}
 	}

@@ -39,3 +39,13 @@ export function getCardinalDirection(player) {
 export function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+export function getDistance(from_, to_) {
+    const fromLoc = from_.location;
+    const toLoc = to_.location;
+    const dx = fromLoc.x - toLoc.x;
+    const dz = fromLoc.z - toLoc.z;
+    const distance = Math.sqrt(dx * dx + dz * dz);
+
+    return distance;
+}

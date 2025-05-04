@@ -40,18 +40,18 @@ export function enchantItems(player) {
         player.runCommand('enchant @s silk_touch');
     }
     //ENCHANTED EMERALD SWORD
-    else if (mainhandItem?.typeId === 'twisted:experience_sword') {
+    else if (mainhandItem?.typeId === 'twisted:enchanted_emerald_sword') {
         player.runCommand('enchant @s sharpness 2');
         player.runCommand('enchant @s unbreaking 3');
         player.runCommand('enchant @s mending');
     }
     //ENCHANTED EMERALD ARMOR
-    else if (mainhandItem?.typeId === 'twisted:experience_helmet' ||
-        mainhandItem?.typeId === 'twisted:experience_chestplate' ||
-        mainhandItem?.typeId === 'twisted:experience_leggings') {
+    else if (mainhandItem?.typeId === 'twisted:enchanted_emerald_helmet' ||
+        mainhandItem?.typeId === 'twisted:enchanted_emerald_chestplate' ||
+        mainhandItem?.typeId === 'twisted:enchanted_emerald_leggings') {
         player.runCommand('enchant @s protection 2');
         player.runCommand('enchant @s mending');
-    } else if (mainhandItem?.typeId === 'twisted:experience_boots') {
+    } else if (mainhandItem?.typeId === 'twisted:enchanted_emerald_boots') {
         player.runCommand('enchant @s protection 2');
         player.runCommand('enchant @s feather_falling');
         player.runCommand('enchant @s mending');

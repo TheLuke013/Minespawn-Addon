@@ -74,7 +74,7 @@ world.afterEvents.entityHitEntity.subscribe(e => {
     if (!(player.typeId === 'minecraft:player')) return;
 
     //summon more xp when player hits with enchanted emerald armor and sword
-    if (detectFullArmor(player, 'twisted:experience') && getPlayerSlotItem(player)?.typeId === 'twisted:experience_sword') {
+    if (detectFullArmor(player, 'twisted:enchanted_emerald') && getPlayerSlotItem(player)?.typeId === 'twisted:enchanted_emerald_sword') {
         for (let i = 0; i < 5; i++) { player.dimension.spawnEntity('minecraft:xp_orb', player.location); }
     }
 

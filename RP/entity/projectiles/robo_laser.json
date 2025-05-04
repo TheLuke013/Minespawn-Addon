@@ -2,18 +2,18 @@
 	"format_version": "1.20.80",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "twisted:spider_rocket",
+			"identifier": "twisted:robo_laser",
 			"materials": {
 				"default": "arrow"
 			},
 			"textures": {
-				"default": "textures/blasters/spider_blaster"
+				"default": "textures/entity/robos/jeffery"
 			},
 			"geometry": {
-				"default": "geometry.rocket"
+				"default": "geometry.robo_laser"
 			},
 			"render_controllers": [
-				"controller.render.item_sprite"
+				"controller.render.robo_jeffery"
 			],
 			"animations": {
 				"move": "animation.rocket.move"

@@ -89,7 +89,7 @@
 				"default": {
 					"transitions": [
 						{
-							"atomic": "query.health <= 4000 && query.health != 0 && query.skin_id < 7"
+							"atomic": "query.skin_id == 7"
 						},
 						{
 							"atomic_shock": "query.skin_id == 9"
@@ -105,7 +105,6 @@
 					"on_entry": [
 						"/playsound mob.mobjira.atomic_breath @p[r=100] ~~~ 100 1 100",
 						"/tag @s remove ready_for_breath",
-						"/event entity @s twisted:prepare_for_breath_atomic",
 						"/execute as @e[rm=0,r=100,c=1,family=!mobjira] at @s run camerashake add @p[r=100] 1 11 positional"
 					]
 				},

@@ -101,16 +101,6 @@
 				"collision_drag": 0.1,
 				"coefficient_of_restitution": 0.1,
 				"collision_radius": 0.1
-			},
-			"minecraft:particle_appearance_tinting": {
-				"color": {
-					"interpolant": "variable.colour",
-					"gradient": {
-						"0.0": "#FFFFFFFF",
-						"0.47": "#BCEDFF00",
-						"1.0": "#0DDFFF00"
-					}
-				}
 			}
 		}
 	}

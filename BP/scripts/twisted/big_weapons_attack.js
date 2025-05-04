@@ -57,6 +57,23 @@ export function longRangeAttack(player) {
     }
 }
 
+export function handleLongRange(player) {
+    const entities = player.dimension.getEntities({ maxDistance: 5, families: ['long_range_weapon'], location: player.location });
+    if (entities.length >= 1) {
+        entities.forEach(projectile => {
+            const tags = projectile.getTags();
+            const playerTag = tags.find(tag => tag.startsWith('player:'));
+            const ownerName = playerTag.split(':')[1];
+            const awayTag = tags.includes('away_from_owner');
+
+            if ((ownerName === player.name) && awayTag) {
+                //world.sendMessage('detectado projetil de longo alcance perto do owner');
+                projectile.kill();
+            }
+        })
+    }
+}
+
 world.afterEvents.projectileHitEntity.subscribe(e => {
     const bigWeaponsProjectiles = [
         'twisted:bbp', 'twisted:sbp', 'twisted:rgp', 'twisted:bap', 'twisted:qba'

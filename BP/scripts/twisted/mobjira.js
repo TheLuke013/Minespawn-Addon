@@ -1,6 +1,6 @@
 import { world } from '@minecraft/server';
 import * as Vector3 from './utils/vector3.js';
-import { getPlayerSlotItem } from './utils/utils.js';
+import { getPlayerSlotItem, getDistance } from './utils/utils.js';
 import { bigWeapons } from './main.js';
 
 const kDist = 12;
@@ -30,39 +30,13 @@ export function mobjiraBehaviours(mobjira, player) {
         const direction = Vector3.fromRotation(mobjira.getRotation()).multiply(5);
         mobjira.applyImpulse({ x: direction.x, y: direction.y, z: direction.z });
         mobjira.removeTag('mobjira_is_jumping');
-    } else if (mobjira.getTags().includes('ready_for_breath')) {
-        world.playSound('mob.mobjira.atomic_breath', player.location, {
-            volume: 1000
-        });
-        mobjira.removeTag('ready_for_breath');
     }
 
     //long distance knockback
-    const mobjiraLoc = mobjira.location;
-    const playerLoc = player.location;
-
-    const dx = mobjiraLoc.x - playerLoc.x;
-    const dy = mobjiraLoc.y - playerLoc.y;
-    const dz = mobjiraLoc.z - playerLoc.z;
-
-    const distance = Math.sqrt(dx * dx + dz * dz);
-
-    if (distance <= 10) {
+    const distance = getDistance(mobjira, player);
+    if (distance <= 10 && !(player.matches({ gameMode: "creative" }))) {
         const dir = mobjira.getViewDirection();
         player.applyKnockback(dir.x, dir.z, kDist, 1);
-    }
-
-
-    //regeneration
-    const healthComponent = mobjira.getComponent('minecraft:health');
-    if (healthComponent && healthComponent?.currentValue > 4000) {
-        mobjira.addEffect('minecraft:regeneration', 100, { amplifier: 255, showParticles: false });
-    }
-
-    //knockback resistance
-    const knockbackComponent = mobjira.getComponent('minecraft:knockback_resistance');
-    if (knockbackComponent) {
-        world.sendMessage('tem component knockback');
     }
 
     //mobjira jumping knockback
