@@ -307,6 +307,9 @@
 					}
 				]
 			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/mobjira.json"
+			},
 			"minecraft:knockback_resistance": {
 				"value": 5
 			},

@@ -1,0 +1,29 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "twisted:uranium_block"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AAA",
+            "AAA",
+            "AAA"
+        ],
+        "key": {
+            "A": {
+                "item": "twisted:uranium_ingot"
+            }
+        },
+        "result": {
+            "item": "twisted:uranium_block"
+        },
+        "unlock": [
+            {
+                "item": "twisted:uranium_ingot"
+            }
+        ]
+    }
+}

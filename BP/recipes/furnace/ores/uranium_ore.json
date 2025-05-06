@@ -1,0 +1,14 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "twisted:uranium_ore"
+		},
+		"tags": [
+			"furnace",
+			"blast_furnace"
+		],
+		"input": "twisted:uranium_ore",
+		"output": "twisted:uranium_nugget"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "twisted:deepslate_titanium_ore"
+		},
+		"tags": [
+			"furnace",
+			"blast_furnace"
+		],
+		"input": "twisted:deepslate_titanium_ore",
+		"output": "twisted:titanium_nugget"
+	}
+}

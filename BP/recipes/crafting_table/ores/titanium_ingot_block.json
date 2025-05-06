@@ -1,0 +1,28 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "twisted:titanium_ingot_block"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "A"
+        ],
+        "key": {
+            "A": {
+                "item": "twisted:titanium_block"
+            }
+        },
+        "result": {
+            "item": "twisted:titanium_ingot",
+            "count": 9
+        },
+        "unlock": [
+            {
+                "item": "twisted:titanium_block"
+            }
+        ]
+    }
+}

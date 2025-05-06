@@ -51,8 +51,14 @@ item.twisted:royal_shield=Royal Shield
 
 item.twisted:extreme_torch=Extreme Torch
 item.twisted:miners_dream=Miner's Dream
+item.twisted:mobjira_scale=Mobjira Scale
 item.twisted:amethyst=Amethyst
 item.twisted:ruby=Ruby
+item.twisted:titanium_ingot=Titanium Ingot
+item.twisted:uranium_ingot=Uranium Ingot
+item.twisted:ultimate_ingot=Ultimate Ingot
+item.twisted:titanium_nugget=Titanium Nugget
+item.twisted:uranium_nugget=Uranium Nugget
 
 item.twisted:emerald_sword=Emerald Sword
 item.twisted:emerald_axe=Emerald Axe
@@ -93,7 +99,7 @@ entity.twisted:water_rocket.name=Water Rocket
 entity.twisted:fire_rocket.name=Fire Rocket
 entity.twisted:mj_atomic_breath.name=Mobjira Atomic Breath
 entity.twisted:mj_atomic_explosion.name=Mobjira Atomic Explosion
-entity.twisted:robo_explosion.name=Robo Explosion
+entity.twisted:robo_laser.name=Robo Laser
 
 entity.twisted:dummy.name=Dummy
 entity.twisted:bap.name=a player with Battle Axe
@@ -105,10 +111,16 @@ entity.twisted:sbp.name=a player with Stelix Bertha
 tile.twisted:extreme_torch.name=Extreme Torch
 tile.twisted:amethyst_ore.name=Amethyst Ore
 tile.twisted:ruby_ore.name=Ruby Ore
+tile.twisted:uranium_ore.name=Uranium Ore
+tile.twisted:titanium_ore.name=Titanium Ore
 tile.twisted:deepslate_amethyst_ore.name=Deepslate Amethyst Ore
 tile.twisted:deepslate_ruby_ore.name=Deepslate Ruby Ore
+tile.twisted:deepslate_uranium_ore.name=Deepslate Uranium Ore
+tile.twisted:deepslate_titanium_ore.name=Deepslate Titanium Ore
 tile.twisted:amethyst_block.name=Amethyst Block
 tile.twisted:ruby_block.name=Ruby Block
+tile.twisted:uranium_block.name=Uranium Block
+tile.twisted:titanium_block.name=Titanium Block
 
 blaster.empty=§4Empty rockets!
 

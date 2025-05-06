@@ -37,8 +37,7 @@
 				]
 			},
 			"spawn_egg": {
-				"base_color": "#A308F6",
-				"overlay_color": "#121111"
+				"texture": "twisted:robo_jeffery_spawn_egg"
 			}
 		}
 	}

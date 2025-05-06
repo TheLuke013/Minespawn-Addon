@@ -196,6 +196,30 @@
 		},
 		"twisted:spider_rocket": {
 			"textures": "textures/items/rockets/spider_rocket"
+		},
+		"twisted:nastysaurus_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/nastysaurus_spawn_egg"
+		},
+		"twisted:robo_jeffery_spawn_egg": {
+			"textures": "textures/items/spawn_eggs/robo_jeffery_spawn_egg"
+		},
+		"twisted:titanium_ingot": {
+			"textures": "textures/items/ores/titanium_ingot"
+		},
+		"twisted:uranium_ingot": {
+			"textures": "textures/items/ores/uranium_ingot"
+		},
+		"twisted:titanium_nugget": {
+			"textures": "textures/items/ores/titanium_nugget"
+		},
+		"twisted:uranium_nugget": {
+			"textures": "textures/items/ores/uranium_nugget"
+		},
+		"twisted:ultimate_ingot": {
+			"textures": "textures/items/ores/ultimate_ingot"
+		},
+		"twisted:mobjira_scale": {
+			"textures": "textures/items/mobjira_scale"
 		}
 	}
 }

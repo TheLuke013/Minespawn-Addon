@@ -1,0 +1,22 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "twisted:uranium_block",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:map_color": "#80D707",
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 15
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 6
+			},
+			"minecraft:loot": "loot_tables/blocks/ores/blocks/uranium_block.json"
+		}
+	}
+}

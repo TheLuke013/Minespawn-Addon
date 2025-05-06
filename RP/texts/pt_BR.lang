@@ -11,7 +11,7 @@ item.twisted:queen_battle_axe=Grande Machado de Batalha da Rainha\n\n§4+666 §9
 item.twisted:battle_axe=Grande Machado de Batalha
 item.twisted:ultimate_chainsaw=Motoserra Ultimate
 item.twisted:ultimate_hammer=Martelo Ultimate
-item.twisted:royal_armor_stand=Suporte de Armadura Ultimate Royal
+item.twisted:royal_armor_stand=Suporte da Armadura Ultimate Royal
 
 item.twisted:water_blaster=Blaster de Água
 item.twisted:fire_blaster=Blaster de Fogo
@@ -49,8 +49,14 @@ item.twisted:royal_shield=Escudo Royal
 
 item.twisted:extreme_torch=Tocha Extrema
 item.twisted:miners_dream=Sonho dos Mineradores
+item.twisted:mobjira_scale=Escama de Mobjira
 item.twisted:amethyst=Ametista
 item.twisted:ruby=Rubi
+item.twisted:titanium_ingot=Barra de Titânio
+item.twisted:uranium_ingot=Barra de Urânio
+item.twisted:ultimate_ingot=Barra Ultimate
+item.twisted:titanium_nugget=Pepita de Titânio
+item.twisted:uranium_nugget=Pepita de Urânio
 
 item.twisted:emerald_sword=Espada de Esmeralda
 item.twisted:emerald_axe=Machado de Esmeralda
@@ -87,7 +93,7 @@ entity.twisted:water_rocket.name=Foguete de Água
 entity.twisted:fire_rocket.name=Foguete de Fogo
 entity.twisted:mj_atomic_breath.name=Sopro Atômico do Mobjira
 entity.twisted:mj_atomic_explosion.name=Explosão Atômica do Mobjira
-entity.twisted:robo_explosion.name=Explosão do Robô
+entity.twisted:robo_laser.name=Laser do Robô
 
 entity.twisted:bap.name=um jogador com Grande Machado de Batalha
 entity.twisted:bbp.name=um jogador com Espada Big Bertha
@@ -98,10 +104,16 @@ entity.twisted:sbp.name=um jogador com Espada Stelix Bertha
 tile.twisted:extreme_torch.name=Tocha Extrema
 tile.twisted:amethyst_ore.name=Minério de Ametista
 tile.twisted:ruby_ore.name=Minério de Rubi
+tile.twisted:uranium_ore.name=Minério de Urânio
+tile.twisted:titanium_ore.name=Minério de Titânio
 tile.twisted:deepslate_amethyst_ore.name=Minério de Ametista de Ardosiabissal
 tile.twisted:deepslate_ruby_ore.name=Minério de Rubi de Ardosiabissal
-tile.twisted:amethyst_block.name=Bloco de Ametista Bruto
+tile.twisted:deepslate_uranium_ore.name=Minério de Urânio de Ardosiabissal
+tile.twisted:deepslate_titanium_ore.name=Minério de Titânio de Ardosiabissal
+tile.twisted:amethyst_block.name=Bloco de Ametista
 tile.twisted:ruby_block.name=Bloco de Rubi
+tile.twisted:uranium_block.name=Bloco de Urânio
+tile.twisted:titanium_block.name=Bloco de Titânio
 
 blaster.empty=§4Sem foguetes!
 

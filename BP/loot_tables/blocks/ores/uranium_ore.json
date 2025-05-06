@@ -1,0 +1,361 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "minecraft:iron_pickaxe",
+					"count": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "twisted:uranium_nugget"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "minecraft:golden_pickaxe",
+					"count": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "twisted:uranium_nugget"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "minecraft:diamond_pickaxe",
+					"count": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "twisted:uranium_nugget"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "minecraft:netherite_pickaxe",
+					"count": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "twisted:uranium_nugget"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "twisted:emerald_pickaxe",
+					"count": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "twisted:uranium_nugget"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "twisted:amethyst_pickaxe",
+					"count": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "twisted:uranium_nugget"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "twisted:ruby_pickaxe",
+					"count": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "twisted:uranium_nugget"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "minecraft:iron_pickaxe",
+					"count": 1,
+					"enchantments": [
+						{
+							"fortune": {
+								"levels": {
+									"range_min": 1,
+									"range_max": 3
+								}
+							}
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "twisted:uranium_nugget",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "minecraft:golden_pickaxe",
+					"count": 1,
+					"enchantments": [
+						{
+							"fortune": {
+								"levels": {
+									"range_min": 1,
+									"range_max": 3
+								}
+							}
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "twisted:uranium_nugget",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "minecraft:diamond_pickaxe",
+					"count": 1,
+					"enchantments": [
+						{
+							"fortune": {
+								"levels": {
+									"range_min": 1,
+									"range_max": 3
+								}
+							}
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "twisted:uranium_nugget",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "minecraft:netherite_pickaxe",
+					"count": 1,
+					"enchantments": [
+						{
+							"fortune": {
+								"levels": {
+									"range_min": 1,
+									"range_max": 3
+								}
+							}
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "twisted:uranium_nugget",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "twisted:emerald_pickaxe",
+					"count": 1,
+					"enchantments": [
+						{
+							"fortune": {
+								"levels": {
+									"range_min": 1,
+									"range_max": 3
+								}
+							}
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "twisted:uranium_nugget",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "twisted:amethyst_pickaxe",
+					"count": 1,
+					"enchantments": [
+						{
+							"fortune": {
+								"levels": {
+									"range_min": 1,
+									"range_max": 3
+								}
+							}
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "twisted:uranium_nugget",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "twisted:ruby_pickaxe",
+					"count": 1,
+					"enchantments": [
+						{
+							"fortune": {
+								"levels": {
+									"range_min": 1,
+									"range_max": 3
+								}
+							}
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "item",
+					"name": "twisted:uranium_nugget",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

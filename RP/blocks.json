@@ -12,6 +12,14 @@
 		"sound": "stone",
 		"textures": "twisted:ruby_ore"
 	},
+	"twisted:uranium_ore": {
+		"sound": "stone",
+		"textures": "twisted:uranium_ore"
+	},
+	"twisted:titanium_ore": {
+		"sound": "stone",
+		"textures": "twisted:titanium_ore"
+	},
 	"twisted:deepslate_amethyst_ore": {
 		"sound": "deepslate",
 		"textures": "twisted:deepslate_amethyst_ore"
@@ -20,6 +28,14 @@
 		"sound": "deepslate",
 		"textures": "twisted:deepslate_ruby_ore"
 	},
+	"twisted:deepslate_uranium_ore": {
+		"sound": "deepslate",
+		"textures": "twisted:deepslate_uranium_ore"
+	},
+	"twisted:deepslate_titanium_ore": {
+		"sound": "deepslate",
+		"textures": "twisted:deepslate_titanium_ore"
+	},
 	"twisted:amethyst_block": {
 		"sound": "stone",
 		"textures": "twisted:amethyst_block"
@@ -27,5 +43,13 @@
 	"twisted:ruby_block": {
 		"sound": "stone",
 		"textures": "twisted:ruby_block"
+	},
+	"twisted:uranium_block": {
+		"sound": "stone",
+		"textures": "twisted:uranium_block"
+	},
+	"twisted:titanium_block": {
+		"sound": "stone",
+		"textures": "twisted:titanium_block"
 	}
 }

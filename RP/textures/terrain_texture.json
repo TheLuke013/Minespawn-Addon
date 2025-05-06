@@ -13,17 +13,35 @@
 		"twisted:ruby_ore": {
 			"textures": "textures/blocks/ores/ruby_ore"
 		},
+		"twisted:uranium_ore": {
+			"textures": "textures/blocks/ores/uranium_ore"
+		},
+		"twisted:titanium_ore": {
+			"textures": "textures/blocks/ores/titanium_ore"
+		},
 		"twisted:deepslate_amethyst_ore": {
 			"textures": "textures/blocks/ores/deepslate_amethyst_ore"
 		},
 		"twisted:deepslate_ruby_ore": {
 			"textures": "textures/blocks/ores/deepslate_ruby_ore"
 		},
+		"twisted:deepslate_uranium_ore": {
+			"textures": "textures/blocks/ores/deepslate_uranium_ore"
+		},
+		"twisted:deepslate_titanium_ore": {
+			"textures": "textures/blocks/ores/deepslate_titanium_ore"
+		},
 		"twisted:amethyst_block": {
 			"textures": "textures/blocks/ores/blocks/amethyst_block"
 		},
 		"twisted:ruby_block": {
 			"textures": "textures/blocks/ores/blocks/ruby_block"
+		},
+		"twisted:uranium_block": {
+			"textures": "textures/blocks/ores/blocks/uranium_block"
+		},
+		"twisted:titanium_block": {
+			"textures": "textures/blocks/ores/blocks/titanium_block"
 		}
 	}
 }
