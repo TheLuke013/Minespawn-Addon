@@ -1,0 +1,51 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "twisted:mantis_nest",
+			"places_feature": "twisted:mantis_nest"
+		},
+		"conditions": {
+			"placement_pass": "first_pass",
+			"minecraft:biome_filter": [
+				{
+					"all_of": [
+						{
+							"any_of": [
+								{
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "plains"
+								},
+								{
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "forest"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 1,
+			"x": {
+				"extent": [
+					0,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"y": "query.heightmap(variable.worldx, variable.worldz) + -5",
+			"z": {
+				"extent": [
+					0,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"scatter_chance": 0.4
+		}
+	}
+}

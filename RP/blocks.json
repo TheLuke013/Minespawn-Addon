@@ -1,8 +1,7 @@
 {
 	"format_version": "1.21.10",
 	"twisted:extreme_torch": {
-		"sound": "wood",
-		"textures": "twisted:extreme_torch"
+		"sound": "wood"
 	},
 	"twisted:amethyst_ore": {
 		"sound": "stone",
