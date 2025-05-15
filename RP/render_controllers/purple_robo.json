@@ -1,7 +1,7 @@
 {
 	"format_version": "1.10.0",
 	"render_controllers": {
-		"controller.render.robo_jeffery": {
+		"controller.render.purple_robo": {
 			"geometry": "Geometry.default",
 			"materials": [
 				{

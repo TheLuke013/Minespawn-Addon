@@ -1,0 +1,143 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.poravagers_robot_bote_warrior.look_at_target": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "query.target_x_rotation",
+            "query.target_y_rotation",
+            0
+          ]
+        }
+      }
+    },
+    "animation.poravagers_robot_bote_warrior.move": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "relative_to": {
+            "rotation": "entity"
+          },
+          "rotation": [
+            0,
+            0,
+            "2.0 * (math.abs(math.mod(query.modified_distance_moved + 6, 13.0) - 6.5) - 3.25)"
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            0,
+            "2.0 * (math.abs(math.mod(query.modified_distance_moved + 6, 13.0) - 6.5) - 3.25)"
+          ]
+        },
+        "leg0": {
+          "rotation": [
+            "(math.cos(query.modified_distance_moved * 38.17) * 40.0)",
+            0,
+            0
+          ]
+        },
+        "leg1": {
+          "rotation": [
+            "(math.cos(query.modified_distance_moved * 38.17 + 180) * 40.0)",
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.poravagers_robot_bote_warrior.idle": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "Math.cos(query.life_time * 100-50) * 1",
+            0,
+            0
+          ]
+        },
+        "arm0": {
+          "rotation": [
+            "Math.cos(query.life_time * 100-50) * 1",
+            0,
+            0
+          ]
+        },
+        "arm2": {
+          "rotation": [
+            "Math.cos(query.life_time * 100-75) * 1",
+            0,
+            0
+          ]
+        },
+        "arm1": {
+          "rotation": [
+            "Math.cos(query.life_time * 100-50) * 1",
+            0,
+            0
+          ]
+        },
+        "arm3": {
+          "rotation": [
+            "Math.cos(query.life_time * 100-75) * 1",
+            0,
+            0
+          ]
+        },
+        "waist": {
+          "rotation": [
+            "Math.cos(query.life_time * 100) * 1",
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.poravagers_robot_bote_warrior.attack": {
+      "loop": true,
+      "bones": {
+        "arm0": {
+          "rotation": [
+            -75,
+            0,
+            0
+          ]
+        },
+        "arm1": {
+          "rotation": [
+            -75,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "body2": {
+          "position": [
+            -12,
+            6,
+            -34
+          ],
+          "scale": [
+            1.5,
+            1.5,
+            1
+          ]
+        },
+        "body3": {
+          "position": [
+            16,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  }
+}

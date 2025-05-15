@@ -1,0 +1,42 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "twisted:robo_tron",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/robos/tron_heavy_bar"
+			},
+			"geometry": {
+				"default": "geometry.poravagers_robot_bote_tron_heavy_bar"
+			},
+			"render_controllers": [
+				"controller.render.purple_robo"
+			],
+			"animations": {
+				"idle": "animation.poravagers_robot_bote_tron_heavy_bar.idle",
+				"walk": "animation.poravagers_robot_bote_tron_heavy_bar.walk",
+				"look_at_target": "animation.poravagers_robot_bote_tron_heavy_bar.look",
+				"attack": "animation.poravagers_robot_bote_tron_heavy_bar.attack",
+				"roar": "animation.poravagers_robot_bote_tron_heavy_bar.roar",
+				"fury_punch": "animation.poravagers_robot_bote_tron_heavy_bar.fury_punch"
+			},
+			"scripts": {
+				"animate": [
+					"look_at_target",
+					{
+						"idle": "query.modified_move_speed <= 0.01"
+					},
+					{
+						"walk": "query.modified_move_speed >= 0.1"
+					}
+				]
+			},
+			"spawn_egg": {
+				"texture": "twisted:robo_tron_spawn_egg"
+			}
+		}
+	}
+}

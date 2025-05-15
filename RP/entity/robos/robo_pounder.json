@@ -1,0 +1,42 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "twisted:robo_pounder",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/robos/pounder"
+			},
+			"geometry": {
+				"default": "geometry.poravagers_robot_bote_pounder"
+			},
+			"render_controllers": [
+				"controller.render.purple_robo"
+			],
+			"animations": {
+				"idle": "animation.poravagers_robot_bote_pounder.idle",
+				"walk": "animation.poravagers_robot_bote_pounder.walk",
+				"look_at_target": "animation.poravagers_robot_bote_pounder.look_at_target",
+				"attack": "animation.poravagers_robot_bote_pounder.attack",
+				"attack2": "animation.poravagers_robot_bote_pounder.attack2",
+				"attack3": "animation.poravagers_robot_bote_pounder.attack3"
+			},
+			"scripts": {
+				"animate": [
+					"look_at_target",
+					{
+						"idle": "query.modified_move_speed <= 0.01"
+					},
+					{
+						"walk": "query.modified_move_speed >= 0.1"
+					}
+				]
+			},
+			"spawn_egg": {
+				"texture": "twisted:robo_pounder_spawn_egg"
+			}
+		}
+	}
+}

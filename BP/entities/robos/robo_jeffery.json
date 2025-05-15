@@ -168,7 +168,7 @@
 				]
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/entities/robo_jeferry.json"
+				"table": "loot_tables/entities/robos/robo_jeferry.json"
 			},
 			"minecraft:boss": {
 				"name": "§5Robo Jeffery",

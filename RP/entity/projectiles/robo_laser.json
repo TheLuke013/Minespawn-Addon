@@ -13,7 +13,7 @@
 				"default": "geometry.robo_laser"
 			},
 			"render_controllers": [
-				"controller.render.robo_jeffery"
+				"controller.render.purple_robo"
 			],
 			"animations": {
 				"move": "animation.rocket.move"

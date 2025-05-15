@@ -83,6 +83,9 @@ item.spawn_egg.entity.twisted:mobjira.name=Ovo de Invocação de Mobjira
 item.spawn_egg.entity.twisted:nastysaurus.name=Ovo de Invocação de Nastysaurus
 item.spawn_egg.entity.twisted:mantis.name=Ovo de Invocação de Mantis
 item.spawn_egg.entity.twisted:robo_jeffery.name=Ovo de Invocação de Robo Jeffery
+item.spawn_egg.entity.twisted:robo_pounder.name=Ovo de Invocação de Robo Pounder
+item.spawn_egg.entity.twisted:robo_warrior.name=Ovo de Invocação de Robo Warrior
+item.spawn_egg.entity.twisted:robo_tron.name=Ovo de Invocação de Robo Tron
 
 entity.twisted:golden_apple_cow.name=Vaca da Maça Dourada
 entity.twisted:enchanted_golden_apple_cow.name=Vaca da Maça Dourada Encantada

@@ -1,0 +1,91 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "twisted:robo_tron",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {},
+		"components": {
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:nameable": {},
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:type_family": {
+				"family": [
+					"tron",
+					"robo"
+				]
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/robos/robo_tron.json"
+			},
+			"minecraft:boss": {
+				"name": "§5Robo Tron",
+				"hud_range": 40
+			},
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 3
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1.0
+			},
+			"minecraft:health": {
+				"value": 250
+			},
+			"minecraft:movement.basic": {
+				"max_turn": 20
+			},
+			"minecraft:movement": {
+				"value": 0.25
+			},
+			"minecraft:underwater_movement": {
+				"value": 0.25
+			},
+			"minecraft:jump.static": {
+				"jump_power": 0.8
+			},
+			"minecraft:can_climb": {},
+			"minecraft:navigation.walk": {
+				"avoid_water": true,
+				"can_jump": true,
+				"avoid_damage_blocks": true,
+				"can_break_doors": true,
+				"can_open_doors": true
+			},
+			"minecraft:behavior.break_door": {
+				"priority": 1
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 5,
+				"speed_multiplier": 0.8
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 7
+			},
+			"minecraft:experience_reward": {
+				"on_death": 1000
+			},
+			"minecraft:behavior.look_at_target": {
+				"priority": 5,
+				"look_distance": 15
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 5,
+				"look_distance": 15
+			},
+			"minecraft:breathable": {
+				"total_supply": 0,
+				"suffocate_time": 0
+			},
+			"minecraft:conditional_bandwidth_optimization": {}
+		},
+		"events": {}
+	}
+}

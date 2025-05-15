@@ -1,0 +1,40 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "twisted:robo_warrior",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/robos/warrior"
+			},
+			"geometry": {
+				"default": "geometry.robo_warrior"
+			},
+			"render_controllers": [
+				"controller.render.purple_robo"
+			],
+			"animations": {
+				"idle": "animation.poravagers_robot_bote_warrior.idle",
+				"walk": "animation.poravagers_robot_bote_warrior.move",
+				"look_at_target": "animation.poravagers_robot_bote_warrior.look_at_target",
+				"attack": "animation.poravagers_robot_bote_warrior.attack"
+			},
+			"scripts": {
+				"animate": [
+					"look_at_target",
+					{
+						"idle": "query.modified_move_speed <= 0.01"
+					},
+					{
+						"walk": "query.modified_move_speed >= 0.1"
+					}
+				]
+			},
+			"spawn_egg": {
+				"texture": "twisted:robo_warrior_spawn_egg"
+			}
+		}
+	}
+}

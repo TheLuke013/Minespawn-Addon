@@ -85,6 +85,9 @@ item.spawn_egg.entity.twisted:mobjira.name=Spawn Mobjira
 item.spawn_egg.entity.twisted:nastysaurus.name=Spawn Nastysaurus
 item.spawn_egg.entity.twisted:mantis.name=Spawn Mantis
 item.spawn_egg.entity.twisted:robo_jeffery.name=Spawn Robo Jeffery
+item.spawn_egg.entity.twisted:robo_pounder.name=Spawn Robo Pounder
+item.spawn_egg.entity.twisted:robo_warrior.name=Spawn Robo Warrior
+item.spawn_egg.entity.twisted:robo_tron.name=Spawn Robo Tron
 
 entity.twisted:golden_apple_cow.name=Golden Apple Cow
 entity.twisted:enchanted_golden_apple_cow.name=Enchanted Golden Apple Cow
@@ -93,6 +96,9 @@ entity.twisted:mobjira.name=Mobjira
 entity.twisted:nastysaurus.name=Nastysaurus
 entity.twisted:mantis.name=Mantis
 entity.twisted:robo_jeffery.name=Robo Jeffery
+entity.twisted:robo_pounder.name=Robo Pounder
+entity.twisted:robo_warrior.name=Robo Warrior
+entity.twisted:robo_tron.name=Robo Tron
 
 entity.twisted:mj_fireball.name=Mobjira Fireball
 entity.twisted:water_rocket.name=Water Rocket
