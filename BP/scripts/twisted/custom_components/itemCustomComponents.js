@@ -59,7 +59,8 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
 
     initEvent.itemComponentRegistry.registerCustomComponent('twisted:blaster', {
         onUse: e => {
-            if (e.source.typeId === 'minecraft:player' && e.itemStack.getTags().includes('twisted:is_blaster')) {
+            const tags = e.itemStack.getTags();
+            if (e.source.typeId === 'minecraft:player' && tags.includes('twisted:is_blaster')) {
                 const player = e.source;
                 const mainhandItem = getPlayerSlotItem(player);
                 if (mainhandItem?.typeId === 'twisted:water_blaster' && hasAmmunition(player, 'twisted:water_rocket')) {
@@ -72,13 +73,24 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
                     shootEntityFromPlayer('twisted:spider_rocket', player);
                     useAmmunition(player, 'twisted:spider_rocket');
                     player.playSound('mob.spider.say');
+                } else if (mainhandItem?.typeId === 'twisted:lumen_blaster') {
+                    shootEntityFromPlayer('twisted:lumen_laser', player);
+                } else if (mainhandItem?.typeId === 'twisted:exterminator_blaster') {
+                    shootEntityFromPlayer('twisted:exterminator_laser', player);
                 } else {
                     player.playSound('blaster.empty');
                     player.runCommand('titleraw @s actionbar {"rawtext":[{"translate":"blaster.empty"}]}');
                     return;
                 }
 
-                player.playSound('blaster.fire');
+                if (tags.includes('twisted:mega_laser')) {
+                    player.playSound('blaster.mega_shot');
+                } else if (tags.includes('twisted:laser')) {
+                    player.playSound('blaster.laser_shoot');
+                } else {
+                    player.playSound('blaster.fire');
+                }
+
                 player.runCommand('camerashake add @s 0.06 0.5 rotational');
                 itemDurability(player);
             }

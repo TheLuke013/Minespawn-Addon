@@ -1,4 +1,4 @@
-{
+	{
 	"format_version": "1.20.80",
 	"minecraft:entity": {
 		"description": {
@@ -8,11 +8,11 @@
 			"is_experimental": false,
 			"scripts": {
 				"animate": [
-					"robo_jeffery_jump"
+					"robo_jeffery"
 				]
 			},
 			"animations": {
-				"robo_jeffery_jump": "controller.animation.robo_jeffery_jump"
+				"robo_jeffery": "controller.animation.robo_jeffery"
 			}
 		},
 		"component_groups": {
@@ -25,7 +25,7 @@
 						"target": "self"
 					},
 					"on_outside_range": {
-						"event": "twisted:jump",
+						"event": "twisted:laser_attack",
 						"target": "self"
 					}
 				}
@@ -105,46 +105,8 @@
 				"minecraft:timer": {
 					"looping": false,
 					"time": [
-						2,
-						2
-					],
-					"time_down_event": {
-						"event": "twisted:mode_switcher",
-						"target": "self"
-					}
-				}
-			},
-			"twisted:jump": {
-				"minecraft:skin_id": {
-					"value": 5
-				},
-				"minecraft:timer": {
-					"looping": true,
-					"time": [
 						1,
 						1
-					],
-					"time_down_event": {
-						"event": "twisted:jumping",
-						"target": "self"
-					}
-				}
-			},
-			"twisted:jumping": {
-				"minecraft:skin_id": {
-					"value": 6
-				},
-				"minecraft:area_attack": {
-					"cause": "entity_explosion",
-					"damage_cooldown": 0.5,
-					"damage_per_tick": 40,
-					"damage_range": 0.7
-				},
-				"minecraft:timer": {
-					"looping": true,
-					"time": [
-						3,
-						3
 					],
 					"time_down_event": {
 						"event": "twisted:mode_switcher",
@@ -317,37 +279,23 @@
 						"twisted:attack1",
 						"twisted:attack2",
 						"twisted:attack3",
-						"twisted:mega_smash",
-						"twisted:jump"
+						"twisted:mega_smash"
 					]
 				}
 			},
-			"twisted:jump": {
+			"twisted:laser_attack": {
 				"add": {
 					"component_groups": [
-						"twisted:jump"
+						"twisted:attack3"
 					]
 				},
 				"remove": {
 					"component_groups": [
 						"twisted:attack1",
 						"twisted:attack2",
-						"twisted:attack3",
 						"twisted:mega_smash",
 						"twisted:melee_attack",
 						"twisted:mode_switcher"
-					]
-				}
-			},
-			"twisted:jumping": {
-				"add": {
-					"component_groups": [
-						"twisted:jumping"
-					]
-				},
-				"remove": {
-					"component_groups": [
-						"twisted:jump"
 					]
 				}
 			},
@@ -366,7 +314,6 @@
 								"twisted:attack2",
 								"twisted:attack3",
 								"twisted:mega_smash",
-								"twisted:jump",
 								"twisted:mode_switcher"
 							]
 						}
@@ -384,7 +331,6 @@
 								"twisted:attack1",
 								"twisted:attack3",
 								"twisted:mega_smash",
-								"twisted:jump",
 								"twisted:mode_switcher"
 							]
 						}
@@ -401,7 +347,6 @@
 								"twisted:attack1",
 								"twisted:attack2",
 								"twisted:mega_smash",
-								"twisted:jump",
 								"twisted:melee_attack",
 								"twisted:mode_switcher"
 							]
@@ -419,7 +364,6 @@
 								"twisted:attack1",
 								"twisted:attack2",
 								"twisted:attack3",
-								"twisted:jump",
 								"twisted:melee_attack",
 								"twisted:mode_switcher"
 							]

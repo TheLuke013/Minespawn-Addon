@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:entity": {
         "description": {
-            "identifier": "twisted:robo_laser",
+            "identifier": "twisted:exterminator_laser",
             "is_spawnable": false,
             "is_summonable": true,
             "is_experimental": false,
@@ -13,8 +13,8 @@
                 "minecraft:explode": {
                     "fuse_length": 0,
                     "fuse_lit": true,
-                    "power": 5,
-                    "breaks_blocks": false
+                    "power": 2,
+                    "causes_fire": true
                 }
             }
         },

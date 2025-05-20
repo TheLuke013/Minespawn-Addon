@@ -1,0 +1,50 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "twisted:exterminator_blaster",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": "bow_pulling",
+			"minecraft:hand_equipped": {
+				"value": true
+			},
+			"minecraft:allow_off_hand": {
+				"value": false
+			},
+			"minecraft:stacked_by_data": {
+				"value": true
+			},
+			"minecraft:durability": {
+				"max_durability": 1000
+			},
+			"minecraft:food": {
+				"can_always_eat": true
+			},
+			"minecraft:cooldown": {
+				"category": "exterminator_blaster",
+				"duration": 2.5
+			},
+			"minecraft:use_modifiers": {
+				"use_duration": 999999
+			},
+			"minecraft:enchantable": {
+				"slot": "bow",
+				"value": 5
+			},
+			"minecraft:tags": {
+				"tags": [
+					"twisted:is_blaster",
+					"twisted:mega_laser"
+				]
+			},
+			"minecraft:custom_components": [
+				"twisted:blaster"
+			]
+		}
+	}
+}

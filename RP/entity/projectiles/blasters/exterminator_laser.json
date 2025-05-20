@@ -2,7 +2,7 @@
 	"format_version": "1.20.80",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "twisted:robo_laser",
+			"identifier": "twisted:exterminator_laser",
 			"materials": {
 				"default": "arrow"
 			},
