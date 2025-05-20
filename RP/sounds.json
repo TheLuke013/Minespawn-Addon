@@ -1,4 +1,4 @@
-{
+	{
 	"entity_sounds": {
 		"entities": {
 			"twisted:golden_apple_cow": {
@@ -36,6 +36,23 @@
 				}
 			},
 			"twisted:enchanted_golden_apple_cow": {
+				"volume": 1,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.cow.say",
+					"hurt": "mob.cow.hurt",
+					"death": "mob.cow.hurt",
+					"step": {
+						"sound": "mob.cow.step",
+						"volume": 0.15,
+						"pitch": 1
+					}
+				}
+			},
+			"twisted:crystal_apple_cow": {
 				"volume": 1,
 				"pitch": [
 					0.8,

@@ -2,15 +2,18 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "twisted:golden_apple_cow",
+			"identifier": "twisted:enchanted_golden_apple_cow",
 			"materials": {
-				"default": "cow"
+				"default": "cow",
+				"charged": "charged_creeper"
 			},
 			"textures": {
-				"default": "textures/entity/golden_apple_cow"
+				"default": "textures/entity/cows/golden_apple_cow",
+				"charged": "textures/entity/cows/enchanted_cow_glint"
 			},
 			"geometry": {
-				"default": "geometry.cow.v1.8"
+				"default": "geometry.cow.v1.8",
+				"charged": "geometry.enchanted_cow_armor"
 			},
 			"animations": {
 				"setup": "animation.cow.setup",
@@ -31,11 +34,9 @@
 				]
 			},
 			"render_controllers": [
-				"controller.render.cow"
-			],
-			"spawn_egg": {
-				"texture": "twisted:golden_apple_cow_spawn_egg"
-			}
+				"controller.render.cow",
+				"controller.render.enchanted_gac"
+			]
 		}
 	}
 }

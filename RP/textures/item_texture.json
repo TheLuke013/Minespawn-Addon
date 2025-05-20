@@ -229,6 +229,12 @@
 		},
 		"twisted:robo_tron_spawn_egg": {
 			"textures": "textures/items/spawn_eggs/robo_tron_spawn_egg"
+		},
+		"twisted:crystal_apple_cow_egg": {
+			"textures": "textures/items/spawn_eggs/crystal_apple_cow_spawn_egg"
+		},
+		"twisted:crystal_apple": {
+			"textures": "textures/items/food/crystal_apple"
 		}
 	}
 }

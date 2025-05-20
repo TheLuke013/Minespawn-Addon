@@ -125,4 +125,13 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
             itemDurability(e.source);
         }
     });
+
+    initEvent.itemComponentRegistry.registerCustomComponent('twisted:food_effects', {
+        onConsume: e => {
+            if (e.itemStack.typeId === 'twisted:crystal_apple') {
+                e.source.addEffect('minecraft:strength', 3000, { showParticles: false });
+                e.source.addEffect('minecraft:regeneration', 3000, { showParticles: false });
+            }
+        }
+    });
 });

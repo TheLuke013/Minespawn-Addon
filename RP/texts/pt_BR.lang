@@ -76,9 +76,12 @@ item.twisted:ruby_hoe=Enxada de Rubi
 item.twisted:ruby_pickaxe=Picareta de Rubi
 item.twisted:ruby_shovel=Pá de Rubi
 
+item.twisted:crystal_apple=Maça de Cristal
+
 item.spawn_egg.entity.twisted:golden_apple_cow.name=Ovo de Invocação de Vaca da Maça Dourada
 item.spawn_egg.entity.twisted:enchanted_gac.name=Ovo de Invocação de Vaca da Maça Dourada Encantada
 item.spawn_egg.entity.twisted:apple_cow.name=Ovo de Invocação de Vaca da Maça
+item.spawn_egg.entity.twisted:crystal_apple_cow.name=Ovo de Invocação de Vaca de Cristal
 item.spawn_egg.entity.twisted:mobjira.name=Ovo de Invocação de Mobjira
 item.spawn_egg.entity.twisted:nastysaurus.name=Ovo de Invocação de Nastysaurus
 item.spawn_egg.entity.twisted:mantis.name=Ovo de Invocação de Mantis
@@ -90,6 +93,7 @@ item.spawn_egg.entity.twisted:robo_tron.name=Ovo de Invocação de Robo Tron
 entity.twisted:golden_apple_cow.name=Vaca da Maça Dourada
 entity.twisted:enchanted_golden_apple_cow.name=Vaca da Maça Dourada Encantada
 entity.twisted:apple_cow.name=Vaca da Maça
+entity.twisted:crystal_apple_cow.name=Vaca de Cristal
 
 entity.twisted:mj_fireball.name=Bolas de fogo do Mobjira
 entity.twisted:water_rocket.name=Foguete de Água

@@ -78,9 +78,12 @@ item.twisted:ruby_hoe=Ruby Hoe
 item.twisted:ruby_pickaxe=Ruby Pickaxe
 item.twisted:ruby_shovel=Ruby Shovel
 
+item.twisted:crystal_apple=Crystal Apple
+
 item.spawn_egg.entity.twisted:golden_apple_cow.name=Spawn Golden Apple Cow
 item.spawn_egg.entity.twisted:enchanted_gac.name=Spawn Enchanted Golden Apple Cow
 item.spawn_egg.entity.twisted:apple_cow.name=Spawn Apple Cow
+item.spawn_egg.entity.twisted:crystal_apple_cow.name=Spawn Crystal Apple Cow
 item.spawn_egg.entity.twisted:mobjira.name=Spawn Mobjira
 item.spawn_egg.entity.twisted:nastysaurus.name=Spawn Nastysaurus
 item.spawn_egg.entity.twisted:mantis.name=Spawn Mantis
@@ -92,6 +95,7 @@ item.spawn_egg.entity.twisted:robo_tron.name=Spawn Robo Tron
 entity.twisted:golden_apple_cow.name=Golden Apple Cow
 entity.twisted:enchanted_golden_apple_cow.name=Enchanted Golden Apple Cow
 entity.twisted:apple_cow.name=Apple Cow
+entity.twisted:crystal_apple_cow.name=Crystal Apple Cow
 entity.twisted:mobjira.name=Mobjira
 entity.twisted:nastysaurus.name=Nastysaurus
 entity.twisted:mantis.name=Mantis

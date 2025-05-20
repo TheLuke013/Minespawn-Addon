@@ -2,12 +2,12 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "twisted:apple_cow",
+			"identifier": "twisted:crystal_apple_cow",
 			"materials": {
-				"default": "cow"
+				"default": "entity_alphablend"
 			},
 			"textures": {
-				"default": "textures/entity/apple_cow"
+				"default": "textures/entity/cows/crystal_apple_cow"
 			},
 			"geometry": {
 				"default": "geometry.cow.v1.8"
@@ -34,7 +34,7 @@
 				"controller.render.cow"
 			],
 			"spawn_egg": {
-				"texture": "twisted:apple_cow_spawn_egg"
+				"texture": "twisted:crystal_apple_cow_egg"
 			}
 		}
 	}
