@@ -78,6 +78,16 @@ item.twisted:ruby_hoe=Ruby Hoe
 item.twisted:ruby_pickaxe=Ruby Pickaxe
 item.twisted:ruby_shovel=Ruby Shovel
 
+item.twisted:ultimate_helmet=The Ultimate Helmet
+item.twisted:ultimate_chestplate=The Ultimate Chestplate
+item.twisted:ultimate_leggings=The Ultimate Leggings
+item.twisted:ultimate_boots=The Ultimate Boots
+item.twisted:ultimate_axe=The Ultimate Axe
+item.twisted:ultimate_hoe=The Ultimate Hoe
+item.twisted:ultimate_pickaxe=The Ultimate Pickaxe
+item.twisted:ultimate_shovel=The Ultimate Shovel
+item.twisted:ultimate_sword=The Ultimate Sword
+
 item.twisted:crystal_apple=Crystal Apple
 
 item.spawn_egg.entity.twisted:golden_apple_cow.name=Spawn Golden Apple Cow
@@ -133,6 +143,3 @@ tile.twisted:uranium_block.name=Uranium Block
 tile.twisted:titanium_block.name=Titanium Block
 
 blaster.empty=§4Empty rockets!
-
-p_poem.title=Princess Poem
-p_poem.content=§5Princess's Poem\n\n\n§7That young woman who walks forever through the valley\nKnown as a princess\nSaid to be a remnant of an ancient kingdom\nThat never truly existed.\nAlways wandering through the four corners of the earth\nPerhaps fleeing, or hiding something.\nOne day, a demon corrupts her\nMakes her believe she is a queen\nShe forges weapons and armor for war\nHer mind crumbles with every sunrise and sunset.\nThen, something terrible comes to pass\nThe one known as a princess, who thinks herself a queen\nIs no longer safe.\nFor without a kingdom, there are no castles or walls\nAnd there is no princess, nor queen\nAnd so the poor princess is found dead\nDead by her own unknown madness.\n\n§3Written by an old peasant

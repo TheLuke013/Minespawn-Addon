@@ -1,6 +1,6 @@
 import { world, system } from '@minecraft/server';
 import { enchantItems } from './item_enchantments.js';
-import { royalArmorEffects } from './armors.js';
+import { royalArmorEffects, ultimateArmorEffects } from './armors.js';
 import { mobjiraBehaviours } from './mobjira.js';
 import { roboJefferyBehaviours } from './robo_jeffery.js';
 import { longRangeAttack, handleLongRange } from './big_weapons_attack.js';
@@ -22,19 +22,13 @@ export const giantMonsters = [
     'twisted:mobjira'
 ]
 
-world.afterEvents.itemUse.subscribe(e => {
-    if (e.itemStack.typeId === 'twisted:princess_poem') {
-        e.source.runCommand('tellraw @a {"rawtext":[{"translate":"p_poem.content"}]}');
-    }
-})
-
 //MOBS KNOCKBACK
 world.afterEvents.entityHitEntity.subscribe(e => {
     const dir = e.damagingEntity.getViewDirection();
 
     //nastysaurus
     if (e.damagingEntity.typeId === 'twisted:nastysaurus') {
-        e.hitEntity.applyKnockback(dir.x, dir.z, 5, 1);
+        e.hitEntity.applyKnockback(dir.x, dir.z, 2, 1);
     }
     //robo jeffery
     else if (e.damagingEntity.typeId === 'twisted:robo_jeffery') {
@@ -60,6 +54,7 @@ system.runInterval(() => {
         //self-enchantment of items
         enchantItems(player);
         royalArmorEffects(player);
+        ultimateArmorEffects(player);
 
         //long range attack
         longRangeAttack(player);

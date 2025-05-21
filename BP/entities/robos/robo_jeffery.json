@@ -1,4 +1,4 @@
-	{
+{
 	"format_version": "1.20.80",
 	"minecraft:entity": {
 		"description": {
@@ -33,8 +33,8 @@
 			"twisted:melee_attack": {
 				"minecraft:behavior.melee_attack": {
 					"priority": 1,
-					"melee_fov": 360,
-					"speed_multiplier": 1.3
+					"speed_multiplier": 1.3,
+					"cooldown_time": 2
 				}
 			},
 			"twisted:attack1": {
@@ -76,7 +76,7 @@
 				"minecraft:behavior.ranged_attack": {
 					"priority": 1,
 					"burst_shots": 22,
-					"burst_interval": 0.5,
+					"burst_interval": 1,
 					"attack_interval_max": 1,
 					"attack_interval_min": 1,
 					"attack_radius": 300,
@@ -89,7 +89,7 @@
 				"minecraft:timer": {
 					"looping": false,
 					"time": [
-						1,
+						3,
 						3
 					],
 					"time_down_event": {
@@ -153,13 +153,13 @@
 				"max_turn": 20
 			},
 			"minecraft:movement": {
-				"value": 0.25
+				"value": 0.15
 			},
 			"minecraft:underwater_movement": {
 				"value": 0.25
 			},
 			"minecraft:jump.static": {
-				"jump_power": 0.8
+				"jump_power": 0.5
 			},
 			"minecraft:can_climb": {},
 			"minecraft:navigation.walk": {
@@ -353,7 +353,7 @@
 						}
 					},
 					{
-						"weight": 15,
+						"weight": 5,
 						"add": {
 							"component_groups": [
 								"twisted:mega_smash"

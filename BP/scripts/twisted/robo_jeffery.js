@@ -20,7 +20,7 @@ export function roboJefferyBehaviours(jeffery, player) {
         const distance = getDistance(jeffery, player);
         if (distance <= 30) {
             const dir = jeffery.getViewDirection();
-            player.applyKnockback(dir.x, dir.z, 20, 2);
+            player.applyKnockback(dir.x, dir.z, 7, 2);
             player.applyDamage(40);
         }
     }

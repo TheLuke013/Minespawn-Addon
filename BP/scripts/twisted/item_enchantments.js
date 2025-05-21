@@ -73,6 +73,39 @@ export function enchantItems(player) {
         player.runCommand('enchant @s unbreaking 3');
         player.runCommand('enchant @s feather_falling 4');
         player.runCommand('enchant @s mending');
-
+    }
+    //ULTIMATE ARMOR
+    else if (mainhandItem?.typeId === 'twisted:ultimate_helmet') {
+        player.runCommand('enchant @s protection 4');
+        player.runCommand('enchant @s aqua_affinity');
+        player.runCommand('enchant @s respiration 2');
+        player.runCommand('enchant @s unbreaking 3');
+    } else if (mainhandItem?.typeId === 'twisted:ultimate_chestplate' ||
+        mainhandItem?.typeId === 'twisted:ultimate_leggings') {
+        player.runCommand('enchant @s protection 4');
+        player.runCommand('enchant @s unbreaking 3');
+    } else if (mainhandItem?.typeId === 'twisted:ultimate_boots') {
+        player.runCommand('enchant @s protection 4');
+        player.runCommand('enchant @s feather_falling 4');
+        player.runCommand('enchant @s unbreaking 3');
+    }
+    //ULTIMATE SWORD
+    if (mainhandItem?.typeId === 'twisted:ultimate_sword') {
+        player.runCommand('enchant @s unbreaking 3');
+        player.runCommand('enchant @s knockback 2');
+        player.runCommand('enchant @s sharpness 5');
+        player.runCommand('enchant @s fire_aspect 2');
+        player.runCommand('enchant @s looting 3');
+    }
+    //ULTIMATE PICKAXE
+    else if (mainhandItem?.typeId === 'twisted:ultimate_pickaxe') {
+        player.runCommand('enchant @s fortune 3');
+        player.runCommand('enchant @s efficiency 5');
+    }
+    //ULTOMATE AXE, SHOVEL, HOE
+    else if (mainhandItem?.typeId === 'twisted:ultimate_axe' ||
+        mainhandItem?.typeId === 'twisted:ultimate_shovel' ||
+        mainhandItem?.typeId === 'twisted:ultimate_hoe') {
+        player.runCommand('enchant @s efficiency 5');
     }
 }

@@ -185,9 +185,6 @@
 		"twisted:royal_shield": {
 			"textures": "textures/items/royal_shield"
 		},
-		"twisted:royal_horse_spawn_egg": {
-			"textures": "textures/items/spawn_eggs/royal_horse_spawn_egg"
-		},
 		"twisted:water_rocket": {
 			"textures": "textures/items/rockets/water_rocket"
 		},
@@ -235,6 +232,33 @@
 		},
 		"twisted:crystal_apple": {
 			"textures": "textures/items/food/crystal_apple"
+		},
+		"twisted:ultimate_helmet": {
+			"textures": "textures/items/armors/ultimate/ultimate_helmet"
+		},
+		"twisted:ultimate_chestplate": {
+			"textures": "textures/items/armors/ultimate/ultimate_chestplate"
+		},
+		"twisted:ultimate_leggings": {
+			"textures": "textures/items/armors/ultimate/ultimate_leggings"
+		},
+		"twisted:ultimate_boots": {
+			"textures": "textures/items/armors/ultimate/ultimate_boots"
+		},
+		"twisted:ultimate_axe": {
+			"textures": "textures/items/tools/ultimate/ultimate_axe"
+		},
+		"twisted:ultimate_hoe": {
+			"textures": "textures/items/tools/ultimate/ultimate_hoe"
+		},
+		"twisted:ultimate_pickaxe": {
+			"textures": "textures/items/tools/ultimate/ultimate_pickaxe"
+		},
+		"twisted:ultimate_shovel": {
+			"textures": "textures/items/tools/ultimate/ultimate_shovel"
+		},
+		"twisted:ultimate_sword": {
+			"textures": "textures/items/tools/ultimate/ultimate_sword"
 		}
 	}
 }
