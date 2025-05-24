@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "twisted:lumen_blaster",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/blasters/lumen_blaster"
+			},
+			"geometry": {
+				"default": "geometry.lumen_blaster"
+			},
+			"animations": {
+				"hold_first_person": "animation.lumen_blaster.first_person",
+				"hold_third_person": "animation.lumen_blaster.third_person"
+			},
+			"scripts": {
+				"pre_animation": [
+					"v.c_ifp = context.is_first_person;"
+				],
+				"animate": [
+					{
+						"hold_first_person": "v.c_ifp"
+					},
+					{
+						"hold_third_person": "!v.c_ifp"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.weapon"
+			]
+		}
+	}
+}

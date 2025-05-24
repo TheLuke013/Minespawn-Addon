@@ -15,6 +15,7 @@ item.twisted:royal_armor_stand=Suporte da Armadura Ultimate Royal
 
 item.twisted:water_blaster=Blaster de Água
 item.twisted:fire_blaster=Blaster de Fogo
+item.twisted:exterminator_blaster=Blaster do Exterminador 4-B
 
 item.twisted:water_rocket=Foguete de Água
 item.twisted:fire_rocket=Foguete de fogo
@@ -75,6 +76,16 @@ item.twisted:ruby_axe=Machado de Rubi
 item.twisted:ruby_hoe=Enxada de Rubi
 item.twisted:ruby_pickaxe=Picareta de Rubi
 item.twisted:ruby_shovel=Pá de Rubi
+
+item.twisted:ultimate_helmet=Capacete Ultimate
+item.twisted:ultimate_chestplate=Peitoral Ultimate
+item.twisted:ultimate_leggings=Calças Ultimate
+item.twisted:ultimate_boots=Botas Ultimate
+item.twisted:ultimate_axe=Machado Ultimate
+item.twisted:ultimate_hoe=Enxada Ultimate
+item.twisted:ultimate_pickaxe=Picareta Ultimate
+item.twisted:ultimate_shovel=Pá Ultimate
+item.twisted:ultimate_sword=Espada Ultimate
 
 item.twisted:crystal_apple=Maça de Cristal
 
