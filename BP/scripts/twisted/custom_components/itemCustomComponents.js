@@ -33,6 +33,9 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
                 ultimateHammerAttack(e.attackingEntity, e.hitEntity.location);
             } else if (weapon.typeId === 'twisted:queen_battle_axe') {
                 e.hitEntity.applyDamage(666);
+            } else if (weapon.typeId === 'twisted:mantis_sword') {
+                const currentHealth = e.attackingEntity.getComponent("minecraft:health").currentValue;
+                e.attackingEntity.getComponent("minecraft:health")?.setCurrentValue(currentHealth + 6);
             }
         }
     });

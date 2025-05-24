@@ -262,6 +262,12 @@
 		},
 		"twisted:lumen_blaster": {
 			"textures": "textures/items/blasters/lumen_blaster"
+		},
+		"twisted:mantis_claw": {
+			"textures": "textures/items/mantis_claw"
+		},
+		"twisted:mantis_sword": {
+			"textures": "textures/items/weapons/mantis_sword"
 		}
 	}
 }

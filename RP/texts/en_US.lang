@@ -90,6 +90,9 @@ item.twisted:ultimate_pickaxe=The Ultimate Pickaxe
 item.twisted:ultimate_shovel=The Ultimate Shovel
 item.twisted:ultimate_sword=The Ultimate Sword
 
+item.twisted:mantis_claw=Mantis Claw
+item.twisted:mantis_sword=Mantis Claw Sword
+
 item.twisted:crystal_apple=Crystal Apple
 
 item.spawn_egg.entity.twisted:golden_apple_cow.name=Spawn Golden Apple Cow

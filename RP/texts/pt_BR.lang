@@ -87,6 +87,9 @@ item.twisted:ultimate_pickaxe=Picareta Ultimate
 item.twisted:ultimate_shovel=Pá Ultimate
 item.twisted:ultimate_sword=Espada Ultimate
 
+item.twisted:mantis_claw=Garras de Mantis
+item.twisted:mantis_sword=Espada de Garras de Mantis
+
 item.twisted:crystal_apple=Maça de Cristal
 
 item.spawn_egg.entity.twisted:golden_apple_cow.name=Ovo de Invocação de Vaca da Maça Dourada
