@@ -13,7 +13,7 @@
                 "minecraft:explode": {
                     "fuse_length": 0,
                     "fuse_lit": true,
-                    "power": 2,
+                    "power": 4,
                     "causes_fire": true
                 }
             }
@@ -26,7 +26,7 @@
             "minecraft:projectile": {
                 "on_hit": {
                     "impact_damage": {
-                        "damage": 8,
+                        "damage": 30,
                         "knockback": true,
                         "semi_random_diff_damage": false
                     },

@@ -34,7 +34,8 @@
 			"minecraft:tags": {
 				"tags": [
 					"twisted:is_blaster",
-					"twisted:laser"
+					"twisted:laser",
+					"twisted:laser_charge"
 				]
 			},
 			"minecraft:custom_components": [

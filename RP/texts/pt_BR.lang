@@ -50,6 +50,7 @@ item.twisted:royal_shield=Escudo Royal
 
 item.twisted:extreme_torch=Tocha Extrema
 item.twisted:miners_dream=Sonho dos Mineradores
+item.twisted:laser_charge=Carga de Laser
 item.twisted:mobjira_scale=Escama de Mobjira
 item.twisted:amethyst=Ametista
 item.twisted:ruby=Rubi
@@ -137,3 +138,4 @@ tile.twisted:uranium_block.name=Bloco de Urânio
 tile.twisted:titanium_block.name=Bloco de Titânio
 
 blaster.empty=§4Sem foguetes!
+laser_blaster.empty=§4Sem carga de laser!

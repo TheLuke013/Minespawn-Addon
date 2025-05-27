@@ -53,6 +53,7 @@ item.twisted:royal_shield=Royal Shield
 
 item.twisted:extreme_torch=Extreme Torch
 item.twisted:miners_dream=Miner's Dream
+item.twisted:laser_charge=Laser Charge
 item.twisted:mobjira_scale=Mobjira Scale
 item.twisted:amethyst=Amethyst
 item.twisted:ruby=Ruby
@@ -148,3 +149,4 @@ tile.twisted:uranium_block.name=Uranium Block
 tile.twisted:titanium_block.name=Titanium Block
 
 blaster.empty=§4Empty rockets!
+laser_blaster.empty=§4Empty laser charge!

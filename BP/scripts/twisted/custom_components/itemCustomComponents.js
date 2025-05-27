@@ -3,7 +3,7 @@ import { shootEntityFromPlayer, getPlayerSlotItem, getCardinalDirection } from '
 import { ultimateChainsaw, ultimateHammerAttack } from '../weapons.js';
 import { itemDurability } from '../item_durability.js';
 import { knockbackAttack, flamingAttack } from '../big_weapons_attack.js';
-import { hasAmmunition, useAmmunition } from '../shooter.js';
+import { hasAmmunition, useAmmunition, useAmmunitionDurability } from '../shooter.js';
 
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
     initEvent.itemComponentRegistry.registerCustomComponent('twisted:knockback', {
@@ -76,13 +76,20 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
                     shootEntityFromPlayer('twisted:spider_rocket', player);
                     useAmmunition(player, 'twisted:spider_rocket');
                     player.playSound('mob.spider.say');
-                } else if (mainhandItem?.typeId === 'twisted:lumen_blaster') {
+                } else if (mainhandItem?.typeId === 'twisted:lumen_blaster' && hasAmmunition(player, 'twisted:laser_charge')) {
                     shootEntityFromPlayer('twisted:lumen_laser', player);
-                } else if (mainhandItem?.typeId === 'twisted:exterminator_blaster') {
+                    useAmmunitionDurability(player, 'twisted:laser_charge');
+                } else if (mainhandItem?.typeId === 'twisted:exterminator_blaster' && hasAmmunition(player, 'twisted:laser_charge')) {
                     shootEntityFromPlayer('twisted:exterminator_laser', player);
+                    useAmmunitionDurability(player, 'twisted:laser_charge');
                 } else {
                     player.playSound('blaster.empty');
-                    player.runCommand('titleraw @s actionbar {"rawtext":[{"translate":"blaster.empty"}]}');
+                    if (tags.includes('twisted:laser_charge')) {
+                        player.runCommand('titleraw @s actionbar {"rawtext":[{"translate":"laser_blaster.empty"}]}');
+                    } else {
+                        player.runCommand('titleraw @s actionbar {"rawtext":[{"translate":"blaster.empty"}]}');
+                    }
+
                     return;
                 }
 

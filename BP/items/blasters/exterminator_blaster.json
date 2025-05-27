@@ -27,7 +27,7 @@
 			},
 			"minecraft:cooldown": {
 				"category": "exterminator_blaster",
-				"duration": 2.5
+				"duration": 3.0
 			},
 			"minecraft:use_modifiers": {
 				"use_duration": 999999
@@ -39,7 +39,8 @@
 			"minecraft:tags": {
 				"tags": [
 					"twisted:is_blaster",
-					"twisted:mega_laser"
+					"twisted:mega_laser",
+					"twisted:laser_charge"
 				]
 			},
 			"minecraft:custom_components": [

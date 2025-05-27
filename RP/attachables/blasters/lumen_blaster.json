@@ -30,7 +30,7 @@
 				]
 			},
 			"render_controllers": [
-				"controller.render.weapon"
+				"controller.render.purple_robo"
 			]
 		}
 	}
