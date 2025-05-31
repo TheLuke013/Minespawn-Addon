@@ -84,7 +84,7 @@
 					"charge_charged_trigger": 0
 				},
 				"minecraft:shooter": {
-					"def": "twisted:robo_laser"
+					"def": "twisted:robo_jeffery_laser"
 				},
 				"minecraft:timer": {
 					"looping": false,
@@ -238,7 +238,7 @@
 				"priority": 2
 			},
 			"minecraft:follow_range": {
-				"value": 500
+				"value": 1000
 			},
 			"minecraft:damage_sensor": {
 				"triggers": [

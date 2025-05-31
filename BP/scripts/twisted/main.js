@@ -34,6 +34,16 @@ world.afterEvents.entityHitEntity.subscribe(e => {
     else if (e.damagingEntity.typeId === 'twisted:robo_jeffery') {
         e.hitEntity.applyKnockback(dir.x, dir.z, 5, 1);
     }
+    //robo warrior
+    else if (e.damagingEntity.typeId === 'twisted:robo_warrior') {
+        e.hitEntity.applyKnockback(dir.x, dir.z, 1, 1);
+    }
+
+    if (e.damagingEntity.typeId === 'minecraft:player' && e.hitEntity.typeId === 'twisted:robo_warrior') {
+        e.damagingEntity.applyKnockback(-dir.x, -dir.z, 3, 1);
+        e.hitEntity.playAnimation('animation.poravagers_robot_bote_warrior.attack', { blendOutTime: 1 });
+        world.playSound('item.shield.block', e.damagingEntity.location);
+    }
 })
 
 system.runInterval(() => {

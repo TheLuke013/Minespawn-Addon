@@ -1,4 +1,4 @@
-	{
+{
 	"entity_sounds": {
 		"entities": {
 			"twisted:golden_apple_cow": {
@@ -149,7 +149,7 @@
 			},
 			"twisted:robo_tron": {
 				"volume": 30.0,
-				"pitch": 1.0,
+				"pitch": 3.0,
 				"events": {
 					"step": {
 						"sound": "mob.robo.step",
@@ -167,7 +167,7 @@
 			},
 			"twisted:robo_warrior": {
 				"volume": 30.0,
-				"pitch": 1.0,
+				"pitch": 2.0,
 				"events": {
 					"step": {
 						"sound": "mob.robo.step",

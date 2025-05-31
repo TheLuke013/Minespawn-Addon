@@ -1,0 +1,82 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "twisted:robo_jeffery_laser",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:arrow"
+        },
+        "component_groups": {
+            "twisted:hit": {
+                "minecraft:explode": {
+                    "fuse_length": 0,
+                    "fuse_lit": true,
+                    "power": 3,
+                    "breaks_blocks": false
+                }
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.25,
+                "height": 0.25
+            },
+            "minecraft:projectile": {
+                "on_hit": {
+                    "impact_damage": {
+                        "damage": 5,
+                        "knockback": true,
+                        "semi_random_diff_damage": false
+                    },
+                    "definition_event": {
+                        "event_trigger": {
+                            "event": "twisted:hit",
+                            "target": "self"
+                        }
+                    }
+                },
+                "multiple_targets": true,
+                "anchor": 1,
+                "power": 1.6,
+                "gravity": 0.01,
+                "angle_offset": 0,
+                "offset": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "minecraft:navigation.float": {},
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "queue_command": {
+                    "command": "playsound blaster.laser_shoot @p[r=30] ~~~ 100 1 100",
+                    "target": "self"
+                }
+            },
+            "twisted:hit": {
+                "sequence": [
+                    {
+                        "queue_command": {
+                            "command": "particle twisted:laser_impact ~~~",
+                            "target": "self"
+                        },
+                        "add": {
+                            "component_groups": [
+                                "twisted:hit"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

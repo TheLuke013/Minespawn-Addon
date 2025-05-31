@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "twisted:robo_warrior_laser",
+			"materials": {
+				"default": "arrow"
+			},
+			"textures": {
+				"default": "textures/blasters/purple_laser"
+			},
+			"geometry": {
+				"default": "geometry.laser_blaster"
+			},
+			"render_controllers": [
+				"controller.render.purple_robo"
+			],
+			"particle_effects": {
+				"laser": "twisted:laser"
+			},
+			"animations": {
+				"rotation": "animation.laser_projectile.rotation",
+				"laser_projectile": "animation.laser_projectile"
+			},
+			"scripts": {
+				"animate": [
+					"rotation",
+					"laser_projectile"
+				]
+			}
+		}
+	}
+}

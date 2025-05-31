@@ -29,6 +29,9 @@
 					},
 					{
 						"walk": "query.modified_move_speed >= 0.1"
+					},
+					{
+						"attack": "variable.attack_time > 0.0"
 					}
 				]
 			},

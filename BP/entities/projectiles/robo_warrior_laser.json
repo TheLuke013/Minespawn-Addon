@@ -2,7 +2,7 @@
     "format_version": "1.20.80",
     "minecraft:entity": {
         "description": {
-            "identifier": "twisted:robo_laser",
+            "identifier": "twisted:robo_warrior_laser",
             "is_spawnable": false,
             "is_summonable": true,
             "is_experimental": false,
@@ -13,7 +13,7 @@
                 "minecraft:explode": {
                     "fuse_length": 0,
                     "fuse_lit": true,
-                    "power": 3,
+                    "power": 1,
                     "breaks_blocks": false
                 }
             }
@@ -26,7 +26,7 @@
             "minecraft:projectile": {
                 "on_hit": {
                     "impact_damage": {
-                        "damage": 5,
+                        "damage": 12,
                         "knockback": true,
                         "semi_random_diff_damage": false
                     },
