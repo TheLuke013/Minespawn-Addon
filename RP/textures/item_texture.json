@@ -258,7 +258,7 @@
 			"textures": "textures/items/tools/ultimate/ultimate_shovel"
 		},
 		"twisted:ultimate_sword": {
-			"textures": "textures/items/tools/ultimate/ultimate_sword"
+			"textures": "textures/items/weapons/ultimate_sword"
 		},
 		"twisted:lumen_blaster": {
 			"textures": "textures/items/blasters/lumen_blaster"
