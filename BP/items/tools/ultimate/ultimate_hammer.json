@@ -1,0 +1,68 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "twisted:small_ultimate_hammer",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.pickaxe"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 3000
+			},
+			"minecraft:icon": "twisted:small_ultimate_hammer",
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"twisted:ultimate_ingot"
+						],
+						"repair_amount": "query.max_durability * 0.25"
+					},
+					{
+						"items": [
+							"twisted:small_ultimate_hammer"
+						],
+						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
+					}
+				]
+			},
+			"minecraft:damage": 42,
+			"minecraft:enchantable": {
+				"value": 14,
+				"slot": "pickaxe"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "query.any_tag('stone', 'metal', 'minecraft:is_pickaxe_item_destructible')"
+						},
+						"speed": 25
+					},
+					{
+						"block": "minecraft:ice",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:sandstone",
+						"speed": 25
+					}
+				]
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_pickaxe"
+				]
+			},
+			"minecraft:custom_components": [
+				"twisted:durability"
+			]
+		}
+	}
+}

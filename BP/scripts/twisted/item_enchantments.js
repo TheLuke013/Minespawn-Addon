@@ -108,4 +108,10 @@ export function enchantItems(player) {
         mainhandItem?.typeId === 'twisted:ultimate_hoe') {
         player.runCommand('enchant @s efficiency 5');
     }
+    //SMALL ULTIMATE HAMMER
+    else if (mainhandItem?.typeId === 'twisted:small_ultimate_hammer') {
+        player.runCommand('enchant @s efficiency 5');
+        player.runCommand('enchant @s unbreaking 3');
+        player.runCommand('enchant @s silk_touch');
+    }
 }

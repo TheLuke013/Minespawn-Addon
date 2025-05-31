@@ -271,6 +271,12 @@
 		},
 		"twisted:laser_charge": {
 			"textures": "textures/items/laser_charge"
+		},
+		"twisted:ultimate_arrow": {
+			"textures": "textures/items/ultimate_arrow"
+		},
+		"twisted:small_ultimate_hammer": {
+			"textures": "textures/items/tools/ultimate/ultimate_hammer"
 		}
 	}
 }
