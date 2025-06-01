@@ -1,117 +1,194 @@
-import { getPlayerSlotItem } from './utils/utils.js';
+import { EnchantmentTypes } from "@minecraft/server";
 
 export function enchantItems(player) {
-    const mainhandItem = getPlayerSlotItem(player);
-    //BIG BERTHA | STELIX BERTHA
-    if (mainhandItem?.typeId === 'twisted:big_bertha' ||
-        mainhandItem?.typeId === 'twisted:stelix_bertha') {
-        player.runCommand('enchant @s knockback 2');
-        player.runCommand('enchant @s bane_of_arthropods');
-        player.runCommand('enchant @s fire_aspect');
-    }
-    //ROYAL GUARDIAN
-    else if (mainhandItem?.typeId === 'twisted:royal_guardian') {
-        player.runCommand('enchant @s unbreaking 3');
-    }
-    //ROYAL SHIELD
-    else if (mainhandItem?.typeId === 'twisted:royal_shield') {
-        player.runCommand('enchant @s unbreaking 3');
-        player.runCommand('enchant @s mending');
-    }
-    //BATTLE AXE
-    else if (mainhandItem?.typeId === 'twisted:battle_axe') {
-        player.runCommand('enchant @s unbreaking 3');
-        player.runCommand('enchant @s looting 3');
-    }
-    //QUEEN BATTLE AXE
-    else if (mainhandItem?.typeId === 'twisted:queen_battle_axe') {
-        player.runCommand('enchant @s unbreaking 3');
-        player.runCommand('enchant @s looting 3');
-        player.runCommand('enchant @s fire_aspect 2');
-        //player.runCommand('enchant @s sharpness 5');
-    }
-    //ULTIMATE HAMMER
-    else if (mainhandItem?.typeId === 'twisted:ultimate_chainsaw') {
-        player.runCommand('enchant @s unbreaking 3');
-        player.runCommand('enchant @s efficiency 5');
-    }
-    //EMERALD PICKAXE
-    else if (mainhandItem?.typeId === 'twisted:emerald_pickaxe') {
-        player.runCommand('enchant @s silk_touch');
-    }
-    //ENCHANTED EMERALD SWORD
-    else if (mainhandItem?.typeId === 'twisted:enchanted_emerald_sword') {
-        player.runCommand('enchant @s sharpness 2');
-        player.runCommand('enchant @s unbreaking 3');
-        player.runCommand('enchant @s mending');
-    }
-    //ENCHANTED EMERALD ARMOR
-    else if (mainhandItem?.typeId === 'twisted:enchanted_emerald_helmet' ||
-        mainhandItem?.typeId === 'twisted:enchanted_emerald_chestplate' ||
-        mainhandItem?.typeId === 'twisted:enchanted_emerald_leggings') {
-        player.runCommand('enchant @s protection 2');
-        player.runCommand('enchant @s mending');
-    } else if (mainhandItem?.typeId === 'twisted:enchanted_emerald_boots') {
-        player.runCommand('enchant @s protection 2');
-        player.runCommand('enchant @s feather_falling');
-        player.runCommand('enchant @s mending');
-    }
-    //ROYAL ARMOR
-    else if (mainhandItem?.typeId === 'twisted:royal_helmet') {
-        player.runCommand('enchant @s protection 4');
-        player.runCommand('enchant @s unbreaking 3');
-        player.runCommand('enchant @s aqua_affinity');
-        player.runCommand('enchant @s respiration 2');
-        player.runCommand('enchant @s mending');
-    } else if (mainhandItem?.typeId === 'twisted:royal_chestplate' ||
-        mainhandItem?.typeId === 'twisted:royal_leggings') {
-        player.runCommand('enchant @s protection 4');
-        player.runCommand('enchant @s unbreaking 3');
-        player.runCommand('enchant @s mending');
-    } else if (mainhandItem?.typeId === 'twisted:royal_boots') {
-        player.runCommand('enchant @s protection 4');
-        player.runCommand('enchant @s unbreaking 3');
-        player.runCommand('enchant @s feather_falling 4');
-        player.runCommand('enchant @s mending');
-    }
-    //ULTIMATE ARMOR
-    else if (mainhandItem?.typeId === 'twisted:ultimate_helmet') {
-        player.runCommand('enchant @s protection 4');
-        player.runCommand('enchant @s aqua_affinity');
-        player.runCommand('enchant @s respiration 2');
-        player.runCommand('enchant @s unbreaking 3');
-    } else if (mainhandItem?.typeId === 'twisted:ultimate_chestplate' ||
-        mainhandItem?.typeId === 'twisted:ultimate_leggings') {
-        player.runCommand('enchant @s protection 4');
-        player.runCommand('enchant @s unbreaking 3');
-    } else if (mainhandItem?.typeId === 'twisted:ultimate_boots') {
-        player.runCommand('enchant @s protection 4');
-        player.runCommand('enchant @s feather_falling 4');
-        player.runCommand('enchant @s unbreaking 3');
-    }
-    //ULTIMATE SWORD
-    if (mainhandItem?.typeId === 'twisted:ultimate_sword') {
-        player.runCommand('enchant @s unbreaking 3');
-        player.runCommand('enchant @s knockback 2');
-        player.runCommand('enchant @s sharpness 5');
-        player.runCommand('enchant @s fire_aspect 2');
-        player.runCommand('enchant @s looting 3');
-    }
-    //ULTIMATE PICKAXE
-    else if (mainhandItem?.typeId === 'twisted:ultimate_pickaxe') {
-        player.runCommand('enchant @s fortune 3');
-        player.runCommand('enchant @s efficiency 5');
-    }
-    //ULTOMATE AXE, SHOVEL, HOE
-    else if (mainhandItem?.typeId === 'twisted:ultimate_axe' ||
-        mainhandItem?.typeId === 'twisted:ultimate_shovel' ||
-        mainhandItem?.typeId === 'twisted:ultimate_hoe') {
-        player.runCommand('enchant @s efficiency 5');
-    }
-    //SMALL ULTIMATE HAMMER
-    else if (mainhandItem?.typeId === 'twisted:small_ultimate_hammer') {
-        player.runCommand('enchant @s efficiency 5');
-        player.runCommand('enchant @s unbreaking 3');
-        player.runCommand('enchant @s silk_touch');
+    const inventory = player.getComponent("inventory").container;
+
+    for (let i = 0; i < inventory.size; i++) {
+        const item = inventory.getItem(i);
+        if (!item) continue;
+
+        const enchantable = item.getComponent("minecraft:enchantable");
+        if (!enchantable) continue;
+
+        const enchants = [];
+
+        switch (item.typeId) {
+            case 'twisted:big_bertha':
+            case 'twisted:stelix_bertha':
+                enchants.push(
+                    { type: EnchantmentTypes.get("knockback"), level: 2 },
+                    { type: EnchantmentTypes.get("bane_of_arthropods"), level: 1 },
+                    { type: EnchantmentTypes.get("fire_aspect"), level: 1 }
+                );
+                break;
+
+            case 'twisted:royal_guardian':
+                enchants.push(
+                    { type: EnchantmentTypes.get("unbreaking"), level: 3 }
+                );
+                break;
+
+            case 'twisted:royal_shield':
+                enchants.push(
+                    { type: EnchantmentTypes.get("unbreaking"), level: 3 },
+                    { type: EnchantmentTypes.get("mending"), level: 1 }
+                );
+                break;
+
+            case 'twisted:battle_axe':
+                enchants.push(
+                    { type: EnchantmentTypes.get("unbreaking"), level: 2 },
+                    { type: EnchantmentTypes.get("looting"), level: 2 }
+                );
+                break;
+
+            case 'twisted:queen_battle_axe':
+                enchants.push(
+                    { type: EnchantmentTypes.get("unbreaking"), level: 3 },
+                    { type: EnchantmentTypes.get("looting"), level: 3 },
+                    { type: EnchantmentTypes.get("fire_aspect"), level: 2 }
+                    // { type: EnchantmentTypes.get("sharpness"), level: 5 } // Descomentável se desejar
+                );
+                break;
+
+            case 'twisted:ultimate_chainsaw':
+                enchants.push(
+                    { type: EnchantmentTypes.get("unbreaking"), level: 3 },
+                    { type: EnchantmentTypes.get("efficiency"), level: 5 }
+                );
+                break;
+
+            case 'twisted:emerald_pickaxe':
+                enchants.push(
+                    { type: EnchantmentTypes.get("silk_touch"), level: 1 }
+                );
+                break;
+
+            case 'twisted:enchanted_emerald_sword':
+                enchants.push(
+                    { type: EnchantmentTypes.get("sharpness"), level: 2 },
+                    { type: EnchantmentTypes.get("unbreaking"), level: 3 },
+                    { type: EnchantmentTypes.get("mending"), level: 1 }
+                );
+                break;
+
+            case 'twisted:enchanted_emerald_helmet':
+            case 'twisted:enchanted_emerald_chestplate':
+            case 'twisted:enchanted_emerald_leggings':
+                enchants.push(
+                    { type: EnchantmentTypes.get("protection"), level: 2 },
+                    { type: EnchantmentTypes.get("mending"), level: 1 }
+                );
+                break;
+
+            case 'twisted:enchanted_emerald_boots':
+                enchants.push(
+                    { type: EnchantmentTypes.get("protection"), level: 2 },
+                    { type: EnchantmentTypes.get("feather_falling"), level: 1 },
+                    { type: EnchantmentTypes.get("mending"), level: 1 }
+                );
+                break;
+
+            case 'twisted:royal_helmet':
+                enchants.push(
+                    { type: EnchantmentTypes.get("protection"), level: 4 },
+                    { type: EnchantmentTypes.get("unbreaking"), level: 3 },
+                    { type: EnchantmentTypes.get("aqua_affinity"), level: 1 },
+                    { type: EnchantmentTypes.get("respiration"), level: 2 },
+                    { type: EnchantmentTypes.get("mending"), level: 1 }
+                );
+                break;
+
+            case 'twisted:royal_chestplate':
+            case 'twisted:royal_leggings':
+                enchants.push(
+                    { type: EnchantmentTypes.get("protection"), level: 4 },
+                    { type: EnchantmentTypes.get("unbreaking"), level: 3 },
+                    { type: EnchantmentTypes.get("mending"), level: 1 }
+                );
+                break;
+
+            case 'twisted:royal_boots':
+                enchants.push(
+                    { type: EnchantmentTypes.get("protection"), level: 4 },
+                    { type: EnchantmentTypes.get("unbreaking"), level: 3 },
+                    { type: EnchantmentTypes.get("feather_falling"), level: 4 },
+                    { type: EnchantmentTypes.get("mending"), level: 1 }
+                );
+                break;
+
+            case 'twisted:ultimate_helmet':
+                enchants.push(
+                    { type: EnchantmentTypes.get("protection"), level: 4 },
+                    { type: EnchantmentTypes.get("aqua_affinity"), level: 1 },
+                    { type: EnchantmentTypes.get("respiration"), level: 2 },
+                    { type: EnchantmentTypes.get("unbreaking"), level: 3 }
+                );
+                break;
+
+            case 'twisted:ultimate_chestplate':
+            case 'twisted:ultimate_leggings':
+                enchants.push(
+                    { type: EnchantmentTypes.get("protection"), level: 4 },
+                    { type: EnchantmentTypes.get("unbreaking"), level: 3 }
+                );
+                break;
+
+            case 'twisted:ultimate_boots':
+                enchants.push(
+                    { type: EnchantmentTypes.get("protection"), level: 4 },
+                    { type: EnchantmentTypes.get("feather_falling"), level: 4 },
+                    { type: EnchantmentTypes.get("unbreaking"), level: 3 }
+                );
+                break;
+
+            case 'twisted:ultimate_sword':
+                enchants.push(
+                    { type: EnchantmentTypes.get("unbreaking"), level: 3 },
+                    { type: EnchantmentTypes.get("knockback"), level: 2 },
+                    { type: EnchantmentTypes.get("sharpness"), level: 5 },
+                    { type: EnchantmentTypes.get("fire_aspect"), level: 2 },
+                    { type: EnchantmentTypes.get("looting"), level: 3 }
+                );
+                break;
+
+            case 'twisted:ultimate_pickaxe':
+                enchants.push(
+                    { type: EnchantmentTypes.get("fortune"), level: 3 },
+                    { type: EnchantmentTypes.get("efficiency"), level: 5 }
+                );
+                break;
+
+            case 'twisted:ultimate_axe':
+            case 'twisted:ultimate_shovel':
+            case 'twisted:ultimate_hoe':
+                enchants.push(
+                    { type: EnchantmentTypes.get("efficiency"), level: 5 }
+                );
+                break;
+
+            case 'twisted:small_ultimate_hammer':
+                enchants.push(
+                    { type: EnchantmentTypes.get("efficiency"), level: 5 },
+                    { type: EnchantmentTypes.get("unbreaking"), level: 3 },
+                    { type: EnchantmentTypes.get("silk_touch"), level: 1 }
+                );
+                break;
+            case 'twisted:ultimate_bow':
+                enchants.push(
+                    { type: EnchantmentTypes.get("flame"), level: 1 },
+                    { type: EnchantmentTypes.get("infinity"), level: 1 },
+                    { type: EnchantmentTypes.get("power"), level: 5 },
+                    { type: EnchantmentTypes.get("punch"), level: 2 }
+                );
+                break;
+        }
+
+        try {
+            if (enchants.length > 0) {
+                enchantable.addEnchantments(enchants);
+                inventory.setItem(i, item);
+            }
+        } catch (e) { }
     }
 }

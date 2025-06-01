@@ -5,6 +5,7 @@ import { mobjiraBehaviours } from './mobjira.js';
 import { roboJefferyBehaviours } from './robo_jeffery.js';
 import { longRangeAttack, handleLongRange } from './big_weapons_attack.js';
 import { shieldSystem } from './shield.js';;
+import { bowFunction } from './bow.js';
 
 import './custom_components/itemCustomComponents.js';
 import './custom_components/blockCustomComponents.js';
@@ -60,11 +61,10 @@ system.runInterval(() => {
         })
 
         shieldSystem(player);
-
-        //self-enchantment of items
         enchantItems(player);
         royalArmorEffects(player);
         ultimateArmorEffects(player);
+        bowFunction(player);
 
         //long range attack
         longRangeAttack(player);

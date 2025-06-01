@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "twisted:ultimate_arrow",
+			"materials": {
+				"default": "arrow"
+			},
+			"textures": {
+				"default": "textures/entity/ultimate_arrow"
+			},
+			"geometry": {
+				"default": "geometry.arrow"
+			},
+			"particle_effects": {
+				"flame": "twisted:arrow_flame"
+			},
+			"animations": {
+				"rotation": "animation.laser_projectile.rotation",
+				"arrow_particle": "animation.arrow_particle"
+			},
+			"scripts": {
+				"animate": [
+					"rotation",
+					"arrow_particle"
+				]
+			},
+			"render_controllers": [
+				"controller.render.arrow"
+			]
+		}
+	}
+}

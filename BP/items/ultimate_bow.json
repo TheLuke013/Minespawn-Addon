@@ -1,0 +1,30 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "twisted:ultimate_bow",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon": "twisted:ultimate_bow",
+			"minecraft:use_animation": "bow",
+			"minecraft:frame_count": 3,
+			"minecraft:durability": {
+				"max_durability": 3000
+			},
+			"minecraft:stacked_by_data": false,
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_modifiers": {
+				"use_duration": 99999999,
+				"movement_modifier": 0.35
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:enchantable": {
+				"slot": "bow",
+				"value": 10
+			}
+		}
+	}
+}

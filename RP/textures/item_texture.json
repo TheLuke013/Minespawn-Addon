@@ -277,6 +277,9 @@
 		},
 		"twisted:small_ultimate_hammer": {
 			"textures": "textures/items/tools/ultimate/ultimate_hammer"
+		},
+		"twisted:ultimate_bow": {
+			"textures": "textures/items/bow/ultimate/ultimate_bow_standby"
 		}
 	}
 }

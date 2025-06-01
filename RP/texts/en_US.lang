@@ -92,6 +92,7 @@ item.twisted:ultimate_shovel=The Ultimate Shovel
 item.twisted:ultimate_sword=The Ultimate Sword
 item.twisted:small_ultimate_hammer=Super Ultimate Hammer
 item.twisted:ultimate_arrow=Ultimate Arrow
+item.twisted:ultimate_bow=Ultimate Bow
 
 item.twisted:mantis_claw=Mantis Claw
 item.twisted:mantis_sword=Mantis Claw Sword
@@ -152,3 +153,5 @@ tile.twisted:titanium_block.name=Titanium Block
 
 blaster.empty=§4Empty rockets!
 laser_blaster.empty=§4Empty laser charge!
+item.spawn_egg.entity.twisted:ultimate_arrow.name=Spawn Ultimate Arrow
+entity.twisted:ultimate_arrow.name=Ultimate Arrow
