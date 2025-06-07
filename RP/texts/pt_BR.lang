@@ -118,7 +118,10 @@ entity.twisted:water_rocket.name=Foguete de Água
 entity.twisted:fire_rocket.name=Foguete de Fogo
 entity.twisted:mj_atomic_breath.name=Sopro Atômico do Mobjira
 entity.twisted:mj_atomic_explosion.name=Explosão Atômica do Mobjira
-entity.twisted:robo_laser.name=Laser do Robô
+entity.twisted:robo_jeffery_laser.name=Laser do Robô Jeffery
+entity.twisted:robo_warrior_laser.name=Laser do Robô Warrior
+entity.twisted:exterminator_laser.name=Laser do Exterminador 4-B
+entity.twisted:ultimate_arrow.name=Flecha Ultimate
 
 entity.twisted:bap.name=um jogador com Grande Machado de Batalha
 entity.twisted:bbp.name=um jogador com Espada Big Bertha

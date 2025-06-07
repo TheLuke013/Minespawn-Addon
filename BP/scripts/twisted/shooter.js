@@ -1,8 +1,8 @@
 import { world, ItemStack } from '@minecraft/server';
 
-export function hasAmmunition(player, itemId) {
+export function hasAmmunition(player, itemId, ignoresCreative = false) {
     if (!itemId) return false;
-    if (player.matches({ gameMode: "creative" })) return true;
+    if (player.matches({ gameMode: "creative" }) && !ignoresCreative) return true;
 
     const inventory = player.getComponent("inventory").container;
     for (let i = 0; i < inventory.size; i++) {

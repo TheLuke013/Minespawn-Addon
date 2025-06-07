@@ -279,7 +279,10 @@
 			"textures": "textures/items/tools/ultimate/ultimate_hammer"
 		},
 		"twisted:ultimate_bow": {
-			"textures": "textures/items/bow/ultimate/ultimate_bow_standby"
+			"textures": "textures/items/bow/ultimate/ultimate_bow"
+		},
+		"twisted:ultimate_upgrade": {
+			"textures": "textures/items/ultimate_upgrade"
 		}
 	}
 }

@@ -93,6 +93,7 @@ item.twisted:ultimate_sword=The Ultimate Sword
 item.twisted:small_ultimate_hammer=Super Ultimate Hammer
 item.twisted:ultimate_arrow=Ultimate Arrow
 item.twisted:ultimate_bow=Ultimate Bow
+item.twisted:ultimate_upgrade=Ultimate Upgrade
 
 item.twisted:mantis_claw=Mantis Claw
 item.twisted:mantis_sword=Mantis Claw Sword
@@ -128,7 +129,11 @@ entity.twisted:water_rocket.name=Water Rocket
 entity.twisted:fire_rocket.name=Fire Rocket
 entity.twisted:mj_atomic_breath.name=Mobjira Atomic Breath
 entity.twisted:mj_atomic_explosion.name=Mobjira Atomic Explosion
-entity.twisted:robo_laser.name=Robo Laser
+entity.twisted:robo_jeffery_laser.name=Robo Jeffery Laser
+entity.twisted:robo_warrior_laser.name=Robo Warrior Laser
+entity.twisted:lumen_laser.name=Lumen Laser
+entity.twisted:exterminator_laser.name=Laser of Exterminator 4-B
+entity.twisted:ultimate_arrow.name=Ultimate Arrow
 
 entity.twisted:dummy.name=Dummy
 entity.twisted:bap.name=a player with Battle Axe
@@ -153,5 +158,3 @@ tile.twisted:titanium_block.name=Titanium Block
 
 blaster.empty=§4Empty rockets!
 laser_blaster.empty=§4Empty laser charge!
-item.spawn_egg.entity.twisted:ultimate_arrow.name=Spawn Ultimate Arrow
-entity.twisted:ultimate_arrow.name=Ultimate Arrow

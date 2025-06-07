@@ -535,7 +535,8 @@
 								"twisted:jump",
 								"twisted:knockback",
 								"twisted:lightning_attack",
-								"twisted:prepare_for_breath_atomic"
+								"twisted:prepare_for_breath_atomic",
+								"twisted:breath_atomic_attack"
 							]
 						}
 					},
@@ -552,7 +553,8 @@
 								"twisted:jump",
 								"twisted:knockback",
 								"twisted:lightning_attack",
-								"twisted:prepare_for_breath_atomic"
+								"twisted:prepare_for_breath_atomic",
+								"twisted:breath_atomic_attack"
 							]
 						}
 					},
@@ -569,7 +571,8 @@
 								"twisted:jump",
 								"twisted:knockback",
 								"twisted:melee_attack",
-								"twisted:prepare_for_breath_atomic"
+								"twisted:prepare_for_breath_atomic",
+								"twisted:breath_atomic_attack"
 							]
 						}
 					},
@@ -586,7 +589,8 @@
 								"twisted:knockback",
 								"twisted:lightning_attack",
 								"twisted:melee_attack",
-								"twisted:prepare_for_breath_atomic"
+								"twisted:prepare_for_breath_atomic",
+								"twisted:breath_atomic_attack"
 							]
 						}
 					},
@@ -603,12 +607,13 @@
 								"twisted:jump",
 								"twisted:lightning_attack",
 								"twisted:melee_attack",
-								"twisted:prepare_for_breath_atomic"
+								"twisted:prepare_for_breath_atomic",
+								"twisted:breath_atomic_attack"
 							]
 						}
 					},
 					{
-						"weight": 25,
+						"weight": 5,
 						"add": {
 							"component_groups": [
 								"twisted:prepare_for_breath_atomic"
@@ -620,7 +625,8 @@
 								"twisted:jump",
 								"twisted:lightning_attack",
 								"twisted:melee_attack",
-								"twisted:knockback"
+								"twisted:knockback",
+								"twisted:breath_atomic_attack"
 							]
 						}
 					}

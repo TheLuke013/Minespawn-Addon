@@ -1,8 +1,34 @@
 import { system, world, EntityEquippableComponent, EquipmentSlot } from "@minecraft/server";
 import { shootEntityFromPlayer } from './utils/utils.js';
 import { useAmmunition, hasAmmunition } from './shooter.js';
+import { itemDurability } from './item_durability.js';
 
 const tags = ["ultimate"]
+
+world.afterEvents.projectileHitEntity.subscribe(e => {
+    //TODO - FIX THIS CODE
+    try {
+        if (e.projectile.typeId === 'twisted:ultimate_arrow') {
+            const hitEntity = e.getEntityHit().entity;
+            const tags = e.projectile.getTags();
+            world.sendMessage(`${tags.length}`);
+            const playerTag = tags.find(tag => tag.startsWith('player:'));
+
+            if (!playerTag) return;
+
+            const ownerName = playerTag.split(':')[1];
+            const ownerPlayer = world.getPlayers().find(p => p.name === ownerName);
+
+            if (!ownerPlayer) return;
+
+            const dir = ownerPlayer.getViewDirection();
+
+            hitEntity.applyKnockback(dir.x, dir.z, 30, 1);
+        }
+    } catch (e) {
+        //world.sendMessage(`${e}`);
+    }
+});
 
 export function bowFunction(player) {
     bowUsing(player);
@@ -73,24 +99,29 @@ function startAutoBowLoop(player) {
 
         delay++;
         if (delay >= 5) {
-            if (hasAmmunition(player, 'twisted:ultimate_arrow')) {
-                shootEntityFromPlayer('twisted:ultimate_arrow', player);
-                player.playSound('random.bow', player.location);
-                if (!player.getTags().includes('enchanted:infinity')) {
-                    useAmmunition(player, 'twisted:ultimate_arrow');
-                }
+            shootEntityFromPlayer('twisted:ultimate_arrow', player);
+            player.playSound('random.bow', player.location);
+            itemDurability(player);
+            if (!player.getTags().includes('enchanted:infinity')) {
+                useAmmunition(player, 'twisted:ultimate_arrow');
             }
             delay = 0;
         }
     }, 1);
 }
 
+world.afterEvents.entityDie.subscribe(e => {
+    if (e.deadEntity.typeId === 'minecraft:player' && e.deadEntity.getTags().includes('using')) {
+        e.deadEntity.removeTag('using');
+    }
+})
+
 world.afterEvents.itemUse.subscribe((use) => {
     try {
         const p = use.source;
         const bow = "_bow";
         const item = use.itemStack.typeId;
-        if (item.toLowerCase().includes(bow)) {
+        if (item.toLowerCase().includes(bow) && hasAmmunition(p, 'twisted:ultimate_arrow', true)) {
             p.addTag("using");
             startAutoBowLoop(p);
         }
@@ -102,15 +133,7 @@ world.afterEvents.itemUse.subscribe((use) => {
 world.afterEvents.itemStopUse.subscribe((stop) => {
     try {
         const p = stop.source;
-        const item = stop.itemStack;
         p.removeTag("using");
-        for (const bows of tags) {
-            if (p.hasTag(`${bows}`)) {
-                if (item.typeId == `twisted:${bows}_bow` && p.hasTag("using")) {
-                    Durability(item, p);
-                }
-            }
-        }
     } catch (e) {
 
     }
